@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/main.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/main.cpp",
+  "file": "/Users/chenxiang/Documents/leetcode_practice/main.cpp"
+},
+{
+  "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/middleNode.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/middleNode.cpp",
+  "file": "/Users/chenxiang/Documents/leetcode_practice/middleNode.cpp"
+},
+{
+  "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/printer.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/printer.cpp",
+  "file": "/Users/chenxiang/Documents/leetcode_practice/printer.cpp"
+},
+{
+  "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/removeNthFromEnd.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/removeNthFromEnd.cpp",
+  "file": "/Users/chenxiang/Documents/leetcode_practice/removeNthFromEnd.cpp"
+},
+{
+  "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/reverseString.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/reverseString.cpp",
+  "file": "/Users/chenxiang/Documents/leetcode_practice/reverseString.cpp"
+},
+{
+  "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/threesum.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/threesum.cpp",
+  "file": "/Users/chenxiang/Documents/leetcode_practice/threesum.cpp"
+}
+]
