@@ -149,6 +149,54 @@ demo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
+firstBadVersion.o: firstBadVersion.cpp.o
+.PHONY : firstBadVersion.o
+
+# target to build an object file
+firstBadVersion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/firstBadVersion.cpp.o
+.PHONY : firstBadVersion.cpp.o
+
+firstBadVersion.i: firstBadVersion.cpp.i
+.PHONY : firstBadVersion.i
+
+# target to preprocess a source file
+firstBadVersion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/firstBadVersion.cpp.i
+.PHONY : firstBadVersion.cpp.i
+
+firstBadVersion.s: firstBadVersion.cpp.s
+.PHONY : firstBadVersion.s
+
+# target to generate assembly for a file
+firstBadVersion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/firstBadVersion.cpp.s
+.PHONY : firstBadVersion.cpp.s
+
+lengthOfLongestSubstring.o: lengthOfLongestSubstring.cpp.o
+.PHONY : lengthOfLongestSubstring.o
+
+# target to build an object file
+lengthOfLongestSubstring.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.o
+.PHONY : lengthOfLongestSubstring.cpp.o
+
+lengthOfLongestSubstring.i: lengthOfLongestSubstring.cpp.i
+.PHONY : lengthOfLongestSubstring.i
+
+# target to preprocess a source file
+lengthOfLongestSubstring.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.i
+.PHONY : lengthOfLongestSubstring.cpp.i
+
+lengthOfLongestSubstring.s: lengthOfLongestSubstring.cpp.s
+.PHONY : lengthOfLongestSubstring.s
+
+# target to generate assembly for a file
+lengthOfLongestSubstring.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.s
+.PHONY : lengthOfLongestSubstring.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -196,6 +244,30 @@ middleNode.s: middleNode.cpp.s
 middleNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/middleNode.cpp.s
 .PHONY : middleNode.cpp.s
+
+moveZeroes.o: moveZeroes.cpp.o
+.PHONY : moveZeroes.o
+
+# target to build an object file
+moveZeroes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/moveZeroes.cpp.o
+.PHONY : moveZeroes.cpp.o
+
+moveZeroes.i: moveZeroes.cpp.i
+.PHONY : moveZeroes.i
+
+# target to preprocess a source file
+moveZeroes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/moveZeroes.cpp.i
+.PHONY : moveZeroes.cpp.i
+
+moveZeroes.s: moveZeroes.cpp.s
+.PHONY : moveZeroes.s
+
+# target to generate assembly for a file
+moveZeroes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/moveZeroes.cpp.s
+.PHONY : moveZeroes.cpp.s
 
 printer.o: printer.cpp.o
 .PHONY : printer.o
@@ -245,6 +317,30 @@ removeNthFromEnd.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/removeNthFromEnd.cpp.s
 .PHONY : removeNthFromEnd.cpp.s
 
+reverse.o: reverse.cpp.o
+.PHONY : reverse.o
+
+# target to build an object file
+reverse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/reverse.cpp.o
+.PHONY : reverse.cpp.o
+
+reverse.i: reverse.cpp.i
+.PHONY : reverse.i
+
+# target to preprocess a source file
+reverse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/reverse.cpp.i
+.PHONY : reverse.cpp.i
+
+reverse.s: reverse.cpp.s
+.PHONY : reverse.s
+
+# target to generate assembly for a file
+reverse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/reverse.cpp.s
+.PHONY : reverse.cpp.s
+
 reverseString.o: reverseString.cpp.o
 .PHONY : reverseString.o
 
@@ -268,6 +364,126 @@ reverseString.s: reverseString.cpp.s
 reverseString.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/reverseString.cpp.s
 .PHONY : reverseString.cpp.s
+
+reverseWords.o: reverseWords.cpp.o
+.PHONY : reverseWords.o
+
+# target to build an object file
+reverseWords.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/reverseWords.cpp.o
+.PHONY : reverseWords.cpp.o
+
+reverseWords.i: reverseWords.cpp.i
+.PHONY : reverseWords.i
+
+# target to preprocess a source file
+reverseWords.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/reverseWords.cpp.i
+.PHONY : reverseWords.cpp.i
+
+reverseWords.s: reverseWords.cpp.s
+.PHONY : reverseWords.s
+
+# target to generate assembly for a file
+reverseWords.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/reverseWords.cpp.s
+.PHONY : reverseWords.cpp.s
+
+rotate.o: rotate.cpp.o
+.PHONY : rotate.o
+
+# target to build an object file
+rotate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/rotate.cpp.o
+.PHONY : rotate.cpp.o
+
+rotate.i: rotate.cpp.i
+.PHONY : rotate.i
+
+# target to preprocess a source file
+rotate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/rotate.cpp.i
+.PHONY : rotate.cpp.i
+
+rotate.s: rotate.cpp.s
+.PHONY : rotate.s
+
+# target to generate assembly for a file
+rotate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/rotate.cpp.s
+.PHONY : rotate.cpp.s
+
+search.o: search.cpp.o
+.PHONY : search.o
+
+# target to build an object file
+search.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/search.cpp.o
+.PHONY : search.cpp.o
+
+search.i: search.cpp.i
+.PHONY : search.i
+
+# target to preprocess a source file
+search.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/search.cpp.i
+.PHONY : search.cpp.i
+
+search.s: search.cpp.s
+.PHONY : search.s
+
+# target to generate assembly for a file
+search.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/search.cpp.s
+.PHONY : search.cpp.s
+
+searchInsert.o: searchInsert.cpp.o
+.PHONY : searchInsert.o
+
+# target to build an object file
+searchInsert.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/searchInsert.cpp.o
+.PHONY : searchInsert.cpp.o
+
+searchInsert.i: searchInsert.cpp.i
+.PHONY : searchInsert.i
+
+# target to preprocess a source file
+searchInsert.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/searchInsert.cpp.i
+.PHONY : searchInsert.cpp.i
+
+searchInsert.s: searchInsert.cpp.s
+.PHONY : searchInsert.s
+
+# target to generate assembly for a file
+searchInsert.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/searchInsert.cpp.s
+.PHONY : searchInsert.cpp.s
+
+sortedSquares.o: sortedSquares.cpp.o
+.PHONY : sortedSquares.o
+
+# target to build an object file
+sortedSquares.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sortedSquares.cpp.o
+.PHONY : sortedSquares.cpp.o
+
+sortedSquares.i: sortedSquares.cpp.i
+.PHONY : sortedSquares.i
+
+# target to preprocess a source file
+sortedSquares.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sortedSquares.cpp.i
+.PHONY : sortedSquares.cpp.i
+
+sortedSquares.s: sortedSquares.cpp.s
+.PHONY : sortedSquares.s
+
+# target to generate assembly for a file
+sortedSquares.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/sortedSquares.cpp.s
+.PHONY : sortedSquares.cpp.s
 
 threesum.o: threesum.cpp.o
 .PHONY : threesum.o
@@ -293,6 +509,30 @@ threesum.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/threesum.cpp.s
 .PHONY : threesum.cpp.s
 
+twoSum.o: twoSum.cpp.o
+.PHONY : twoSum.o
+
+# target to build an object file
+twoSum.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/twoSum.cpp.o
+.PHONY : twoSum.cpp.o
+
+twoSum.i: twoSum.cpp.i
+.PHONY : twoSum.i
+
+# target to preprocess a source file
+twoSum.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/twoSum.cpp.i
+.PHONY : twoSum.cpp.i
+
+twoSum.s: twoSum.cpp.s
+.PHONY : twoSum.s
+
+# target to generate assembly for a file
+twoSum.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/twoSum.cpp.s
+.PHONY : twoSum.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -304,24 +544,54 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... demo"
+	@echo "... firstBadVersion.o"
+	@echo "... firstBadVersion.i"
+	@echo "... firstBadVersion.s"
+	@echo "... lengthOfLongestSubstring.o"
+	@echo "... lengthOfLongestSubstring.i"
+	@echo "... lengthOfLongestSubstring.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... middleNode.o"
 	@echo "... middleNode.i"
 	@echo "... middleNode.s"
+	@echo "... moveZeroes.o"
+	@echo "... moveZeroes.i"
+	@echo "... moveZeroes.s"
 	@echo "... printer.o"
 	@echo "... printer.i"
 	@echo "... printer.s"
 	@echo "... removeNthFromEnd.o"
 	@echo "... removeNthFromEnd.i"
 	@echo "... removeNthFromEnd.s"
+	@echo "... reverse.o"
+	@echo "... reverse.i"
+	@echo "... reverse.s"
 	@echo "... reverseString.o"
 	@echo "... reverseString.i"
 	@echo "... reverseString.s"
+	@echo "... reverseWords.o"
+	@echo "... reverseWords.i"
+	@echo "... reverseWords.s"
+	@echo "... rotate.o"
+	@echo "... rotate.i"
+	@echo "... rotate.s"
+	@echo "... search.o"
+	@echo "... search.i"
+	@echo "... search.s"
+	@echo "... searchInsert.o"
+	@echo "... searchInsert.i"
+	@echo "... searchInsert.s"
+	@echo "... sortedSquares.o"
+	@echo "... sortedSquares.i"
+	@echo "... sortedSquares.s"
 	@echo "... threesum.o"
 	@echo "... threesum.i"
 	@echo "... threesum.s"
+	@echo "... twoSum.o"
+	@echo "... twoSum.i"
+	@echo "... twoSum.s"
 .PHONY : help
 
 

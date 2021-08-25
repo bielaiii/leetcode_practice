@@ -1,6 +1,16 @@
 [
 {
   "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/firstBadVersion.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/firstBadVersion.cpp",
+  "file": "/Users/chenxiang/Documents/leetcode_practice/firstBadVersion.cpp"
+},
+{
+  "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/lengthOfLongestSubstring.cpp",
+  "file": "/Users/chenxiang/Documents/leetcode_practice/lengthOfLongestSubstring.cpp"
+},
+{
+  "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
   "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/main.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/main.cpp",
   "file": "/Users/chenxiang/Documents/leetcode_practice/main.cpp"
 },
@@ -8,6 +18,11 @@
   "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
   "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/middleNode.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/middleNode.cpp",
   "file": "/Users/chenxiang/Documents/leetcode_practice/middleNode.cpp"
+},
+{
+  "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/moveZeroes.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/moveZeroes.cpp",
+  "file": "/Users/chenxiang/Documents/leetcode_practice/moveZeroes.cpp"
 },
 {
   "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
@@ -21,12 +36,47 @@
 },
 {
   "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/reverse.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/reverse.cpp",
+  "file": "/Users/chenxiang/Documents/leetcode_practice/reverse.cpp"
+},
+{
+  "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
   "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/reverseString.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/reverseString.cpp",
   "file": "/Users/chenxiang/Documents/leetcode_practice/reverseString.cpp"
 },
 {
   "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/reverseWords.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/reverseWords.cpp",
+  "file": "/Users/chenxiang/Documents/leetcode_practice/reverseWords.cpp"
+},
+{
+  "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/rotate.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/rotate.cpp",
+  "file": "/Users/chenxiang/Documents/leetcode_practice/rotate.cpp"
+},
+{
+  "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/search.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/search.cpp",
+  "file": "/Users/chenxiang/Documents/leetcode_practice/search.cpp"
+},
+{
+  "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/searchInsert.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/searchInsert.cpp",
+  "file": "/Users/chenxiang/Documents/leetcode_practice/searchInsert.cpp"
+},
+{
+  "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/sortedSquares.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/sortedSquares.cpp",
+  "file": "/Users/chenxiang/Documents/leetcode_practice/sortedSquares.cpp"
+},
+{
+  "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
   "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/threesum.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/threesum.cpp",
   "file": "/Users/chenxiang/Documents/leetcode_practice/threesum.cpp"
+},
+{
+  "directory": "/Users/chenxiang/Documents/leetcode_practice/build",
+  "command": "/usr/bin/clang++   -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++11 -o CMakeFiles/demo.dir/twoSum.cpp.o -c /Users/chenxiang/Documents/leetcode_practice/twoSum.cpp",
+  "file": "/Users/chenxiang/Documents/leetcode_practice/twoSum.cpp"
 }
 ]
