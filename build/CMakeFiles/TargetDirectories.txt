@@ -1,5 +1,3 @@
-/Users/chenxiang/Documents/leetcode_practice/build/CMakeFiles/rebuild_cache.dir
-/Users/chenxiang/Documents/leetcode_practice/build/CMakeFiles/edit_cache.dir
-/Users/chenxiang/Documents/leetcode_practice/build/CMakeFiles/package_source.dir
-/Users/chenxiang/Documents/leetcode_practice/build/CMakeFiles/package.dir
-/Users/chenxiang/Documents/leetcode_practice/build/CMakeFiles/demo.dir
+C:/Users/amino/Documents/cpp/build/CMakeFiles/demo.dir
+C:/Users/amino/Documents/cpp/build/CMakeFiles/edit_cache.dir
+C:/Users/amino/Documents/cpp/build/CMakeFiles/rebuild_cache.dir
