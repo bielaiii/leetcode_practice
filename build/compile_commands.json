@@ -1,6 +1,11 @@
 [
 {
   "directory": "C:/Users/amino/Documents/leetcode_practice/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\X86_64~2.EXE   -g -std=gnu++11 -o CMakeFiles\\demo.dir\\checkInclusion.cpp.obj -c C:\\Users\\amino\\Documents\\leetcode_practice\\checkInclusion.cpp",
+  "file": "C:/Users/amino/Documents/leetcode_practice/checkInclusion.cpp"
+},
+{
+  "directory": "C:/Users/amino/Documents/leetcode_practice/build",
   "command": "C:\\PROGRA~1\\mingw64\\bin\\X86_64~2.EXE   -g -std=gnu++11 -o CMakeFiles\\demo.dir\\firstBadVersion.cpp.obj -c C:\\Users\\amino\\Documents\\leetcode_practice\\firstBadVersion.cpp",
   "file": "C:/Users/amino/Documents/leetcode_practice/firstBadVersion.cpp"
 },

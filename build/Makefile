@@ -128,6 +128,30 @@ demo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
+checkInclusion.obj: checkInclusion.cpp.obj
+.PHONY : checkInclusion.obj
+
+# target to build an object file
+checkInclusion.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/checkInclusion.cpp.obj
+.PHONY : checkInclusion.cpp.obj
+
+checkInclusion.i: checkInclusion.cpp.i
+.PHONY : checkInclusion.i
+
+# target to preprocess a source file
+checkInclusion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/checkInclusion.cpp.i
+.PHONY : checkInclusion.cpp.i
+
+checkInclusion.s: checkInclusion.cpp.s
+.PHONY : checkInclusion.s
+
+# target to generate assembly for a file
+checkInclusion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/checkInclusion.cpp.s
+.PHONY : checkInclusion.cpp.s
+
 firstBadVersion.obj: firstBadVersion.cpp.obj
 .PHONY : firstBadVersion.obj
 
@@ -521,6 +545,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... demo
+	@echo ... checkInclusion.obj
+	@echo ... checkInclusion.i
+	@echo ... checkInclusion.s
 	@echo ... firstBadVersion.obj
 	@echo ... firstBadVersion.i
 	@echo ... firstBadVersion.s

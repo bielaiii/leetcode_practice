@@ -68,10 +68,24 @@ include CMakeFiles/demo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/demo.dir/flags.make
 
+CMakeFiles/demo.dir/checkInclusion.cpp.obj: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/checkInclusion.cpp.obj: ../checkInclusion.cpp
+CMakeFiles/demo.dir/checkInclusion.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo.dir/checkInclusion.cpp.obj"
+	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/checkInclusion.cpp.obj -MF CMakeFiles\demo.dir\checkInclusion.cpp.obj.d -o CMakeFiles\demo.dir\checkInclusion.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\checkInclusion.cpp
+
+CMakeFiles/demo.dir/checkInclusion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/checkInclusion.cpp.i"
+	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\amino\Documents\leetcode_practice\checkInclusion.cpp > CMakeFiles\demo.dir\checkInclusion.cpp.i
+
+CMakeFiles/demo.dir/checkInclusion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/checkInclusion.cpp.s"
+	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\amino\Documents\leetcode_practice\checkInclusion.cpp -o CMakeFiles\demo.dir\checkInclusion.cpp.s
+
 CMakeFiles/demo.dir/firstBadVersion.cpp.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/firstBadVersion.cpp.obj: ../firstBadVersion.cpp
 CMakeFiles/demo.dir/firstBadVersion.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo.dir/firstBadVersion.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/demo.dir/firstBadVersion.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/firstBadVersion.cpp.obj -MF CMakeFiles\demo.dir\firstBadVersion.cpp.obj.d -o CMakeFiles\demo.dir\firstBadVersion.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\firstBadVersion.cpp
 
 CMakeFiles/demo.dir/firstBadVersion.cpp.i: cmake_force
@@ -85,7 +99,7 @@ CMakeFiles/demo.dir/firstBadVersion.cpp.s: cmake_force
 CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.obj: ../lengthOfLongestSubstring.cpp
 CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.obj -MF CMakeFiles\demo.dir\lengthOfLongestSubstring.cpp.obj.d -o CMakeFiles\demo.dir\lengthOfLongestSubstring.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\lengthOfLongestSubstring.cpp
 
 CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.i: cmake_force
@@ -99,7 +113,7 @@ CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.s: cmake_force
 CMakeFiles/demo.dir/main.cpp.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/demo.dir/main.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/demo.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/demo.dir/main.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/main.cpp.obj -MF CMakeFiles\demo.dir\main.cpp.obj.d -o CMakeFiles\demo.dir\main.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\main.cpp
 
 CMakeFiles/demo.dir/main.cpp.i: cmake_force
@@ -113,7 +127,7 @@ CMakeFiles/demo.dir/main.cpp.s: cmake_force
 CMakeFiles/demo.dir/middleNode.cpp.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/middleNode.cpp.obj: ../middleNode.cpp
 CMakeFiles/demo.dir/middleNode.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/demo.dir/middleNode.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/demo.dir/middleNode.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/middleNode.cpp.obj -MF CMakeFiles\demo.dir\middleNode.cpp.obj.d -o CMakeFiles\demo.dir\middleNode.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\middleNode.cpp
 
 CMakeFiles/demo.dir/middleNode.cpp.i: cmake_force
@@ -127,7 +141,7 @@ CMakeFiles/demo.dir/middleNode.cpp.s: cmake_force
 CMakeFiles/demo.dir/moveZeroes.cpp.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/moveZeroes.cpp.obj: ../moveZeroes.cpp
 CMakeFiles/demo.dir/moveZeroes.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/demo.dir/moveZeroes.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/demo.dir/moveZeroes.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/moveZeroes.cpp.obj -MF CMakeFiles\demo.dir\moveZeroes.cpp.obj.d -o CMakeFiles\demo.dir\moveZeroes.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\moveZeroes.cpp
 
 CMakeFiles/demo.dir/moveZeroes.cpp.i: cmake_force
@@ -141,7 +155,7 @@ CMakeFiles/demo.dir/moveZeroes.cpp.s: cmake_force
 CMakeFiles/demo.dir/printer.cpp.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/printer.cpp.obj: ../printer.cpp
 CMakeFiles/demo.dir/printer.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/demo.dir/printer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/demo.dir/printer.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/printer.cpp.obj -MF CMakeFiles\demo.dir\printer.cpp.obj.d -o CMakeFiles\demo.dir\printer.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\printer.cpp
 
 CMakeFiles/demo.dir/printer.cpp.i: cmake_force
@@ -155,7 +169,7 @@ CMakeFiles/demo.dir/printer.cpp.s: cmake_force
 CMakeFiles/demo.dir/removeNthFromEnd.cpp.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/removeNthFromEnd.cpp.obj: ../removeNthFromEnd.cpp
 CMakeFiles/demo.dir/removeNthFromEnd.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/demo.dir/removeNthFromEnd.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/demo.dir/removeNthFromEnd.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/removeNthFromEnd.cpp.obj -MF CMakeFiles\demo.dir\removeNthFromEnd.cpp.obj.d -o CMakeFiles\demo.dir\removeNthFromEnd.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\removeNthFromEnd.cpp
 
 CMakeFiles/demo.dir/removeNthFromEnd.cpp.i: cmake_force
@@ -169,7 +183,7 @@ CMakeFiles/demo.dir/removeNthFromEnd.cpp.s: cmake_force
 CMakeFiles/demo.dir/reverse.cpp.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/reverse.cpp.obj: ../reverse.cpp
 CMakeFiles/demo.dir/reverse.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/demo.dir/reverse.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/demo.dir/reverse.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/reverse.cpp.obj -MF CMakeFiles\demo.dir\reverse.cpp.obj.d -o CMakeFiles\demo.dir\reverse.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\reverse.cpp
 
 CMakeFiles/demo.dir/reverse.cpp.i: cmake_force
@@ -183,7 +197,7 @@ CMakeFiles/demo.dir/reverse.cpp.s: cmake_force
 CMakeFiles/demo.dir/reverseString.cpp.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/reverseString.cpp.obj: ../reverseString.cpp
 CMakeFiles/demo.dir/reverseString.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/demo.dir/reverseString.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/demo.dir/reverseString.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/reverseString.cpp.obj -MF CMakeFiles\demo.dir\reverseString.cpp.obj.d -o CMakeFiles\demo.dir\reverseString.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\reverseString.cpp
 
 CMakeFiles/demo.dir/reverseString.cpp.i: cmake_force
@@ -197,7 +211,7 @@ CMakeFiles/demo.dir/reverseString.cpp.s: cmake_force
 CMakeFiles/demo.dir/reverseWords.cpp.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/reverseWords.cpp.obj: ../reverseWords.cpp
 CMakeFiles/demo.dir/reverseWords.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/demo.dir/reverseWords.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/demo.dir/reverseWords.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/reverseWords.cpp.obj -MF CMakeFiles\demo.dir\reverseWords.cpp.obj.d -o CMakeFiles\demo.dir\reverseWords.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\reverseWords.cpp
 
 CMakeFiles/demo.dir/reverseWords.cpp.i: cmake_force
@@ -211,7 +225,7 @@ CMakeFiles/demo.dir/reverseWords.cpp.s: cmake_force
 CMakeFiles/demo.dir/rotate.cpp.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/rotate.cpp.obj: ../rotate.cpp
 CMakeFiles/demo.dir/rotate.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/demo.dir/rotate.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/demo.dir/rotate.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/rotate.cpp.obj -MF CMakeFiles\demo.dir\rotate.cpp.obj.d -o CMakeFiles\demo.dir\rotate.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\rotate.cpp
 
 CMakeFiles/demo.dir/rotate.cpp.i: cmake_force
@@ -225,7 +239,7 @@ CMakeFiles/demo.dir/rotate.cpp.s: cmake_force
 CMakeFiles/demo.dir/search.cpp.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/search.cpp.obj: ../search.cpp
 CMakeFiles/demo.dir/search.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/demo.dir/search.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/demo.dir/search.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/search.cpp.obj -MF CMakeFiles\demo.dir\search.cpp.obj.d -o CMakeFiles\demo.dir\search.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\search.cpp
 
 CMakeFiles/demo.dir/search.cpp.i: cmake_force
@@ -239,7 +253,7 @@ CMakeFiles/demo.dir/search.cpp.s: cmake_force
 CMakeFiles/demo.dir/searchInsert.cpp.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/searchInsert.cpp.obj: ../searchInsert.cpp
 CMakeFiles/demo.dir/searchInsert.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/demo.dir/searchInsert.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/demo.dir/searchInsert.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/searchInsert.cpp.obj -MF CMakeFiles\demo.dir\searchInsert.cpp.obj.d -o CMakeFiles\demo.dir\searchInsert.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\searchInsert.cpp
 
 CMakeFiles/demo.dir/searchInsert.cpp.i: cmake_force
@@ -253,7 +267,7 @@ CMakeFiles/demo.dir/searchInsert.cpp.s: cmake_force
 CMakeFiles/demo.dir/sortedSquares.cpp.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/sortedSquares.cpp.obj: ../sortedSquares.cpp
 CMakeFiles/demo.dir/sortedSquares.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/demo.dir/sortedSquares.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/demo.dir/sortedSquares.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/sortedSquares.cpp.obj -MF CMakeFiles\demo.dir\sortedSquares.cpp.obj.d -o CMakeFiles\demo.dir\sortedSquares.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\sortedSquares.cpp
 
 CMakeFiles/demo.dir/sortedSquares.cpp.i: cmake_force
@@ -267,7 +281,7 @@ CMakeFiles/demo.dir/sortedSquares.cpp.s: cmake_force
 CMakeFiles/demo.dir/threesum.cpp.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/threesum.cpp.obj: ../threesum.cpp
 CMakeFiles/demo.dir/threesum.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/demo.dir/threesum.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/demo.dir/threesum.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/threesum.cpp.obj -MF CMakeFiles\demo.dir\threesum.cpp.obj.d -o CMakeFiles\demo.dir\threesum.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\threesum.cpp
 
 CMakeFiles/demo.dir/threesum.cpp.i: cmake_force
@@ -281,7 +295,7 @@ CMakeFiles/demo.dir/threesum.cpp.s: cmake_force
 CMakeFiles/demo.dir/twoSum.cpp.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/twoSum.cpp.obj: ../twoSum.cpp
 CMakeFiles/demo.dir/twoSum.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/demo.dir/twoSum.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/demo.dir/twoSum.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/twoSum.cpp.obj -MF CMakeFiles\demo.dir\twoSum.cpp.obj.d -o CMakeFiles\demo.dir\twoSum.cpp.obj -c C:\Users\amino\Documents\leetcode_practice\twoSum.cpp
 
 CMakeFiles/demo.dir/twoSum.cpp.i: cmake_force
@@ -294,6 +308,7 @@ CMakeFiles/demo.dir/twoSum.cpp.s: cmake_force
 
 # Object files for target demo
 demo_OBJECTS = \
+"CMakeFiles/demo.dir/checkInclusion.cpp.obj" \
 "CMakeFiles/demo.dir/firstBadVersion.cpp.obj" \
 "CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.obj" \
 "CMakeFiles/demo.dir/main.cpp.obj" \
@@ -314,6 +329,7 @@ demo_OBJECTS = \
 # External object files for target demo
 demo_EXTERNAL_OBJECTS =
 
+demo.exe: CMakeFiles/demo.dir/checkInclusion.cpp.obj
 demo.exe: CMakeFiles/demo.dir/firstBadVersion.cpp.obj
 demo.exe: CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.obj
 demo.exe: CMakeFiles/demo.dir/main.cpp.obj
@@ -334,7 +350,7 @@ demo.exe: CMakeFiles/demo.dir/build.make
 demo.exe: CMakeFiles/demo.dir/linklibs.rsp
 demo.exe: CMakeFiles/demo.dir/objects1.rsp
 demo.exe: CMakeFiles/demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable demo.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable demo.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\demo.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

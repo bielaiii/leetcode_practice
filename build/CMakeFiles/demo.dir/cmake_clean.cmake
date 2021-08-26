@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/demo.dir/checkInclusion.cpp.obj"
+  "CMakeFiles/demo.dir/checkInclusion.cpp.obj.d"
   "CMakeFiles/demo.dir/firstBadVersion.cpp.obj"
   "CMakeFiles/demo.dir/firstBadVersion.cpp.obj.d"
   "CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.obj"
