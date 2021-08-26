@@ -25,5 +25,5 @@ vector<int> twoSum(vector<int> &, int);
 
 void reverseString(vector<char>&);
 string reverseWords(string);
-int lengthOfLongestSubstring(string s);
+
 #endif

@@ -1,3 +1,3 @@
-C:/Users/amino/Documents/cpp/build/CMakeFiles/demo.dir
-C:/Users/amino/Documents/cpp/build/CMakeFiles/edit_cache.dir
-C:/Users/amino/Documents/cpp/build/CMakeFiles/rebuild_cache.dir
+C:/Users/amino/Documents/leetcode_practice/build/CMakeFiles/demo.dir
+C:/Users/amino/Documents/leetcode_practice/build/CMakeFiles/edit_cache.dir
+C:/Users/amino/Documents/leetcode_practice/build/CMakeFiles/rebuild_cache.dir

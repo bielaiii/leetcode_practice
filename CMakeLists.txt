@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.13)
 
 # 工程名称
-project(cmake_study)
+project(demo)
 
 # 设置
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

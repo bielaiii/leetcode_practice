@@ -56,10 +56,10 @@ RM = "C:\Program Files\cmake-3.21.0-rc1-windows-x86_64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\amino\Documents\cpp
+CMAKE_SOURCE_DIR = C:\Users\amino\Documents\leetcode_practice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\amino\Documents\cpp\build
+CMAKE_BINARY_DIR = C:\Users\amino\Documents\leetcode_practice\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\amino\Documents\cpp\build\CMakeFiles C:\Users\amino\Documents\cpp\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles C:\Users\amino\Documents\leetcode_practice\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\amino\Documents\cpp\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\amino\Documents\leetcode_practice\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -152,29 +152,29 @@ firstBadVersion.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/firstBadVersion.cpp.s
 .PHONY : firstBadVersion.cpp.s
 
-letterCombinations.obj: letterCombinations.cpp.obj
-.PHONY : letterCombinations.obj
+lengthOfLongestSubstring.obj: lengthOfLongestSubstring.cpp.obj
+.PHONY : lengthOfLongestSubstring.obj
 
 # target to build an object file
-letterCombinations.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/letterCombinations.cpp.obj
-.PHONY : letterCombinations.cpp.obj
+lengthOfLongestSubstring.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.obj
+.PHONY : lengthOfLongestSubstring.cpp.obj
 
-letterCombinations.i: letterCombinations.cpp.i
-.PHONY : letterCombinations.i
+lengthOfLongestSubstring.i: lengthOfLongestSubstring.cpp.i
+.PHONY : lengthOfLongestSubstring.i
 
 # target to preprocess a source file
-letterCombinations.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/letterCombinations.cpp.i
-.PHONY : letterCombinations.cpp.i
+lengthOfLongestSubstring.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.i
+.PHONY : lengthOfLongestSubstring.cpp.i
 
-letterCombinations.s: letterCombinations.cpp.s
-.PHONY : letterCombinations.s
+lengthOfLongestSubstring.s: lengthOfLongestSubstring.cpp.s
+.PHONY : lengthOfLongestSubstring.s
 
 # target to generate assembly for a file
-letterCombinations.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/letterCombinations.cpp.s
-.PHONY : letterCombinations.cpp.s
+lengthOfLongestSubstring.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/lengthOfLongestSubstring.cpp.s
+.PHONY : lengthOfLongestSubstring.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -200,6 +200,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+middleNode.obj: middleNode.cpp.obj
+.PHONY : middleNode.obj
+
+# target to build an object file
+middleNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/middleNode.cpp.obj
+.PHONY : middleNode.cpp.obj
+
+middleNode.i: middleNode.cpp.i
+.PHONY : middleNode.i
+
+# target to preprocess a source file
+middleNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/middleNode.cpp.i
+.PHONY : middleNode.cpp.i
+
+middleNode.s: middleNode.cpp.s
+.PHONY : middleNode.s
+
+# target to generate assembly for a file
+middleNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/middleNode.cpp.s
+.PHONY : middleNode.cpp.s
+
 moveZeroes.obj: moveZeroes.cpp.obj
 .PHONY : moveZeroes.obj
 
@@ -223,6 +247,54 @@ moveZeroes.s: moveZeroes.cpp.s
 moveZeroes.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/moveZeroes.cpp.s
 .PHONY : moveZeroes.cpp.s
+
+printer.obj: printer.cpp.obj
+.PHONY : printer.obj
+
+# target to build an object file
+printer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/printer.cpp.obj
+.PHONY : printer.cpp.obj
+
+printer.i: printer.cpp.i
+.PHONY : printer.i
+
+# target to preprocess a source file
+printer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/printer.cpp.i
+.PHONY : printer.cpp.i
+
+printer.s: printer.cpp.s
+.PHONY : printer.s
+
+# target to generate assembly for a file
+printer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/printer.cpp.s
+.PHONY : printer.cpp.s
+
+removeNthFromEnd.obj: removeNthFromEnd.cpp.obj
+.PHONY : removeNthFromEnd.obj
+
+# target to build an object file
+removeNthFromEnd.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/removeNthFromEnd.cpp.obj
+.PHONY : removeNthFromEnd.cpp.obj
+
+removeNthFromEnd.i: removeNthFromEnd.cpp.i
+.PHONY : removeNthFromEnd.i
+
+# target to preprocess a source file
+removeNthFromEnd.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/removeNthFromEnd.cpp.i
+.PHONY : removeNthFromEnd.cpp.i
+
+removeNthFromEnd.s: removeNthFromEnd.cpp.s
+.PHONY : removeNthFromEnd.s
+
+# target to generate assembly for a file
+removeNthFromEnd.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/removeNthFromEnd.cpp.s
+.PHONY : removeNthFromEnd.cpp.s
 
 reverse.obj: reverse.cpp.obj
 .PHONY : reverse.obj
@@ -452,15 +524,24 @@ help:
 	@echo ... firstBadVersion.obj
 	@echo ... firstBadVersion.i
 	@echo ... firstBadVersion.s
-	@echo ... letterCombinations.obj
-	@echo ... letterCombinations.i
-	@echo ... letterCombinations.s
+	@echo ... lengthOfLongestSubstring.obj
+	@echo ... lengthOfLongestSubstring.i
+	@echo ... lengthOfLongestSubstring.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... middleNode.obj
+	@echo ... middleNode.i
+	@echo ... middleNode.s
 	@echo ... moveZeroes.obj
 	@echo ... moveZeroes.i
 	@echo ... moveZeroes.s
+	@echo ... printer.obj
+	@echo ... printer.i
+	@echo ... printer.s
+	@echo ... removeNthFromEnd.obj
+	@echo ... removeNthFromEnd.i
+	@echo ... removeNthFromEnd.s
 	@echo ... reverse.obj
 	@echo ... reverse.i
 	@echo ... reverse.s
