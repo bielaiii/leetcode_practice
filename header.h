@@ -27,4 +27,6 @@ void reverseString(vector<char>&);
 string reverseWords(string);
 int lengthOfLongestSubstring(string s);
 bool checkInclusion(string s1, string s2);
+vector<vector<int>> floodFill(vector<vector<int>>&, int , int , int);
+int maxAreaOfIsland(vector<vector<int>>&);
 #endif
