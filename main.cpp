@@ -6,19 +6,17 @@ using namespace std;
 
 
 int main(void){
-    cout << "---------------------------"<<endl;
-    cout <<  checkInclusion("ab", "eidbaooo") << endl;
-    cout << "---------------------------"<<endl;
-    cout <<  checkInclusion("ab", "ab") << endl;
-    cout << "---------------------------"<<endl;
-    cout <<  checkInclusion("hello", "ooolleoooleh") << endl;
-    cout << "---------------------------"<<endl;
-    cout << checkInclusion("adc", "dcda")<<endl;
-    cout << "---------------------------"<<endl;
-    cout << checkInclusion("prosperity", "properties")<<endl;
-    cout << "---------------------------"<<endl;
-    cout << checkInclusion("abcdxabcde","abcdeabcdx")<<endl;
+    TreeNode root1(1);
+    TreeNode root2(3);
+    TreeNode root3(2);
+    TreeNode root4(5);
+    TreeNode root5(2);
+    TreeNode root6(1);
+    TreeNode root7(3);
+    TreeNode root8(4);
+    TreeNode root9(7);
     
+
     return 0;
 }
 

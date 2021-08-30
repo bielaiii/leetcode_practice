@@ -1,3 +1,0 @@
-/Users/chenxiang/Documents/leetcode_practice/build/CMakeFiles/rebuild_cache.dir
-/Users/chenxiang/Documents/leetcode_practice/build/CMakeFiles/edit_cache.dir
-/Users/chenxiang/Documents/leetcode_practice/build/CMakeFiles/demo.dir
