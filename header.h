@@ -4,7 +4,14 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
+struct TreeNode {
+     int val;
+      TreeNode *left;
+      TreeNode *right;
+      TreeNode() : val(0), left(nullptr), right(nullptr) {}
+      TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+      TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
 using namespace std;
 
 void printer();
@@ -29,4 +36,5 @@ int lengthOfLongestSubstring(string s);
 bool checkInclusion(string s1, string s2);
 vector<vector<int>> floodFill(vector<vector<int>>&, int , int , int);
 int maxAreaOfIsland(vector<vector<int>>&);
+TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2);
 #endif

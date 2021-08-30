@@ -6,29 +6,17 @@ using namespace std;
 
 
 int main(void){
-    int arr[8][13] = {
-    {0,0,1,0,0,0,0,1,0,0,0,0,0},
-    {0,0,0,0,0,0,0,1,1,1,0,0,0},
-    {0,1,1,0,1,0,0,0,0,0,0,0,0},
-    {0,1,0,0,1,1,0,0,1,0,1,0,0},
-    {0,1,0,0,1,1,0,0,1,1,1,0,0},
-    {0,0,0,0,0,0,0,0,0,0,1,0,0},
-    {0,0,0,0,0,0,0,1,1,1,0,0,0},
-    {0,0,0,0,0,0,0,1,1,0,0,0,0}
-    };
-    vector<vector<int>> vec;
-    vector<int> temp;
-    for(int d = 0; d < 8; d ++){
-        for(int r =0;r < 13; r++){
-            
-            temp.push_back(arr[d][r]);
-        }
-        vec.push_back(temp);
-        temp.clear();
-
-    }
-    cout << maxAreaOfIsland(vec) <<endl;
+    TreeNode root1(1);
+    TreeNode root2(3);
+    TreeNode root3(2);
+    TreeNode root4(5);
+    TreeNode root5(2);
+    TreeNode root6(1);
+    TreeNode root7(3);
+    TreeNode root8(4);
+    TreeNode root9(7);
     
+
     return 0;
 }
 
