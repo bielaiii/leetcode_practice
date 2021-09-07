@@ -5,18 +5,37 @@
 using namespace std;
 
 
-int main(void){
-    TreeNode root1(1);
-    TreeNode root2(3);
-    TreeNode root3(2);
-    TreeNode root4(5);
-    TreeNode root5(2);
-    TreeNode root6(1);
-    TreeNode root7(3);
-    TreeNode root8(4);
-    TreeNode root9(7);
-    
+void printer(vector<vector <int> > toprint){
+    for(int d =0; d < toprint.size(); d++){
+        for(int f = 0; f< toprint[d].size(); f++){
+            cout << toprint[d][f] << " ";
+        }
+        cout << endl;
+    }
+    cout << "------------------"<<endl;
+}
 
+int main(void){
+    vector<int> vec;
+    int arr[]={1,2,3,4,5,10,6,7,8,9};
+    for(int d = 0; d < 10; d++){
+        vec.push_back(arr[d]);
+    }
+    cout << canArrange(vec,5)<<endl;
+    int arr1[] = {-1,1,-2,2,-3,3,-4,4};
+    vec.clear();
+    for(int d = 0; d < 8; d++){
+        vec.push_back(arr1[d]);
+    }
+    cout << canArrange(vec,3)<<endl;
+    //permute(vec);
+    int arr2[] = {-1,-1,-1,-1,2,2,-2,-2};
+    vec.clear();
+    for(int d = 0; d < 8; d++){
+        vec.push_back(arr2[d]);
+    }
+    cout << canArrange(vec,3)<<endl;
+    
     return 0;
 }
 
