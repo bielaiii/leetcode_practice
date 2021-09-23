@@ -42,9 +42,29 @@ void printer(vector<vector <int> > toprint){
  */
 
 int main(void){
-    
-        
-    
+    while(1){
+        //std::cout << *my_maze << std::endl;
+        int ch = getchar();
+        ch = getchar();
+        switch (!= 0X)
+        {
+        case 72: //up
+            cout <<"up"<<endl;
+            break;
+        case 80: //down
+            cout <<"down"<<endl;
+            break;
+        case 75: //left
+            cout <<"left"<<endl;
+            break;
+        case 77: //right
+            cout <<"right"<<endl;
+            break;
+        default:
+            cout <<"none"<<endl;
+            break;
+        }
+    }
     return 0;
 }
 

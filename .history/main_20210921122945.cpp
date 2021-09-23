@@ -43,6 +43,16 @@ void printer(vector<vector <int> > toprint){
 
 int main(void){
     
+        //std::cout << *my_maze << std::endl;
+        int ch = getchar();
+        ch = getchar();
+        while(ch != 0x1B){
+        if(ch == "^[[A"){
+            cout <<"up"<<endl;
+           
+        }else{
+            cout << "none"<<endl;
+        }
         
     
     return 0;

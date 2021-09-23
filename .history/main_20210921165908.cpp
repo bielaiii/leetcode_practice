@@ -43,6 +43,13 @@ void printer(vector<vector <int> > toprint){
 
 int main(void){
     
+        //std::cout << *my_maze << std::endl;
+        char ch;
+        //ch = getchar();
+        while(ch != 'q'){
+            cin >> ch;
+            cout << ch << endl;
+        }
         
     
     return 0;

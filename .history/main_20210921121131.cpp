@@ -1,7 +1,7 @@
 #include "header.h"
 #include <iostream>
 #include <vector>
-//#include <conio.h>
+#include <conio.h>
 #include <unordered_set>
 using namespace std;
 
@@ -42,9 +42,28 @@ void printer(vector<vector <int> > toprint){
  */
 
 int main(void){
-    
-        
-    
+    while(1){
+        //std::cout << *my_maze << std::endl;
+        int ch = getch();
+        ch = getch();
+        switch (ch)
+        {
+        case 72: //up
+            cout <<"up"<<endl;
+            break;
+        case 80: //down
+            cout <<"down"<<endl;
+            break;
+        case 75: //left
+            cout <<"left"<<endl;
+            break;
+        case 77: //right
+            cout <<"right"<<endl;
+            break;
+        default:
+            break;
+        }
+    }
     return 0;
 }
 
