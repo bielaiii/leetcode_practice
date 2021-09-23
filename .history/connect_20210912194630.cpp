@@ -24,7 +24,7 @@ void recurConnect(Node* temp){
     if(temp->next)
         temp->right->next = temp->next->left;
     recurConnect(temp->left);
-    recurConnect(temp->right);//asjdkhkjsafhkjsah
+    recurConnect(temp->right);
 }
 
 

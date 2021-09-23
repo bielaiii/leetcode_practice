@@ -21,10 +21,10 @@ void recurConnect(Node* temp){
         return ;
     }
     temp->left->next = temp->right;
-    if(temp->next)
+    if(temp->left)
         temp->right->next = temp->next->left;
     recurConnect(temp->left);
-    recurConnect(temp->right);//asjdkhkjsafhkjsah
+    recurConnect(temp->right);
 }
 
 

@@ -15,13 +15,13 @@ void printer(vector<vector <int> > toprint){
     }
     cout << "------------------"<<endl;
 }
-g
+
 
 int main(void){
     //cout << myPow(2,2) << endl;
     cout << "hello, world" << endl;
     /* vector<int> vec;
-
+>>>>>>> 11226b2e4f4f14f2e1dfa8fe3962eafa402ac343
     int arr[]={1,2,3,4,5,10,6,7,8,9};
     for(int d = 0; d < 10; d++){
         vec.push_back(arr[d]);
