@@ -44,5 +44,4 @@ vector<vector<int>> combine(int n, int k);
 vector<vector<int>> permute(vector<int>& nums) ;
 bool canArrange(vector<int>& arr, int k);
 int maxSubArray(vector<int>& nums);
-double myPow(double x, int n);
 #endif

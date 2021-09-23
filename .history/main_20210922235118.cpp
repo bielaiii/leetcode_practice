@@ -16,8 +16,8 @@ void printer(vector<vector <int> > toprint){
 }
 
 int main(void){
-    //cout << myPow(2,2) << endl;
-    cout << "hello, world" << endl;
+    cout << myPow(2,2) << endl;
+    //cout << "hello, world" << endl;
     /* vector<int> vec;
     int arr[]={1,2,3,4,5,10,6,7,8,9};
     for(int d = 0; d < 10; d++){
