@@ -13,7 +13,7 @@ double recur(double x, int n, double sum){
 double myPow(double x, int n){
     //cout << "in pow" << endl;
     //return 2;
-    //int a = abs(n);
+    int a = abs(n);
     //double t = 1.0;
     double sum = 1.0;
     for(int r = abs(n); r > 0; r /= 2){

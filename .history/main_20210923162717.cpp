@@ -15,11 +15,10 @@ void printer(vector<vector <int> > toprint){
     }
     cout << "------------------"<<endl;
 }
-
+g
 
 int main(void){
     cout << myPow(2,2) << endl;
-    cout << myPow(2,10) << endl;
     //cout << "hello, world" << endl;
     /* vector<int> vec;
 

@@ -13,14 +13,13 @@ double recur(double x, int n, double sum){
 double myPow(double x, int n){
     //cout << "in pow" << endl;
     //return 2;
-    //int a = abs(n);
-    //double t = 1.0;
-    double sum = 1.0;
-    for(int r = abs(n); r > 0; r /= 2){
-        if(r % 2){
-            sum *= x;
-        }
-        x *= x;
+    int a = abs(n);
+    for(int r =0; r < abs(n); r+=2){
+        if(n % 2 == 1){ //odd
+            x *= x;
+        }/* else{ //even
+            x *= x;
+        } */
     }
-    return n < 0? 1/sum:sum;
+    return n < 0? 1/x:x;
 }
