@@ -23,10 +23,9 @@ int main(void){
     vector<int> vec3 = {0,0,0};
    vector<vector<int>> vec4 = { vec1, vec2, vec3};
    vector<vector<int>> answer;
-   printer(vec4);
    answer = updateMatrix(vec4);
    printer(answer);
-    cout << "hello, world" << endl;
+    //cout << "hello, world" << endl;
     /* vector<int> vec;
 
     int arr[]={1,2,3,4,5,10,6,7,8,9};
