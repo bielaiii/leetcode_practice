@@ -18,8 +18,8 @@ void printer(T toprint){
 
 
 int main(void){
-    vector<int> vec1 = {1,2,3};
-    vector<vector<int>> check = permute(vec1);
+    vector<string> vec1 = {1,2,3};
+    check = permute(vec);
     printer(check);
     /* vector<int> vec;
 

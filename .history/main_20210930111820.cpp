@@ -5,8 +5,8 @@
 #include <unordered_set>
 using namespace std;
 
-template<typename T>
-void printer(T toprint){
+
+void printer(vector<vector <int> > toprint){
     for(int d =0; d < toprint.size(); d++){
         for(int f = 0; f< toprint[d].size(); f++){
             cout << toprint[d][f] << " ";
@@ -18,9 +18,7 @@ void printer(T toprint){
 
 
 int main(void){
-    vector<int> vec1 = {1,2,3};
-    vector<vector<int>> check = permute(vec1);
-    printer(check);
+    cout << letterCasePermutation("ssd42")<<endl;
     /* vector<int> vec;
 
     int arr[]={1,2,3,4,5,10,6,7,8,9};

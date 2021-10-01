@@ -46,5 +46,5 @@ bool canArrange(vector<int>& arr, int k);
 int maxSubArray(vector<int>& nums);
 double myPow(double x, int n);
 vector<vector<int>> updateMatrix(vector<vector<int>>& mat);
-vector<string> letterCasePermutation(string s);
+
 #endif

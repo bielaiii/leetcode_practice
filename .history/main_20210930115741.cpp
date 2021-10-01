@@ -19,7 +19,7 @@ void printer(T toprint){
 
 int main(void){
     vector<int> vec1 = {1,2,3};
-    vector<vector<int>> check = permute(vec1);
+    check = permute(vec1);
     printer(check);
     /* vector<int> vec;
 
