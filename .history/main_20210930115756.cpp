@@ -18,22 +18,9 @@ void printer(T toprint){
 
 
 int main(void){
-
-    int arr[3][3] = {{2,1,1},{1,1,0},{0,1,1}};
-    vector<vector<int>> myvec;
-    for(int i = 0; i < 3; i++){
-        vector<int> temp;
-        for(int e = 0; e < 3; e++){
-            temp.push_back(arr[i][e]);
-        }
-        myvec.push_back(temp);
-        temp.clear();
-    }
-    printer(myvec);
-    orangesRotting(myvec);
-    //cout << orangesRotting(myvec) << endl;
-    //cout << "hello, world" << endl;
-
+    vector<int> vec1 = {1,2,3};
+    vector<vector<int>> check = permute(vec1);
+    printer(check);
     /* vector<int> vec;
 
     int arr[]={1,2,3,4,5,10,6,7,8,9};

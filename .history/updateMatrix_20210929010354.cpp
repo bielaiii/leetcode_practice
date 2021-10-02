@@ -36,7 +36,7 @@ struct matr
     int x,y,dist;
 };
 
-/* 
+
 vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
     int max_c = mat.size(), max_r=mat[0].size();
     int c = 0, r = 0;
@@ -63,4 +63,4 @@ vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
 
     }
     return answer;
-} */
+}

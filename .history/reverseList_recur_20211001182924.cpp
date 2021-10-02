@@ -8,7 +8,7 @@ using namespace std;
      ListNode(int x) : val(x), next(NULL) {}
  };
 
- void recur(ListNode * node){
+/* void recur(ListNode * node){
     if(node->next == NULL){
         return node;
     }else{

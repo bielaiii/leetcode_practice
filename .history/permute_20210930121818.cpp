@@ -14,7 +14,7 @@ void printer1(vector<vector<int>> vec){
 
 void backtrack(vector<int>& nums, vector<vector<int>>& vec, vector<int>&arr, vector<int>& one_time){
    if(one_time.size() == nums.size()){
-       vec.push_back(one_time);
+       vec.push_back(nums);
        return ;
    }
    for(int e =0; e < nums.size(); e++){

@@ -5,8 +5,8 @@
 #include <unordered_set>
 using namespace std;
 
-template<typename T>
-void printer(T toprint){
+
+void printer(vector<vector <int> > toprint){
     for(int d =0; d < toprint.size(); d++){
         for(int f = 0; f< toprint[d].size(); f++){
             cout << toprint[d][f] << " ";
@@ -18,22 +18,11 @@ void printer(T toprint){
 
 
 int main(void){
-
-    int arr[3][3] = {{2,1,1},{1,1,0},{0,1,1}};
-    vector<vector<int>> myvec;
-    for(int i = 0; i < 3; i++){
-        vector<int> temp;
-        for(int e = 0; e < 3; e++){
-            temp.push_back(arr[i][e]);
-        }
-        myvec.push_back(temp);
-        temp.clear();
-    }
-    printer(myvec);
-    orangesRotting(myvec);
-    //cout << orangesRotting(myvec) << endl;
+    vector<int> vec1 = {0,0,0};
+    vector<int> vec2 = {0,0,0};
+    vector<int> vec3 = {0,0,0};
+   vector<vector<int>>
     //cout << "hello, world" << endl;
-
     /* vector<int> vec;
 
     int arr[]={1,2,3,4,5,10,6,7,8,9};

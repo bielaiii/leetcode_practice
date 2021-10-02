@@ -25,42 +25,20 @@ using namespace std;
     return ;
 } 
 
-struct matr
-{
-    /* data */
-    matr(int a, int b, int c){
-        x = a;
-        y = b;
-        dist = c;
-    }
-    int x,y,dist;
-};
-
-/* 
 vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
     int max_c = mat.size(), max_r=mat[0].size();
     int c = 0, r = 0;
-    queue<matr> q;
-    vector<vector<int>> visited(max_c, vector<int>(max_r,0));
-    vector<vector<int>> ret(max_c, vector<int>(max_r,0));
+    queue<int> q;
     for(int t=0;t < max_c; t++){
         for(int e =0; e< max_r; e++){
             if(!mat[t][e]){
-                matr temp_struct(t, e, 0);
-                q.push(temp_struct);
+
             }
         }
     }
-    matr taker(0,0,0);
-    while(!q.empty()){
-        taker = q.front();
-        q.pop();
-        visited[taker.x][taker.y] = 1;
-        matr temp(taker.x, taker.y, 0);
-        if(taker.x >= 0){
-            q.push(temp.x)
-        }
-
-    }
+    int arr[max_c][max_r] = {0};
+    vector<vector<int>> answer = mat;
+    recur(mat, c,  r,c, r, max_c, max_r, answer);
+    cout << "hello" <<endl;
     return answer;
-} */
+}
