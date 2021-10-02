@@ -45,4 +45,5 @@ vector<vector<int>> permute(vector<int>& nums) ;
 bool canArrange(vector<int>& arr, int k);
 int maxSubArray(vector<int>& nums);
 double myPow(double x, int n);
+int orangesRotting(vector<vector<int>>& grid);
 #endif

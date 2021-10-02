@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+/*
 struct TreeNode {
      int val;
       TreeNode *left;
@@ -12,6 +13,7 @@ struct TreeNode {
       TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
       TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
+*/
 using namespace std;
 
 void printer();
@@ -36,6 +38,12 @@ int lengthOfLongestSubstring(string s);
 bool checkInclusion(string s1, string s2);
 vector<vector<int>> floodFill(vector<vector<int>>&, int , int , int);
 int maxAreaOfIsland(vector<vector<int>>&);
-TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2);
-ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
+//TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2);
+//ListNode* mergeTwoLists(ListNode* l1, ListNode* l2);
+vector<vector<int>> combine(int n, int k);
+vector<vector<int>> permute(vector<int>& nums) ;
+bool canArrange(vector<int>& arr, int k);
+int maxSubArray(vector<int>& nums);
+double myPow(double x, int n);
+int orangesRotting(vector<vector<int>>& grid);
 #endif

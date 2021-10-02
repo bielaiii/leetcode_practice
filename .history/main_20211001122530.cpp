@@ -28,9 +28,7 @@ int main(void){
         myvec.push_back(temp);
         temp.clear();
     }
-    printer(myvec);
-    orangesRotting(myvec);
-    //cout << orangesRotting(myvec) << endl;
+    cout << orangesRotting(myvec) << endl;
     //cout << "hello, world" << endl;
     /* vector<int> vec;
 
