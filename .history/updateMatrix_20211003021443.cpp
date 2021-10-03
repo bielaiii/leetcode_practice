@@ -80,8 +80,7 @@ vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
         int temp_r = temp_node.second;
         if(visited[temp_c][temp_r]) continue;
         cout << temp_c << " " << temp_r << endl;
-        printer(ans);
-        cout << "|||||||||||||||"<<endl;
+        
         for(int e =0; e < 4; e++){
             int temp_cc = temp_c + arr[e][0];
             int temp_rr = temp_r + arr[e][1];

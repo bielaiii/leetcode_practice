@@ -70,30 +70,24 @@ vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
             } 
         }
     }
-    //printQueue(q);
+    printQueue(q);
     while (!q.empty())
     {
-       // printQueue(q);
+        printQueue(q);
         pair<int,int> temp_node = q.front();
         q.pop();
         int temp_c = temp_node.first;
         int temp_r = temp_node.second;
         if(visited[temp_c][temp_r]) continue;
-        cout << temp_c << " " << temp_r << endl;
-        printer(ans);
-        cout << "|||||||||||||||"<<endl;
         for(int e =0; e < 4; e++){
             int temp_cc = temp_c + arr[e][0];
             int temp_rr = temp_r + arr[e][1];
             if(temp_cc < 0 || temp_cc >= mat.size() || temp_rr < 0 || temp_rr >= mat[0].size()){
                 continue;
             }else{
-                if(mat[temp_cc][temp_rr]) ans[temp_cc][temp_rr] = ans[temp_c][temp_r] + 1;
-               // if(!visited[temp_cc][temp_rr]) 
-                q.push(make_pair(temp_cc, temp_rr));
+                if(!visited[temp_cc][temp_rr]) q.push(make_pair(temp_cc, temp_rr));
             }
         }
-        printer(ans);
         //cout << temp_c << " " << temp_r << endl;
         visited[temp_c][temp_r] = 1;
     }

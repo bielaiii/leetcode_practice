@@ -55,7 +55,7 @@ void printQueue(queue<pair<int,int>> que){
     cout << "-----------"<<endl;
 }
 
-const int arr[4][2] = {{1,0}, {-1,0}, {0,1}, {0,-1}};
+
 
 vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
     queue<pair<int,int>> q;
@@ -70,31 +70,44 @@ vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
             } 
         }
     }
-    //printQueue(q);
+    printer(q);
     while (!q.empty())
     {
-       // printQueue(q);
+        printQueue(q);
         pair<int,int> temp_node = q.front();
         q.pop();
         int temp_c = temp_node.first;
         int temp_r = temp_node.second;
         if(visited[temp_c][temp_r]) continue;
-        cout << temp_c << " " << temp_r << endl;
-        printer(ans);
-        cout << "|||||||||||||||"<<endl;
-        for(int e =0; e < 4; e++){
-            int temp_cc = temp_c + arr[e][0];
-            int temp_rr = temp_r + arr[e][1];
-            if(temp_cc < 0 || temp_cc >= mat.size() || temp_rr < 0 || temp_rr >= mat[0].size()){
-                continue;
-            }else{
-                if(mat[temp_cc][temp_rr]) ans[temp_cc][temp_rr] = ans[temp_c][temp_r] + 1;
-               // if(!visited[temp_cc][temp_rr]) 
-                q.push(make_pair(temp_cc, temp_rr));
+        if(temp_c >= 0 ){
+            if(mat[temp_c+1][temp_r]) ans[temp_c+1][temp_r] += ans[temp_c][temp_r] + 1;
+            if(!visited[temp_c+1][temp_r]){
+                q.push(make_pair(temp_c+1, temp_r));
             }
+            
+        } 
+        if(temp_c < mat.size()){
+            if(mat[temp_c-1][temp_r]) ans[temp_c-1][temp_r] += ans[temp_c][temp_r] + 1;
+            if(!visited[temp_c-1][temp_r]){
+                q.push(make_pair(temp_c-1, temp_r));
+            }
+            
+        } 
+        if(temp_r >= 0){
+            if(mat[temp_c][temp_r+1]) ans[temp_c][temp_r+1] += ans[temp_c][temp_r] + 1;
+            if(!visited[temp_c][temp_r+1]){
+                q.push(make_pair(temp_c, temp_r+1));
+            }
+            
+        } 
+        if(temp_r <= mat[0].size()){
+            if(mat[temp_c][temp_r-1]) ans[temp_c][temp_r-1] += ans[temp_c][temp_r] + 1;
+            if(!visited[temp_c][temp_r-1]){
+                q.push(make_pair(temp_c, temp_r-1));
+            }
+            
         }
-        printer(ans);
-        //cout << temp_c << " " << temp_r << endl;
+        cout << temp_c << " " << temp_r << endl;
         visited[temp_c][temp_r] = 1;
     }
     return ans;

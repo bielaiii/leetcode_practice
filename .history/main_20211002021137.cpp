@@ -29,14 +29,10 @@ int main(void){
         myvec.push_back(temp);
         temp.clear();
     } */
-    vector<vector<int>> vec{{0,0,0},{0,1,0},{0,0,0}};
-    vec = updateMatrix(vec);
-    printer(vec);
-    vector<vector<int>> vec1{{0,0,0}
-                            ,{0,1,0}
-                            ,{1,1,1}};
-    vec = updateMatrix(vec1);
-    printer(vec1);
+    vector<vector<int>> vec{{0,0,0},{0,1,0}, {0,0,0}};
+    printer(myvec);
+    vector<vector<int>> check_anw = updateMatrix(myvec);
+    printer(check_anw);
     //orangesRotting(myvec);
     //cout << orangesRotting(myvec) << endl;
     //cout << "hello, world" << endl;

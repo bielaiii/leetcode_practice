@@ -2,26 +2,30 @@
 #include<vector>
 #include<queue>
 #include<tuple>
+#include<utility>
 using namespace std;
 
-void recur(vector<vector<int>>& vec,int c, int r, int &n, int former, vector<vector<int>> &visited){
-    if(c < 0 || c >= vec.size()) return;
-    if(r < 0 || r >= vec[0].size()) return;
-    if(visited[c][r]) return;
-    //visited[c][r] = 1;
-    if(!vec[c][r]) return;
-    visited[c][r] = 1;
-    if(vec[c][r] ==1 && former == 2) {
-        vec[c][r] =2;
-        n ++;
-        recur(vec, c - 1, r, n,  vec[c][r], visited);
-        recur(vec, c + 1, r, n,  vec[c][r], visited);
-        recur(vec, c , r + 1, n, vec[c][r],  visited);
-        recur(vec, c , r - 1, n, vec[c][r],  visited);
-    }
 
+ void recur(vector<vector<int>>& mat, int c, int r, int before_c, int before_r, int max_c, int max_r, vector<vector<int>>& vec){
+    //cout << c << " " << r << endl;
+    
+    
+    if(c < 0 || c >= max_c) return;
+    if(r < 0 || r >= max_r) return;
+    
+    if(!mat[c][r] && !mat[before_c][before_r]){
+        vec[c][r] = 0;
+    }else{
+        vec[c][r] = vec[before_c][before_r] + 1;
+    }
+    recur(mat, c+1, r, c, r, max_c, max_r, vec);
+    recur(mat, c, r+1, c, r, max_c, max_r, vec);
+    recur(mat, c-1, r, c, r, max_c, max_r, vec);
+    recur(mat, c, r-1, c, r, max_c, max_r, vec);
+    
+    cout << c << " " << r << endl;
     return ;
-}
+} 
 
 struct coor
 {
@@ -40,7 +44,7 @@ void printer(T toprint){
     cout << "------------------"<<endl;
 }
 
-/* int orangesRotting(vector<vector<int>>& grid) {
+vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
     int max_c = mat.size(), max_r=mat[0].size();
     int c = 0, r = 0;
     vector<vector<int>> answer;
@@ -59,9 +63,8 @@ void printer(T toprint){
     while(!q.empty()){
         coor taker = q.front();
         q.pop();
-        int temp_c = taker.c;
-        int temp_r = taker.r;
-        if(!mat[taker.c][taker.r]) continue;
+        int temp_c = taker_c;
+        int temp_r = taker_r
         if(temp_c >= 0 ){
             coor coor_temp(temp_c+1, temp_r);
             q.push(coor_temp);
@@ -86,4 +89,4 @@ void printer(T toprint){
     }
    
     return mat;
-}  */
+} 

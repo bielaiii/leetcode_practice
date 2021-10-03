@@ -32,9 +32,7 @@ int main(void){
     vector<vector<int>> vec{{0,0,0},{0,1,0},{0,0,0}};
     vec = updateMatrix(vec);
     printer(vec);
-    vector<vector<int>> vec1{{0,0,0}
-                            ,{0,1,0}
-                            ,{1,1,1}};
+    vector<vector<int>> vec1{{0,0,0},{0,1,0},{1,1,1}};
     vec = updateMatrix(vec1);
     printer(vec1);
     //orangesRotting(myvec);

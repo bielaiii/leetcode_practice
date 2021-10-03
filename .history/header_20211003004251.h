@@ -50,5 +50,4 @@ vector<vector<int>> updateMatrix(vector<vector<int>>& mat);
 vector<string> letterCasePermutation(string s);
 int hammingWeight(uint32_t n);
 bool isPowerOfTwo(int n);
-int climbStairs(int n);
 #endif

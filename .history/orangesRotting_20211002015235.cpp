@@ -40,7 +40,7 @@ void printer(T toprint){
     cout << "------------------"<<endl;
 }
 
-/* int orangesRotting(vector<vector<int>>& grid) {
+vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
     int max_c = mat.size(), max_r=mat[0].size();
     int c = 0, r = 0;
     vector<vector<int>> answer;
@@ -86,4 +86,4 @@ void printer(T toprint){
     }
    
     return mat;
-}  */
+} 

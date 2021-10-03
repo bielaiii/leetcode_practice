@@ -81,7 +81,6 @@ vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
         if(visited[temp_c][temp_r]) continue;
         cout << temp_c << " " << temp_r << endl;
         printer(ans);
-        cout << "|||||||||||||||"<<endl;
         for(int e =0; e < 4; e++){
             int temp_cc = temp_c + arr[e][0];
             int temp_rr = temp_r + arr[e][1];
@@ -93,7 +92,6 @@ vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
                 q.push(make_pair(temp_cc, temp_rr));
             }
         }
-        printer(ans);
         //cout << temp_c << " " << temp_r << endl;
         visited[temp_c][temp_r] = 1;
     }

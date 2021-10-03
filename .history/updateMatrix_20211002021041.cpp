@@ -45,57 +45,54 @@ void printer(T toprint){
     cout << "------------------"<<endl;
 }
 
-void printQueue(queue<pair<int,int>> que){
-    queue<pair<int,int>> myque = que;
-    while(!myque.empty()){
-        pair<int,int> temp = myque.front();
-        cout<< temp.first << " "<<temp.second << endl;
-        myque.pop();
-    }
-    cout << "-----------"<<endl;
-}
 
-const int arr[4][2] = {{1,0}, {-1,0}, {0,1}, {0,-1}};
 
 vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
     queue<pair<int,int>> q;
-    // int visited[mat.size()][mat[0].size()] = {0};
-    vector<vector<int>> ans (mat.size(), vector<int>(mat[0].size(),0));
-    vector<vector<int>> visited (mat.size(), vector<int>(mat[0].size(),0));
+
     for(int c =0; c< mat.size(); c++){
         for(int r =0; r< mat[0].size(); r++){
-            if(!mat[c][r]){
-                q.push(make_pair(c,r));
-                ans[c][r] = 0;
-            } 
+            if(!mat[c][r]) q.push(make_pair(c,r));
         }
     }
-    //printQueue(q);
+    int visited[mat.size()][mat[0].size()] = {0};
+    vector<vector<int>> ans (mat.size(), vector<int>(mat[0].size(),0));
     while (!q.empty())
     {
-       // printQueue(q);
         pair<int,int> temp_node = q.front();
         q.pop();
+        printer(ans);
         int temp_c = temp_node.first;
         int temp_r = temp_node.second;
-        if(visited[temp_c][temp_r]) continue;
-        cout << temp_c << " " << temp_r << endl;
-        printer(ans);
-        cout << "|||||||||||||||"<<endl;
-        for(int e =0; e < 4; e++){
-            int temp_cc = temp_c + arr[e][0];
-            int temp_rr = temp_r + arr[e][1];
-            if(temp_cc < 0 || temp_cc >= mat.size() || temp_rr < 0 || temp_rr >= mat[0].size()){
-                continue;
-            }else{
-                if(mat[temp_cc][temp_rr]) ans[temp_cc][temp_rr] = ans[temp_c][temp_r] + 1;
-               // if(!visited[temp_cc][temp_rr]) 
-                q.push(make_pair(temp_cc, temp_rr));
-            }
+        if(mat[temp_c][temp_r] == 0){
+            visited[temp_c][temp_r] = 1;
+            continue;
         }
-        printer(ans);
-        //cout << temp_c << " " << temp_r << endl;
-        visited[temp_c][temp_r] = 1;
+        if(temp_c >= 0 ){
+            if(mat[temp_c+1][temp_r]) ans[temp_c+1][temp_r] += ans[temp_c][temp_r];
+            if(visited[temp_c+1][temp_r]) continue;
+            q.push(make_pair(temp_c+1, temp_r));
+            visited[temp_c+1][temp_r] = 2;
+        } 
+        if(temp_c < mat.size()){
+            if(mat[temp_c+1][temp_r]) ans[temp_c-1][temp_r] += ans[temp_c][temp_r];
+            if(visited[temp_c-1][temp_r]) continue;
+            q.push(make_pair(temp_c-1, temp_r));
+            visited[temp_c-1][temp_r] = 2;
+        } 
+        if(temp_r >= 0){
+            if(mat[temp_c+1][temp_r]) ans[temp_c][temp_r+1] += ans[temp_c][temp_r];
+            if(visited[temp_c][temp_r+1]) continue;
+            q.push(make_pair(temp_c, temp_r+1));
+            visited[temp_c][temp_r+1] = 2;
+        } 
+        if(temp_r <= mat[0].size()){
+            if(mat[temp_c+1][temp_r]) ans[temp_c+1][temp_r-1] += ans[temp_c][temp_r];
+            if(visited[temp_c][temp_r-1]) continue;
+            q.push(make_pair(temp_c, temp_r-1));
+            visited[temp_c][temp_r-1] = 2;
+        }
+        /* code */
     }
     return ans;
-}
+} 
