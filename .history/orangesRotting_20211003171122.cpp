@@ -51,18 +51,15 @@ int orangesRotting(vector<vector<int>>& grid) {
                         grid[temp_c][temp_r] = 2;
                         q.push(make_pair(temp_c, temp_r));
                         temp_level ++;
-                        flag ++;
                     } 
                     //cout <<"flag : "<< flag <<endl;
                 }
             }
         }
-       // printer(grid);
         level = temp_level;
-        temp_level = 0;
-        if(flag > 0) sum ++;
-        flag = 0;
+       sum ++;
     }
+    cout << sum << endl;
     for(int c= 0; c< grid.size(); c++){
         for(int r = 0; r< grid[0].size(); r++){
             if(grid[c][r] == 1) return -1;

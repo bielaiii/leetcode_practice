@@ -18,17 +18,6 @@ void printer(T toprint){
 
 
 int main(void){
-    vector<vector<int>> vec = {{2},
-                            {3,4},
-                            {6,5,7},
-                            {4,1,8,3}};
-    cout << minimumTotal(vec) <<endl;
-    vector<vector<int>> vec1 = {{-1},{2,3},{1,-1,-3}};
-    cout << minimumTotal(vec1) <<endl;
-    //printer(vec);
-   // uint32_t t1 = 00000010100101000001111010011100;
-   // cout << reverseBits(43261596) <<endl;
-    /*
     vector<int> vec= {2,2,1};
     cout << singleNumber(vec) <<endl;
     vector<int> vec1= {4,1,2,1,2};
@@ -37,7 +26,7 @@ int main(void){
     
     cout << singleNumber(vec2) <<endl;
     cout << (singleNumber(vec2) == -92) <<endl;
-
+/* 
     int arr[3][3] = {{2,1,1},{1,1,0},{0,1,1}};
     vector<vector<int>> myvec;
     for(int i = 0; i < 3; i++){

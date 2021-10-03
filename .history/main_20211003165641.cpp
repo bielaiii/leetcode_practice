@@ -18,13 +18,8 @@ void printer(T toprint){
 
 
 int main(void){
-    vector<vector<int>> vec = {{2},
-                            {3,4},
-                            {6,5,7},
-                            {4,1,8,3}};
-    cout << minimumTotal(vec) <<endl;
-    vector<vector<int>> vec1 = {{-1},{2,3},{1,-1,-3}};
-    cout << minimumTotal(vec1) <<endl;
+    vector<vector<int>> vec = {{2,1,1}, {1,1,0}, {1,0,1}};
+    cout << orangesRotting(vec) <<endl;
     //printer(vec);
    // uint32_t t1 = 00000010100101000001111010011100;
    // cout << reverseBits(43261596) <<endl;

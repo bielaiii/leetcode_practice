@@ -57,7 +57,7 @@ int orangesRotting(vector<vector<int>>& grid) {
                 }
             }
         }
-       // printer(grid);
+        printer(grid);
         level = temp_level;
         temp_level = 0;
         if(flag > 0) sum ++;

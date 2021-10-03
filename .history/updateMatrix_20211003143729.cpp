@@ -59,6 +59,7 @@ const int arr[4][2] = {{1,0}, {-1,0}, {0,1}, {0,-1}};
 
 vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
     queue<pair<int,int>> q;
+    // int visited[mat.size()][mat[0].size()] = {0};
     vector<vector<int>> ans (mat.size(), vector<int>(mat[0].size(),-1));
     vector<vector<int>> visited (mat.size(), vector<int>(mat[0].size(),0));
     for(int c =0; c< mat.size(); c++){
@@ -69,29 +70,33 @@ vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
             } 
         }
     }
+    //printQueue(q);
     while (!q.empty())
     {
-
+       // printQueue(q);
         pair<int,int> temp_node = q.front();
         q.pop();
         int temp_c = temp_node.first;
         int temp_r = temp_node.second;
         if(visited[temp_c][temp_r]) continue;
+        cout << temp_c << " " << temp_r << endl;
+        printer(ans);
+        cout << "|||||||||||||||"<<endl;
         for(int e =0; e < 4; e++){
             int temp_cc = temp_c + arr[e][0];
             int temp_rr = temp_r + arr[e][1];
+            if(ans[temp_c][temp_r]==-1 && mat[temp_c][temp_r] == 0) ans[temp_c][temp_r] = 0;
+            
             if(temp_cc < 0 || temp_cc >= mat.size() || temp_rr < 0 || temp_rr >= mat[0].size()){
                 continue;
             }else{
-                if(ans[temp_cc][temp_rr] == -1 && mat[temp_cc][temp_rr] ){
-                    ans[temp_cc][temp_rr] = ans[temp_c][temp_r] + 1;
-                }else if(ans[temp_cc][temp_rr] > ans[temp_c][temp_r] + 1){
-                    ans[temp_cc][temp_rr] = ans[temp_c][temp_r] + 1;
-                }
+                if(mat[temp_cc][temp_rr]) ans[temp_cc][temp_rr] = ans[temp_c][temp_r] + 1;
+               // if(!visited[temp_cc][temp_rr]) 
                 q.push(make_pair(temp_cc, temp_rr));
             }
         }
-       
+        printer(ans);
+        //cout << temp_c << " " << temp_r << endl;
         visited[temp_c][temp_r] = 1;
     }
     return ans;

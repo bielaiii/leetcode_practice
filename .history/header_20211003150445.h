@@ -52,6 +52,4 @@ int hammingWeight(uint32_t n);
 bool isPowerOfTwo(int n);
 int climbStairs(int n);
 int singleNumber(vector<int>& nums);
-uint32_t reverseBits(uint32_t n);
-int minimumTotal(vector<vector<int>>& triangle);
 #endif
