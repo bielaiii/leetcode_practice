@@ -55,5 +55,4 @@ int singleNumber(vector<int>& nums);
 uint32_t reverseBits(uint32_t n);
 int minimumTotal(vector<vector<int>>& triangle);
 int fib(int n);
-int minCostClimbingStairs(vector<int>& cost);
 #endif
