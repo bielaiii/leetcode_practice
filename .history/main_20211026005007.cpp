@@ -27,14 +27,8 @@ int main(void){
     vector<int> num4 = {6,3,10,8,2,10,3,5,10,5,3};
     cout << (robb(num4) == 36) <<endl; */
     //printer(num1);
-    vector<int> vec = {2,3,1,1,4};
-    cout << jump_ii(vec) << endl;
-    vector<int> vec1 = {2,3,1};
-    cout << jump_ii(vec1) << endl;
-    vector<int> vec2 = {1,2,1,1,1};
-    cout << jump_ii(vec2) << endl;
-    vector<int> vec3 = {4,1,1,3,1,1,1};
-    cout << jump_ii(vec3) << endl;
+    vector<int> vec = {3,4,2};
+    dele
     return 0;
 }
 

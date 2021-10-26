@@ -56,7 +56,5 @@ uint32_t reverseBits(uint32_t n);
 int minimumTotal(vector<vector<int>>& triangle);
 int fib(int n);
 int minCostClimbingStairs(vector<int>& cost);
-int robb(vector<int> &nums);
-int deleteAndEarn(vector<int>& nums);
-bool jump_ii(vector<int>& nums);
+int minCostClimbingStairs(vector<int>& cost);
 #endif

@@ -29,12 +29,6 @@ int main(void){
     //printer(num1);
     vector<int> vec = {2,3,1,1,4};
     cout << jump_ii(vec) << endl;
-    vector<int> vec1 = {2,3,1};
-    cout << jump_ii(vec1) << endl;
-    vector<int> vec2 = {1,2,1,1,1};
-    cout << jump_ii(vec2) << endl;
-    vector<int> vec3 = {4,1,1,3,1,1,1};
-    cout << jump_ii(vec3) << endl;
     return 0;
 }
 
