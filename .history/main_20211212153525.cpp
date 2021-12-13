@@ -18,8 +18,13 @@ void printer(T toprint){
 
 
 int main(void){
-    vector<int> vec = {-2,1,-3,4,-1,2,1,-5,4};
-    cout << maxSubArray(vec);
+    //s = "leetcode", wordDict = ["leet", "code"]
+    vector<int> vec = {1,2,3,4,5,6};
+    vector<int> vec1 = {1,2,3,4,5,6};
+    string s = "leetcode";
+    //sortColors(vec);
+    cout << wordBreak(s, vec) <<endl;
+    //printer(vec);
     return 0;
 }
 

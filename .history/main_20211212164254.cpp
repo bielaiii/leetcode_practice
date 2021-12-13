@@ -18,8 +18,7 @@ void printer(T toprint){
 
 
 int main(void){
-    vector<int> vec = {-2,1,-3,4,-1,2,1,-5,4};
-    cout << maxSubArray(vec);
+    
     return 0;
 }
 

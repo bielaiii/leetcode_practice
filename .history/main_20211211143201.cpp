@@ -18,8 +18,18 @@ void printer(T toprint){
 
 
 int main(void){
-    vector<int> vec = {-2,1,-3,4,-1,2,1,-5,4};
-    cout << maxSubArray(vec);
+   /*  vector<int> num1 = {200,3,140,20,10};
+    cout << (robb(num1) == 340) << endl;
+     vector<int> num2 = {1,2,3,1};
+    cout << (robb(num2) == 4) << endl;
+    vector<int> num3 = {1,7,9,2};
+    cout << (robb(num3) == 10) << endl;
+    vector<int> num4 = {6,3,10,8,2,10,3,5,10,5,3};
+    cout << (robb(num4) == 36) <<endl; */
+    //printer(num1);
+    vector<int> vec = {2,2,1,1,0};
+    sortColors(vec);
+    printer(vec)
     return 0;
 }
 

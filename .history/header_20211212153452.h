@@ -62,7 +62,5 @@ bool jump_ii(vector<int>& nums);
 void sortColors(vector<int>& nums);
 bool wordBreak(string s, vector<string>& wordDict);
 int maxIncreaseKeepingSkyline(vector<vector<int>>& grid);
-bool isPowerOfThree(int n );
-vector<int> intersection(vector<int>& nums1, vector<int>& nums2);
-vector<string> findRepeatedDnaSequences(string s);
+
 #endif
