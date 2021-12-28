@@ -35,7 +35,7 @@ int main(void){
     vector<vector<int>> ans1 = matrixBlockSum(test1, 1);
     vector<vector<int>> ans2 = matrixBlockSum(test1, 2);
     printer2(ans1);
-    printer2(ans2);
+    printer2(ans2)；
     return 0;
 }
 

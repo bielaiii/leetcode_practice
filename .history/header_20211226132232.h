@@ -81,5 +81,4 @@ int nthUglyNumber(int n );
 vector<vector<int>> generate(int numRows);
 vector<int> getRow(int numRows);
 int minFallingPathSum(vector<vector<int>>& matrix);
-vector<vector<int>> matrixBlockSum(vector<vector<int>>& mat, int k);
 #endif
