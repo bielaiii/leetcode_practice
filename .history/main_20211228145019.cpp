@@ -1,4 +1,8 @@
+#include "header.h"
 #include <iostream>
+#include <vector>
+//#include <conio.h>
+#include <unordered_set>
 using namespace std;
 
 template<typename T>
@@ -23,3 +27,17 @@ void printer2(T toprint){
     
         cout << endl;
 }
+
+
+int main(void){
+    vector<vector<int>> test1 = {{0,0,0},{0,1,0},{0,0,0}};
+    vector<vector<int>> test2 = {{0,1},{0,0}};
+    vector<vector<int>> test3 = {{0,0},{0,1}};
+    cout << uniquePathsWithObstacles(test1) << endl;
+    cout << uniquePathsWithObstacles(test2) << endl;
+    cout << uniquePathsWithObstacles(test3) << endl;
+    return 0;
+}
+
+
+

@@ -37,6 +37,7 @@ int maxAreaOfIsland(vector<vector<int>>& grid) {
     for(int d = 0; d< height; d++){
         for(int e =0 ; e< width; e++){
             if(grid[d][e]){
+                
                     ret = max(ret, recurArea(grid, width, height, e, d) );
             }
         }

@@ -1,4 +1,8 @@
+#include "header.h"
 #include <iostream>
+#include <vector>
+//#include <conio.h>
+#include <unordered_set>
 using namespace std;
 
 template<typename T>
@@ -23,3 +27,13 @@ void printer2(T toprint){
     
         cout << endl;
 }
+
+
+int main(void){
+    
+    cout << 
+    return 0;
+}
+
+
+

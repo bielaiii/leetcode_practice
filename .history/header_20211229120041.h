@@ -85,5 +85,4 @@ vector<vector<int>> matrixBlockSum(vector<vector<int>>& mat, int k);
 int uniquePaths(int m, int n);
 int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid);
 int minPathSum(vector<vector<int>>& grid);
-int maximalSquare(vector<vector<char>>& matrix);
 #endif
