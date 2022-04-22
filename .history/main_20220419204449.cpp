@@ -14,7 +14,6 @@ int main(void){
     float c = 2017.7687834;
     float d = 2017.454674;
     cout << setiosflags(ios::fixed) <<setprecision(2) << a <<" "<< b << " " << c << " "<< d << endl;
-    
 
     return 0;
 }
