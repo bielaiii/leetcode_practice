@@ -7,19 +7,7 @@ using namespace std;
 
 
 int lengthOfLongestSubstring(string s) {
-    int len = 0;
-    unordered_set<char> set_;
-    int size_ = s.size();
-    int start = -1;
-    for(int i = 0; i < s.length(); i++){
-        if(set_.count(s[i])) set_.erase(s[i-1]);
-        while(start + 1 < size_ && set_.count(s[start + 1])){
-            set_.insert(s[start + 1]);
-            start ++;
-        }
-        len = max(len , start - i + 1);
-    }
-    return len;
+    
 }
 
 
