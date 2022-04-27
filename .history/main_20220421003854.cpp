@@ -15,7 +15,8 @@ void printer(vector<T> const & vec){
     cout << endl;
 }
 
-/*
+
+int main(void){
     string s = "who love solo";
     for(int i = 0; i < s.length(); i++){
         if(s[i] == 'a' || s[i] == 'A'||
@@ -25,20 +26,15 @@ void printer(vector<T> const & vec){
         s[i] == 'u' || s[i] == 'U'
         ){
             if(s[i] >= 'a' && s[i] <= 'z')
-                s[i]  -= 'a' - 'A';
+                s[i]  -= 'A' - 'a';
         }else{
             if(s[i] >= 'A' && s[i] <= 'Z'){
-                s[i] += 'a' - 'A';
+                s[i] += 'A' - 'a';
             }
         }
         cout <<s << endl;
     }
     cout << s << endl;
-*/
-
-
-int main(void){
-    
     return 0;
 }
 

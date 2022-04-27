@@ -15,7 +15,8 @@ void printer(vector<T> const & vec){
     cout << endl;
 }
 
-/*
+
+int main(void){
     string s = "who love solo";
     for(int i = 0; i < s.length(); i++){
         if(s[i] == 'a' || s[i] == 'A'||
@@ -34,11 +35,6 @@ void printer(vector<T> const & vec){
         cout <<s << endl;
     }
     cout << s << endl;
-*/
-
-
-int main(void){
-    
     return 0;
 }
 

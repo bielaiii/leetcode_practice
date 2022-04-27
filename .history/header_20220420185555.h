@@ -88,10 +88,4 @@ int minPathSum(vector<vector<int>>& grid);
 int maximalSquare(vector<vector<char>>& matrix);
 int lengthOfLastWord(string s);
 string toGoatLatin(string sentence);
-int mySqrt(int x);
-int majorityElement(vector<int> & nums);
-bool canFinish(int numCourses, vector<vector<int>> & prerequisites);
-double findMaxAverage(vector<int>& nums, int k);
-int totalFruit(vector<int>& fruits);
-
 #endif
