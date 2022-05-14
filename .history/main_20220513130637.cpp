@@ -27,12 +27,7 @@ using namespace std;
 
 
 int main(void){
- // vector<string> vec1 {"with", "example", "sceience"};
- // string target1 = "thehat";
- // cout << minStickers(vec1, target1) << endl;
- int i = 1;
- int j = i << 4;
- cout << j <<endl;
+  vector<stirng> vec1 {}
 }
 
 
