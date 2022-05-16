@@ -36,7 +36,7 @@ int dfs(unordered_map<string, int>& map_, vector<vector<int>> &mystickers, strin
         string new_target = "";
         for(int j = 0; j < 26; j++){
             if(alphabet_[j] - mystickers[i][j] > 0){
-                new_target += string(alphabet_[j] - mystickers[i][j], 'a' + j);
+                new_target += string(alphabet_[j] + mystickers[i][j], 'a' + j);
             }
         }
         int temp = dfs(map_, mystickers, new_target);

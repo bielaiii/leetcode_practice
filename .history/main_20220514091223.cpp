@@ -30,15 +30,9 @@ int main(void){
  // vector<string> vec1 {"with", "example", "sceience"};
  // string target1 = "thehat";
  // cout << minStickers(vec1, target1) << endl;
-  //  vector<vector<int>> vec1 {{0,0}, {0,1}, {1,0}, {0,2}, {2,0}};
-  //  cout << largestTriangleArea(vec1) <<endl;
-  vector<int> vec1 {1,2,2,1};
-  vector<int> vec2 {2,2};
-  printer( intersectii(vec1, vec2) );
-  vector<int> vec3 {4,9,5};
-  vector<int> vec4 {9,4,9,8,4};
-  printer( intersectii(vec3, vec4) );
-  vector<int> vec5 {1,2,2,1};
-  vector<int> vec6 {2,2};
-  printer( intersectii(vec5, vec6) );
+    vector<string> vec1 {
+        "with", "example", "science"
+    };
+    string target1 = "thehat";
+    cout << minStickers(vec1,target1 ) <<endl;
 }

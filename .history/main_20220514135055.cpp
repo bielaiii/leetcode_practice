@@ -34,11 +34,9 @@ int main(void){
   //  cout << largestTriangleArea(vec1) <<endl;
   vector<int> vec1 {1,2,2,1};
   vector<int> vec2 {2,2};
-  printer( intersectii(vec1, vec2) );
+  printer(intersectii(vec1, vec2));
   vector<int> vec3 {4,9,5};
   vector<int> vec4 {9,4,9,8,4};
-  printer( intersectii(vec3, vec4) );
-  vector<int> vec5 {1,2,2,1};
-  vector<int> vec6 {2,2};
-  printer( intersectii(vec5, vec6) );
+  printer(intersectii(vec3, vec4));
+  
 }

@@ -103,5 +103,4 @@ bool oneEditAway(string first, string second);
 int maxArea(vector<int>& height);
 int minStickers(vector<string>& stickers, string target);
 double largestTriangleArea(vector<vector<int>> &points);
-vector<int> intersectii(vector<int>& nums1, vector<int>& nums2) ;
 #endif
