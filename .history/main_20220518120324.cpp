@@ -28,23 +28,9 @@
 
 
 int main(void){
+   // std::cout << std::format("print out {} {} {}\n", "a", "b", "c");
 
 
 
-    vector<vector<int>> vec {{3,4}, {2,3}, {1,2}};
-    vector<int> ans = findRightInterval(vec);
-    printer(ans); 
-    
-    vector<vector<int>> vec1 {{1,4}, {2,3}, {3,4}};
-    vector<int> ans1 = findRightInterval(vec1);
-    printer(ans1); 
-
-        vector<vector<int>> vec2 {{4,5}, {2,3}, {1,2}};
-    vector<int> ans2 = findRightInterval(vec2);
-    printer(ans2); 
-
-    vector<vector<int>> vec3 {{1,2}};
-    vector<int> ans3 = findRightInterval(vec3);
-    printer(ans3);
   
 }

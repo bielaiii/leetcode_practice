@@ -5,8 +5,7 @@
 #include <unordered_set>
 #include <unordered_map>
 #include <iomanip>
-
-//using namespace std;
+using namespace std;
 
 
 /*  vector<int> plusOne(vector<int>& digits) {
@@ -28,23 +27,13 @@
 
 
 int main(void){
-
-
-
-    vector<vector<int>> vec {{3,4}, {2,3}, {1,2}};
-    vector<int> ans = findRightInterval(vec);
-    printer(ans); 
-    
-    vector<vector<int>> vec1 {{1,4}, {2,3}, {3,4}};
-    vector<int> ans1 = findRightInterval(vec1);
-    printer(ans1); 
-
-        vector<vector<int>> vec2 {{4,5}, {2,3}, {1,2}};
-    vector<int> ans2 = findRightInterval(vec2);
-    printer(ans2); 
-
-    vector<vector<int>> vec3 {{1,2}};
-    vector<int> ans3 = findRightInterval(vec3);
-    printer(ans3);
+ // vector<string> vec1 {"with", "example", "sceience"};
+ // string target1 = "thehat";
+ // cout << minStickers(vec1, target1) << endl;
+  //  vector<vector<int>> vec1 {{0,0}, {0,1}, {1,0}, {0,2}, {2,0}};
+  //  cout << largestTriangleArea(vec1) <<endl;
+  vector<int> vec1 {31,41,59,26,41,58};
+  insertionSort(vec1)
+  printer(vec1);
   
 }

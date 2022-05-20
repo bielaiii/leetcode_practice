@@ -105,8 +105,5 @@ int minStickers(vector<string>& stickers, string target);
 double largestTriangleArea(vector<vector<int>> &points);
 vector<int> intersectii(vector<int>& nums1, vector<int>& nums2) ;
 void insertionSort(vector<int> &vec);
-bool isAlienSorted(vector<string>& words, string order);
-int findKthNumber(int m, int n ,int k);
-int minMove2(vector<int> &nums);
-vector<int> findRightInterval(vector<vector<int>>& intervals);
+;
 #endif
