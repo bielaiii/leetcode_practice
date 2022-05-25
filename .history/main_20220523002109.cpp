@@ -27,9 +27,7 @@
 } */
 
 
-
 int main(void){
-   vector<vector<int>> vec1 = {{1,2},{2,3},{6,1}};
-   vector<int> ans1 =  fallingSquares(vec1);
-   printer(ans1);
+    vector<vector<int>> vec {{1,2,3},{0,0,4},{7,6,5}};
+    cout << cutOffTree(vec) << endl;
 }

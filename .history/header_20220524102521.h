@@ -113,5 +113,4 @@ int repeatedNTimes(vector<int> &nums);
 bool canIWin(int maxChoosableInteger, int desiredTotal);
 int cutOffTree(vector<vector<int>>& forest);
 int findSubstringInWraproundString(string p);
-vector<int> fallingSquares(vector<vector<int>>& positions);
 #endif

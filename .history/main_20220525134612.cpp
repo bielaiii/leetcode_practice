@@ -31,5 +31,5 @@
 int main(void){
    vector<vector<int>> vec1 = {{1,2},{2,3},{6,1}};
    vector<int> ans1 =  fallingSquares(vec1);
-   printer(ans1);
+   printer2(ans1);
 }

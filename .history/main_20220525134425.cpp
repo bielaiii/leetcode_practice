@@ -28,6 +28,15 @@
 
 
 
+int rec(int i){
+    int j = 0;
+    if(! i) return i;
+    j = rec( i - 1);
+    cout << "i " << i <<endl;
+    cout << "j " << j <<endl;
+    return j;
+}
+
 int main(void){
    vector<vector<int>> vec1 = {{1,2},{2,3},{6,1}};
    vector<int> ans1 =  fallingSquares(vec1);

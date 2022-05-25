@@ -27,9 +27,8 @@
 } */
 
 
-
 int main(void){
-   vector<vector<int>> vec1 = {{1,2},{2,3},{6,1}};
-   vector<int> ans1 =  fallingSquares(vec1);
-   printer(ans1);
+    cout << canIWin(10, 11) << endl;;
+    cout << canIWin(10, 0) << endl;;
+    cout << canIWin(10, 1) << endl;;
 }

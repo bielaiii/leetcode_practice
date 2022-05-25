@@ -109,9 +109,5 @@ bool isAlienSorted(vector<string>& words, string order);
 int findKthNumber(int m, int n ,int k);
 int minMove2(vector<int> &nums);
 vector<int> findRightInterval(vector<vector<int>>& intervals);
-int repeatedNTimes(vector<int> &nums);
-bool canIWin(int maxChoosableInteger, int desiredTotal);
-int cutOffTree(vector<vector<int>>& forest);
-int findSubstringInWraproundString(string p);
-vector<int> fallingSquares(vector<vector<int>>& positions);
+int repeatNTimes(vector<int> &nums);
 #endif
