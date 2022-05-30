@@ -29,9 +29,12 @@
 
 
 int main(void){
-    vector<int> vec1 {3,3,5,0,0,3,1,4};
-    cout << maxProfit_iv(vec1) <<endl;
-
-    vector<int> vec2 {1,2,3,4,5};
-    cout << maxProfit_iv(vec2) <<endl;
+    cout << validIPAddress("192.168.0.1") <<endl;
+    cout << validIPAddress("192.168.0.01") <<endl;
+    cout << validIPAddress("1e1.168.0.01") <<endl;
+    cout << validIPAddress("2001:0db8:85a3:0:0:8A2E:0370:7334") <<endl;
+    cout << validIPAddress("256.56.256.256") <<endl;
+    cout << validIPAddress("2001:0db8:85a3:0:0:8A2E:0370:7334") <<endl;
+    cout << validIPAddress("2001:0db8:85a3:0000:0:8A2E:0370:733a") <<endl;
+    cout << validIPAddress("2001:0db8:85a3:00000:0:8A2E:0370:7334") <<endl;
 }

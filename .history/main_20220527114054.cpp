@@ -29,9 +29,12 @@
 
 
 int main(void){
-    vector<int> vec1 {3,3,5,0,0,3,1,4};
-    cout << maxProfit_iv(vec1) <<endl;
+  string s1 = "(()())";
+  cout << removeOuterParaentheses(s1) <<endl;
 
-    vector<int> vec2 {1,2,3,4,5};
-    cout << maxProfit_iv(vec2) <<endl;
+  string s2= "()()";
+  cout << removeOuterParaentheses(s2) <<endl;
+
+  string s3 = "(()())(())(()(()))";
+  cout << removeOuterParaentheses(s3) <<endl;
 }

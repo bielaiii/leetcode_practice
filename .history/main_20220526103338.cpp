@@ -29,9 +29,7 @@
 
 
 int main(void){
-    vector<int> vec1 {3,3,5,0,0,3,1,4};
-    cout << maxProfit_iv(vec1) <<endl;
-
-    vector<int> vec2 {1,2,3,4,5};
-    cout << maxProfit_iv(vec2) <<endl;
+   vector<vector<string>> vec1 = {};
+   vector<int> ans1 =  fallingSquares(vec1);
+   printer(ans1);
 }

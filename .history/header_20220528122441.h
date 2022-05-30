@@ -117,5 +117,4 @@ vector<int> fallingSquares(vector<vector<int>>& positions);
 int findClosest(vector<string>& words, string word1, string word2);
 string removeOuterParentheses(string s);
 string validIPAddress(string queryIP);
-int maxProfit_iv(vector<int>& prices);
 #endif
