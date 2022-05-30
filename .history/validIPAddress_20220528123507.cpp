@@ -1,0 +1,59 @@
+#include<iostream>
+#include<vector>
+#include<sstream>
+using namespace std;
+
+
+string validIPAddress(string queryIP){
+    string deli = "";
+    int start = 0;
+    int end = 0;
+    string temp = "";
+    string ret = "Neither";
+    stringstream ss;
+    int num = 0;
+    if(queryIP.find(".", start) != -1){
+        //deli = ",";
+        queryIP += ".";
+        while((end = queryIP.find(".", start)) != -1){
+            ss  << queryIP.substr(start, end - start);
+            ss >> num;
+           // cout << "num: "<< num <<endl;
+            if(num < 0 || num > 255) return "Neither";
+            start = end + 1;
+            ss.clear();
+        }
+        ret = "IPV4";
+    }else if( queryIP.find(":") != -1){
+       // deli = ":";
+       queryIP += ":";
+       while((end = queryIP.find(":", start)) != -1){
+            ss  << queryIP.substr(start, end - start);
+            ss >> num;
+           // cout << "num: "<< num <<endl;
+            if(num < 0 || num > 255) return "Neither";
+            start = end + 1;
+            ss.clear();
+        }
+        ret = "IPV4";
+    }
+    return ret;
+}
+
+int recursive(string s, int ret, int i){
+    if(i == s.length() - 1) return ret;
+    int cur = 0 ;
+    if(s[i] == 'a'){
+        cur = 10;
+    }else if(s[i] == 'b'){
+        cur = 11;
+    }else if(s[i] == 'c'){
+        cur = 12;
+    }else if(s[i] == 'd'){
+        cur = 13;
+    }else if(s[i] == 'e'){
+        cur = 14;
+    }else if(s[i] == 'f'){
+        cur = 15;
+    }else
+}
