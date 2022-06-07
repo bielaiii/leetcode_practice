@@ -32,9 +32,7 @@ int main(void){
    vector<vector<int>> vec1  {{1,1},{2,3},{3,2}};
    vector<vector<int>> vec2  {{1,1},{2,2},{3,3}};
    vector<vector<int>> vec3  {{0,0},{1,2},{0,1}};
-   vector<vector<int>> vec4  {{19,82},{73,73},{97,69}};
     cout << isBoomerang(vec1) << endl;;
     cout << isBoomerang(vec2) << endl;;
     cout << isBoomerang(vec3) << endl;;
-    cout << isBoomerang(vec4) << endl;;
 }
