@@ -123,6 +123,5 @@ bool makesquare(vector<int>& matchsticks);
 int consecutiveNumbersSum(int n);
 string alienOrder(vector<string>& words);
 int numUniqueEmails(vector<string>& emails);
-//class MyCalendarThree;
-int minEatingSpeed(vector<int>& piles, int h);
+class MyCalendarThree(){};
 #endif

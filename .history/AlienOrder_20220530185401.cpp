@@ -68,7 +68,7 @@ string alienOrder(vector<string>& words) {
     for(auto de : degree){
         if(de.second == 0) que.push(de.first); 
     }
-    while(!que.empty()){
+    while(!degree.empty()){
         char temp = que.front();
         que.pop();
         ans += temp;

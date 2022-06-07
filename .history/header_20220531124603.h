@@ -120,9 +120,5 @@ string removeOuterParentheses(string s);
 string validIPAddress(string queryIP);
 int maxProfit_iv(vector<int>& prices);
 bool makesquare(vector<int>& matchsticks);
-int consecutiveNumbersSum(int n);
-string alienOrder(vector<string>& words);
-int numUniqueEmails(vector<string>& emails);
-//class MyCalendarThree;
-int minEatingSpeed(vector<int>& piles, int h);
+
 #endif

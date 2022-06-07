@@ -36,8 +36,8 @@ string alienOrder(vector<string>& words) {
     unordered_map<char, unordered_set<char> > map_;
     unordered_map<char, int> degree;
     bool visited = 1;
-    char cha1;
-    char cha2;
+    char char_1;
+    char char_2;
     for(auto word : words){
         for(auto cha : word){
             if(!map_.count(cha)){
@@ -53,11 +53,9 @@ string alienOrder(vector<string>& words) {
         int len = min(words[i-1].size(), words[i].size());
         for(; j < len; j++){
             if(words[i][j] != words[i-1][j]){
-                cha1 = words[i-1][j];
-                cha2 = words[i][j];
-                if(!map_[cha1].count(cha2)){
-                    map_[cha1].insert(cha2);
-                    degree[cha2] ++;
+                if(!map_[words[i-1][j]].count(words[i][j])){
+                    map_[words[i-1][j]].insert(words[i][j]);
+                    degree[words[i][j]] ++;
                 }
                 break;
             }
@@ -68,12 +66,12 @@ string alienOrder(vector<string>& words) {
     for(auto de : degree){
         if(de.second == 0) que.push(de.first); 
     }
-    while(!que.empty()){
+    while(degree.size()){
         char temp = que.front();
         que.pop();
         ans += temp;
         for(auto c : map_[temp]){
-            degree[c] --;
+            degree[c]--;
             if(degree[c] == 0)
                 que.push(c);
         }
@@ -82,4 +80,3 @@ string alienOrder(vector<string>& words) {
     if(ans.size() != degree.size()) return "";
     return ans;
 }
-

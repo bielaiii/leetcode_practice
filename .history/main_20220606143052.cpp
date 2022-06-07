@@ -34,6 +34,4 @@ int main(void){
     vector<int> vec2 {30,11,23,4,20};
     cout << minEatingSpeed(vec2, 5) << endl;
     cout << minEatingSpeed(vec2, 6) << endl;
-    vector<int> vec3 {2,2};
-    cout << minEatingSpeed(vec3, 2) <<endl;;
 }

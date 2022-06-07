@@ -29,11 +29,6 @@
 
 
 int main(void){
-    vector<int> vec1 {3,6,7,11};
-    cout << minEatingSpeed(vec1, 8) << endl;
-    vector<int> vec2 {30,11,23,4,20};
-    cout << minEatingSpeed(vec2, 5) << endl;
-    cout << minEatingSpeed(vec2, 6) << endl;
-    vector<int> vec3 {2,2};
-    cout << minEatingSpeed(vec3, 2) <<endl;;
+    MyCalendarThree mycal;
+    mycal.add
 }
