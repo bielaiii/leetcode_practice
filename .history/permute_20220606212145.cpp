@@ -2,19 +2,9 @@
 #include<vector>
 using namespace std;
 
-void printer1(vector<vector<int>> vec){
-    for(int d = 0; d < vec.size(); d++){
-        for(int i = 0; i < vec[d].size(); i++){
-            cout << vec[d][i] << " ";
-        }
-        cout <<endl;
-    }
-}
-
-
 void backtrack(vector<int>& nums, vector<vector<int>>& vec, vector<int>&arr, vector<int>& one_time){
    if(one_time.size() == nums.size()){
-       vec.push_back(nums);
+       vec.push_back(one_time);
        return ;
    }
    for(int e =0; e < nums.size(); e++){
@@ -26,7 +16,6 @@ void backtrack(vector<int>& nums, vector<vector<int>>& vec, vector<int>&arr, vec
            one_time.pop_back();
        }
    }
-
 }
 
 vector<vector<int>> permute(vector<int>& nums) {
