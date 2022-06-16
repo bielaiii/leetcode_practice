@@ -1,0 +1,16 @@
+#include<iostream>
+#include<vector>
+#include<sstream>
+using namespace std;
+
+bool isPalindrome(string s){
+    stringstream ss;
+    ss << s;
+    string str = "";
+    string temp ; 
+    for(auto c : s){
+        if( isalpha(c)) s+= c;
+    }
+    cout << s <<endl;
+    return 1;
+}
