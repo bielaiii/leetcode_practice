@@ -14,7 +14,7 @@ using namespace std;
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-/*
+
 unordered_map<int ,int> map_;
 int traversal_findFrequentTreeSum(TreeNode * root){
     
@@ -45,4 +45,3 @@ vector<int> findFrequentTreeSum(TreeNode* root ) {
     }
     return ans;
 }
-*/
