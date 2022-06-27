@@ -50,9 +50,7 @@ void printSubsequence(string input, string output)
 
 int main(void){
 	vector<string> vec1 {"aaaa", "aaa", "aa"};
-	vector<string> vec2 {"rgtrwe", "aafsf", "fdsgfergerg"};
 	cout << findLUSlength(vec1)<<endl;
-	//cout << findLUSlength(vec2)<<endl;
     
     
 	return 0;

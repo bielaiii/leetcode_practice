@@ -140,7 +140,7 @@ int longestValidParentheses(string s);
 int smallestDistancePair(vector<int>& nums, int k);
 int findPairs(vector<int>& nums, int k);
 void duplicateZeros(vector<int>& arr) ;
-int findLUSlength(vector<string>& strs);
+int findLUSlength(vector<string>& strs)
 //vector<int> findFrequentTreeSum(TreeNode* root) ;
 //int findBottomLeftValue(TreeNode* root);
 #endif
