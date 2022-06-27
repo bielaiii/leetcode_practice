@@ -49,12 +49,10 @@ void printSubsequence(string input, string output)
 
 
 int main(void){
-
 	vector<vector<int>> vec1 = {{17,2,17},{16,16,5},{14,3,19}};
-	vector<vector<int>> vec2 = {{7,6,2}};
+	vector<vector<int>> vec2 = {{17,2,17},{16,16,5},{14,3,19}};
 	cout << minCost(vec1) <<endl;
 	cout << minCost(vec2) <<endl;
-
     
     
 	return 0;
