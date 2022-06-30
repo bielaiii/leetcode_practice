@@ -50,8 +50,10 @@ void printSubsequence(string input, string output)
 
 int main(void){
 
-	cout << numPrimeArrangements(5) <<endl;;
-	cout << numPrimeArrangements(100) <<endl;;
+	vector<vector<int>> vec1 = {{17,2,17},{16,16,5},{14,3,19}};
+	vector<vector<int>> vec2 = {{7,6,2}};
+	cout << minCost(vec1) <<endl;
+	cout << minCost(vec2) <<endl;
 
     
     

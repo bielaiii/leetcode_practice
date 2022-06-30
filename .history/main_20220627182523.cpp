@@ -50,8 +50,16 @@ void printSubsequence(string input, string output)
 
 int main(void){
 
-	cout << numPrimeArrangements(5) <<endl;;
-	cout << numPrimeArrangements(100) <<endl;;
+	vector<int> vec1 = {1,5,1,1,6,4};
+	vector<int> vec2 = {1,3,2,2,3,1};
+	vector<int> vec3 = {4,5,5,6};
+	wiggleSort(vec1);
+	wiggleSort(vec2);
+	wiggleSort(vec3);
+	printer(vec1);
+	printer(vec2);
+	printer(vec3);
+	
 
     
     

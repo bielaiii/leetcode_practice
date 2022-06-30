@@ -26,12 +26,39 @@
         return digits;
 } */
 
+void printSubsequence(string input, string output)
+{
+	// Base Case
+	// if the input is empty print the output string
+	if (input.empty()) {
+		cout << output << endl;
+		return;
+	}
+
+	// output is passed with including
+	// the Ist character of
+	// Input string
+	printSubsequence(input.substr(1), output + input[0]);
+
+	// output is passed without
+	// including the Ist character
+	// of Input string
+	printSubsequence(input.substr(1), output);
+}
+
 
 
 int main(void){
-    cout << validIPAddress("192.168.0.1") <<endl;
-    cout << validIPAddress("192.168.0.01") <<endl;
-    cout << validIPAddress("1e1.168.0.01") <<endl;
-    cout << validIPAddress("2001:0db8:85a3:0:0:8A2E:0370:7334") <<endl;
-    cout << validIPAddress("256.56.256.256") <<endl;
+
+	vector<int> vec1 = {1,5,1,1,6,4};
+	vector<int> vec2 = {1,3,2,2,3,1};
+	wiggleSort(vec1);
+	wiggleSort(vec2);
+	printer(vec1);
+	printer(vec2);
+	
+
+    
+    
+	return 0;
 }

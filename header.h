@@ -144,4 +144,6 @@ int findLUSlength(vector<string>& strs);
 //vector<int> findFrequentTreeSum(TreeNode* root) ;
 //int findBottomLeftValue(TreeNode* root);
 int minCost(vector<vector<int>>& costs);
+void wiggleSort(vector<int>& nums);
+int numPrimeArrangements(int n);
 #endif
