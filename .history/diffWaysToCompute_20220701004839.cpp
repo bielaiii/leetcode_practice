@@ -21,9 +21,9 @@ vector<int> diffWaysToCompute(string expression) {
                     if(expression[i] == '+'){
                         ans.push_back(j + z);
                     }else if(expression[i] == '-'){
-                        ans.push_back(j - z);
+                        ans.push_back(z - j);
                     }else{
-                        ans.push_back(j * z);
+                        ans.push_back(z * j);
                     }
                 }
             }

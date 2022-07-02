@@ -50,7 +50,6 @@ void printSubsequence(string input, string output)
 
 int main(void){
 	cout << nextGreaterElement(12) <<endl;
-	cout << nextGreaterElement(21) <<endl;
 
     
     

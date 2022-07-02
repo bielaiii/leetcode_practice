@@ -146,4 +146,5 @@ int findLUSlength(vector<string>& strs);
 int minCost(vector<vector<int>>& costs);
 void wiggleSort(vector<int>& nums);
 int numPrimeArrangements(int n);
+int nextGreaterElement(int n);
 #endif
