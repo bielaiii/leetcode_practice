@@ -12,24 +12,22 @@ int nextGreaterElement(int n) {
     while(tail > 0 && str[tail] <= str[tail-1]){
         tail --;
     }
-    
-    //tail --;
-    int replace = str.size() -1;
-    if(tail == 0) return -1;
-    while(replace > 0 && str[replace] <= str[tail -1 ]){
-        replace --;
-    }
-   // cout << str <<endl;
-    
-    
-    // if(replace == tail) return -1;
-    //  cout << str[tail] <<" "<< str[replace ]<<endl;
-    char temp = str[replace];
-    str[replace] = str[tail-1];
-    str[tail -1 ] = temp;
     sort(str.begin() + tail, str.end(), [](char a, char b){
         return a <= b;
     });
+    //tail --;
+    cout << str <<endl;
+     if(tail == 0) return -1;
+    int replace = str.size() -1;
+    while(replace > 0 && str[replace] <= str[tail]){
+        replace --;
+    }
+   // if(replace == tail) return -1;
+    cout << str[tail] <<" "<< str[replace ]<<endl;
+    char temp = str[replace];
+    str[replace] = str[tail];
+    str[tail ] = temp;
+    
     //cout << str.size() <<endl;
     long long ans = stoll(str);
     if(ans == n) return -1;

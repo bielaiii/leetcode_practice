@@ -49,9 +49,9 @@ void printSubsequence(string input, string output)
 
 
 int main(void){
-	cout << "ans "<< nextGreaterElement(230241) <<endl; //230412
-	//cout << "ans "<< nextGreaterElement(987654321) <<endl;
-	//cout << "ans "<< nextGreaterElement(2347903) <<endl;
+	cout << "ans "<< nextGreaterElement(45340580) <<endl;
+	cout << "ans "<< nextGreaterElement(987654321) <<endl;
+	cout << "ans "<< nextGreaterElement(2347903) <<endl;
 	cout << "ans "<< nextGreaterElement(12) <<endl;
 	cout << "ans "<< nextGreaterElement(21) <<endl;
 	cout << "ans "<< nextGreaterElement(101) <<endl;

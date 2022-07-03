@@ -27,11 +27,13 @@ int nextGreaterElement(int n) {
     char temp = str[replace];
     str[replace] = str[tail-1];
     str[tail -1 ] = temp;
+    
     sort(str.begin() + tail, str.end(), [](char a, char b){
         return a <= b;
     });
     //cout << str.size() <<endl;
     long long ans = stoll(str);
+    cout << "final " << ans <<endl;
     if(ans == n) return -1;
     return ans > INT32_MAX ? -1 : ans;
 }
