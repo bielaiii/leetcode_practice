@@ -11,7 +11,7 @@ vector<vector<int>> minimumAbsDifference(vector<int>& arr) {
     int mini = INT16_MAX;
     sort(arr.begin(), arr.end());
     
-    for(int i = 0; i < arr.size() - 1 ; i++){
+    for(int i = 0; i < arr.size() - + ; i++){
         
         if(abs(arr[i] - arr[i + 1]) < mini){
             ans.clear();
