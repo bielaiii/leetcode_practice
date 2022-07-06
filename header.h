@@ -149,4 +149,5 @@ int numPrimeArrangements(int n);
 int nextGreaterElement(int n);
 //vector<vector<int>> minimumAbsDifference;
 int evaluate(string expression);
+string replaceWords(vector<string>& dictionary, string sentence);
 #endif
