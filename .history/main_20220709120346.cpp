@@ -11,7 +11,11 @@ using namespace std;
 
 
 int main(void){
-	string st1 = "abcdefg";
-	cout << reverseLeftWords(st1, 2) <<endl;
+	vector<vector<int>> vec1{
+							{0,1,-1},
+							{1,0,-1},
+							{1,1,1}
+	};
+	cout << cherryPickup(vec1) <<endl;
 	return 0;
 }

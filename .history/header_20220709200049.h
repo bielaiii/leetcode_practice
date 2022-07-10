@@ -156,5 +156,4 @@ vector<int> searchRange(vector<int>& nums, int target);
 int lenLongestFibSubseq(vector<int>& arr) ;
 int cherryPickup(vector<vector<int>>& grid) ;
 string replaceSpace(string s);
-string reverseLeftWords(string s, int n);
 #endif

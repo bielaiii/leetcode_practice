@@ -11,7 +11,7 @@ using namespace std;
 
 
 int main(void){
-	string st1 = "abcdefg";
-	cout << reverseLeftWords(st1, 2) <<endl;
+	string s1 = "sda 231";
+	cout << replaceSpace(s1) <<endl;
 	return 0;
 }

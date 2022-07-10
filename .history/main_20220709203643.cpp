@@ -11,7 +11,6 @@ using namespace std;
 
 
 int main(void){
-	string st1 = "abcdefg";
-	cout << reverseLeftWords(st1, 2) <<endl;
+	
 	return 0;
 }
