@@ -12,9 +12,8 @@ using namespace std;
 
 
 int main(void){
-	vector<vector<int>> fruits1 {{0,2},{1,4},{2,1}};
-	vector<int> times {2,3,2};
-	cout << getMinimumTime(times, fruits1, 3) <<endl;
-	
+	vector<int> vec1 {5,7,7,8,8,10};
+	cout << search2(vec1, 8) << endl;
+	cout << search2(vec1, 6) << endl;
 	return 0;
 }

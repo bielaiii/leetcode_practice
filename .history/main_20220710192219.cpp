@@ -12,9 +12,9 @@ using namespace std;
 
 
 int main(void){
-	vector<vector<int>> fruits1 {{0,2},{1,4},{2,1}};
-	vector<int> times {2,3,2};
-	cout << getMinimumTime(times, fruits1, 3) <<endl;
-	
+	vector<int> vec1 {0,1,2,3,4,5,6,7,9};
+	vector<int> vec2 {0,1,3};
+	cout << missingNumber(vec1) << endl;;
+	cout << missingNumber(vec2) << endl;;
 	return 0;
 }

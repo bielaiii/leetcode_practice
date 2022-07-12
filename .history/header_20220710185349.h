@@ -161,18 +161,4 @@ int coinChange(vector<int>& coins, int amount) ;
 int maximum_subarray(vector<int> &nums);
 int lengthOfLIS(vector<int>& nums) ;
 int findRepeatNumber(std::vector<int> &nums);
-int getMinimumTime(vector<int>& time, vector<vector<int>>& fruits, int limit);
-int missingNumber(vector<int>& nums);
-int search2(vector<int>& nums, int target) ;
-int oddCells(int m, int n, vector<vector<int>>& indices);
-int minArray(vector<int> &nums);
-bool findNumberIn2DArray(vector<vector<int>>& matrix, int target);
-int minArray(vector<int> &nums);
-char firstUniqChar(string s) ;
-int perfectMenu(vector<int>& materials, vector<vector<int>>& cookbooks, vector<vector<int>>& attribute, int limit);
-int maximumBags(vector<int>& capacity, vector<int>& rocks, int additionalRocks);
-
-
-
-
 #endif

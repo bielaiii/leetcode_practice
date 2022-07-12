@@ -5,16 +5,14 @@
 #include <unordered_set>
 #include <unordered_map>
 #include <iomanip>
-//#include "magicDictionary.cpp"
+#include "magicDictionary.cpp"
 using namespace std;
 
 
 
 
 int main(void){
-	vector<vector<int>> fruits1 {{0,2},{1,4},{2,1}};
-	vector<int> times {2,3,2};
-	cout << getMinimumTime(times, fruits1, 3) <<endl;
-	
+	vector<int> vec1 {2,3,1,0,4,5};
+	findRepeatedDnaSequences(vec1);
 	return 0;
 }

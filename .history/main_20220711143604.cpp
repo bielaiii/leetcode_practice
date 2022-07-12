@@ -12,9 +12,9 @@ using namespace std;
 
 
 int main(void){
-	vector<vector<int>> fruits1 {{0,2},{1,4},{2,1}};
-	vector<int> times {2,3,2};
-	cout << getMinimumTime(times, fruits1, 3) <<endl;
-	
+	vector<int> vec1 {3,4,5,1,2};
+	vector<int> vec2 {2,2,2,0,1};
+	cout << minArray(vec1) <<endl;
+	cout << minArray(vec2) <<endl;
 	return 0;
 }

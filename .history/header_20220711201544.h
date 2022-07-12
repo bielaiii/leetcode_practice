@@ -170,9 +170,4 @@ bool findNumberIn2DArray(vector<vector<int>>& matrix, int target);
 int minArray(vector<int> &nums);
 char firstUniqChar(string s) ;
 int perfectMenu(vector<int>& materials, vector<vector<int>>& cookbooks, vector<vector<int>>& attribute, int limit);
-int maximumBags(vector<int>& capacity, vector<int>& rocks, int additionalRocks);
-
-
-
-
 #endif

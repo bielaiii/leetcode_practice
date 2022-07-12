@@ -12,9 +12,9 @@ using namespace std;
 
 
 int main(void){
-	vector<vector<int>> fruits1 {{0,2},{1,4},{2,1}};
-	vector<int> times {2,3,2};
-	cout << getMinimumTime(times, fruits1, 3) <<endl;
-	
+	vector<int> vec1 { 10,9,2,5,3,7,101,18};
+	vector<int> vec2 { 0,1,0,3,2,3};
+	cout << lengthOfLIS(vec1) << endl;
+	cout << lengthOfLIS(vec2) << endl;
 	return 0;
 }

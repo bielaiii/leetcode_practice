@@ -12,9 +12,10 @@ using namespace std;
 
 
 int main(void){
-	vector<vector<int>> fruits1 {{0,2},{1,4},{2,1}};
-	vector<int> times {2,3,2};
-	cout << getMinimumTime(times, fruits1, 3) <<endl;
-	
+	vector<vector<int>> vec1 {{0,1},{1,1}};
+	vector<vector<int>> vec2 {{1,1},{0,0}};
+	cout <<oddCells(2,3,vec1) << endl;
+	cout <<oddCells(2,2,vec2) << endl;
+	//cout << search2(vec1, 6) << endl;
 	return 0;
 }
