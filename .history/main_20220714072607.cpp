@@ -5,7 +5,6 @@
 #include <unordered_set>
 #include <unordered_map>
 #include <iomanip>
-#include"print_1d_array.cpp"
 //#include "magicDictionary.cpp"
 using namespace std;
 
@@ -13,9 +12,11 @@ using namespace std;
 
 
 int main(void){
-	vector<string> log1 {"dig1 8 1 5 1","let1 art can","dig2 3 6","let2 own kit dig","let3 art zero", "let5 art zero"};
-
-	print_1d_array( reorderLogFiles(log1) );
+	vector<vector<char>> grid1 = {{'1','1','1','1','0'},
+								{'1','1','0','1','0'},
+								{'1','1','0','0','0'},
+								{'0','0','0','0','0'}};
+	cout << numIslands(grid1) <<endl;
 	
 	return 0;
 }

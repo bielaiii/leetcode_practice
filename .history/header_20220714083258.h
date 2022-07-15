@@ -17,10 +17,8 @@ struct TreeNode {
 using namespace std;
 
 template<typename T>
-void print_1d_array(T toprint);
+void print_1d_array(T toprint)
 
-template<typename T>
-void print_2d_array(T toprint);
 
 vector<vector <int> > threeSum(vector<int> & nums);
 void hello();

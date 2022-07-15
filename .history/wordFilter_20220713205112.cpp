@@ -1,23 +1,16 @@
 #include<iostream>
 #include<vector>
-#include<vector>
+#include<set>
 #include<algorithm>
 using namespace std;
 
 
 class TrieNode{
     public:
-        vector<int> ids;
+        set<int> ids;
         bool isValid = 0;
-        TrieNode * next[26];;
-        TrieNode(){
-            isValid = 0;
-            ids = {};
-            for(int i = 0; i < 26; i++){
-                next[i] = nullptr;
-            }
-           // next = new TrieNode[26];
-        }
+        TrieNode * next[26] = {nullptr};
+        
 };
 
 class TrieTree{
@@ -30,16 +23,15 @@ class TrieTree{
         }
         void insert(string s, int id){
             TrieNode * cur = root;
-            cur->ids.push_back(id);
-            for(char c : s){
+            for(auto c : s){
                 if(cur->next[c - 'a'] == nullptr){
                     cur->next[c - 'a'] = new TrieNode();
                 }
                 cur = cur->next[c - 'a' ];
-                cur->ids.push_back(id);
+                cur->ids.emplace(id);
             }
         }
-        vector<int> search(string word){
+        set<int> search(string word){
             TrieNode * cur = root;
             for(auto c : word){
                 if(cur->next[c - 'a'] == nullptr){
@@ -56,13 +48,12 @@ class WordFilter {
         TrieTree * reverse_trie ;//= new TrieTree();
 public:
     WordFilter(vector<string>& words) {
-        inorder_trie = new TrieTree();
-        reverse_trie = new TrieTree();
+        TrieTree * inorder_trie = new TrieTree();
+        TrieTree * reverse_trie = new TrieTree();
         for(int i = 0; i < words.size(); i++){
-            string temp = words[i];
             inorder_trie->insert(words[i], i);
-            reverse(temp.begin(), temp.end());
-            reverse_trie->insert(temp, i);
+            reverse(words[i].begin(), words[i].end());
+            reverse_trie->insert(words[i], i);
         }
     }
     
@@ -70,22 +61,20 @@ public:
 
     int f(string pref, string suff) {
         reverse(suff.begin(), suff.end());
-        vector<int> inorder_vector = inorder_trie->search(pref) ;
-        vector<int> reverse_vector = reverse_trie->search(suff);
-        if(inorder_vector.size() == 0 || reverse_vector.size() == 0) return -1;
-        int i = inorder_vector.size() - 1;
-        int j = reverse_vector.size() - 1;
-        while(i >= 0 && j >= 0){
-            cout << i << endl;
-            if( inorder_vector[i] ==  reverse_vector[j]){
-                return inorder_vector[i];
-            }else if(inorder_vector[i] > reverse_vector[j]){
-                i --;
+        set<int> inorder_set = inorder_trie->search(pref) ;
+        set<int> reverse_set = reverse_trie->search(suff);
+        if(inorder_set.size() == 0 || reverse_set.size() == 0) return -1;
+        auto i = inorder_set.begin();
+        auto j = reverse_set.begin();
+        while(i != inorder_set.end() && j != reverse_set.end()){
+            if( *i == * j){
+                return *i;
+            }else if(*i > *j){
+                i ++;
             }else{
-                j --;
+                
             }
         }
-        return -1;
     }
 
 };

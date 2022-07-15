@@ -30,7 +30,6 @@ class TrieTree{
         }
         void insert(string s, int id){
             TrieNode * cur = root;
-            cur->ids.push_back(id);
             for(char c : s){
                 if(cur->next[c - 'a'] == nullptr){
                     cur->next[c - 'a'] = new TrieNode();

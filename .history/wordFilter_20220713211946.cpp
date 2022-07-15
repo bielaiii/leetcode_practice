@@ -9,14 +9,11 @@ class TrieNode{
     public:
         vector<int> ids;
         bool isValid = 0;
-        TrieNode * next[26];;
+        TrieNode * next;//[26] = {nullptr};
         TrieNode(){
             isValid = 0;
-            ids = {};
-            for(int i = 0; i < 26; i++){
-                next[i] = nullptr;
-            }
-           // next = new TrieNode[26];
+            ids.clear();
+            next = new TrieNode[26];
         }
 };
 
@@ -30,7 +27,6 @@ class TrieTree{
         }
         void insert(string s, int id){
             TrieNode * cur = root;
-            cur->ids.push_back(id);
             for(char c : s){
                 if(cur->next[c - 'a'] == nullptr){
                     cur->next[c - 'a'] = new TrieNode();
@@ -76,7 +72,6 @@ public:
         int i = inorder_vector.size() - 1;
         int j = reverse_vector.size() - 1;
         while(i >= 0 && j >= 0){
-            cout << i << endl;
             if( inorder_vector[i] ==  reverse_vector[j]){
                 return inorder_vector[i];
             }else if(inorder_vector[i] > reverse_vector[j]){
