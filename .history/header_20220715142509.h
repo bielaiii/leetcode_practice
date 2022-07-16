@@ -181,5 +181,4 @@ vector<int> asteroidCollision(vector<int>& asteroids);
 int numIslands(vector<vector<char>>& grid);;
 vector<string> reorderLogFiles(vector<string>& logs);
 vector<vector<int>> kClosest(vector<vector<int>>& points, int k);
-
 #endif
