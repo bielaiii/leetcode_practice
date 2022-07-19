@@ -14,7 +14,7 @@ using namespace std;
 
 int main(void){
 	vector<string> log1 {"dig1 8 1 5 1","let1 art can","dig2 3 6","let2 own kit dig","let3 art zero", "let5 art zero"};
-	
+
 	print_1d_array( reorderLogFiles(log1) );
 	
 	return 0;
