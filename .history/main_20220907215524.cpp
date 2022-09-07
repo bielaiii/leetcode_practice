@@ -16,9 +16,8 @@ using namespace std;
 
 
 int main(void){
-	
-	print_1d_array( constructArray(3,1));
-	print_1d_array( constructArray(3,2));
+	vector<int> vec {5,4,3,2,1};
+	findrea
 	
 	return 0;
 }

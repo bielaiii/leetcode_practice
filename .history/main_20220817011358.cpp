@@ -16,9 +16,11 @@ using namespace std;
 
 
 int main(void){
-	
-	print_1d_array( constructArray(3,1));
-	print_1d_array( constructArray(3,2));
+	vector<int> vec1 {2,7,11,15};
+	vector<int> vec2 {10, 26, 35};
+	QuickSort(vec1, 0, vec1.size() - 1);
+	print_1d_array(vec1);
+
 	
 	return 0;
 }

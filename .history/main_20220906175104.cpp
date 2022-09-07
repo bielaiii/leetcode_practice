@@ -16,9 +16,10 @@ using namespace std;
 
 
 int main(void){
-	
-	print_1d_array( constructArray(3,1));
-	print_1d_array( constructArray(3,2));
+	string str1 = "cbaebabacd";
+	string str2 = "abc";
+	vector<int> vec =  findAnagrams(str1, str2);
+	print_1d_array(vec);
 	
 	return 0;
 }

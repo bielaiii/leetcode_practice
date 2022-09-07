@@ -197,5 +197,4 @@ int wordCount(vector<string>& startWords, vector<string>& targetWords);
 bool isAnagram(string s, string t);
 vector<int> findAnagrams(string s, string p);
 vector<string> findRelativeRanks(vector<int>& score);
-vector<int> constructArray(int n, int k);
 #endif
