@@ -16,7 +16,9 @@ using namespace std;
 
 
 int main(void){
-	vector<vector<int > > vec1 {{0,0,2,2},{1,0,2,3},{1,0,3,1}};
-	cout << rectangleArea(vec1) <<endl;
+	vector<int> vec1 {1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3};
+	vector<int> vec2 {6,2,7,5,1,2,0,3,10,2,5,0,5,5,0,8,7,6,8,0};
+	cout << trimMean(vec1) <<endl;
+	cout << trimMean(vec2) <<endl;
 	return 0;
 }

@@ -209,5 +209,4 @@ int findPeakElement(vector<int>& nums);
 double trimMean(vector<int>& arr);
 int bulbSwitch(int n);
 int rectangleArea(vector<vector<int>>& rectangles);
-int maxLengthBetweenEqualCharacters(string s) ;
 #endif

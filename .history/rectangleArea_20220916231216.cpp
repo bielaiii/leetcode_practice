@@ -1,0 +1,122 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+bool checkCovered(const vector<vector<int> > & rectangles, int x, int y){
+      for(auto rec : rectangles){
+            if(rec[0] <= x && x < rec[2] && rec[1] <= y && y < rec[3]){
+                  return true;
+            }
+      }
+      return false;
+}
+
+
+int getMaxHeight(const vector<vector<int>>& rectangles, int x){
+      int h = 0;
+      for(auto vec : rectangles){
+            if(vec[0] <= x && x < vec[2] ){
+                  h = max(h, vec[3]);
+            }
+      }
+      return h;
+}
+
+/* 
+int rectangleArea(vector<vector<int>>& rectangles){
+      const long long mod = 1e9 + 7;
+      vector<int> vec ;
+      int ans = 0;
+      for(auto rec : rectangles){
+            vec.push_back(rec[0]);
+            vec.push_back(rec[2]);
+      }
+      sort(vec.begin(), vec.end());
+      for(int i = 1 ; i < vec.size(); i++){
+            int l = vec[i -1], r = vec[i ];
+            if(l == r) continue;
+            vector< pair<int , int> > pr;
+            int res = 0 ;
+            for(auto rec : rectangles){
+                  if(rec[0] <= l && vec[2] >= r) pr.push_back({rec[1], rec[3]});
+            }
+            sort(pr.begin(), pr.end());
+            int up = -1, down = -1;
+            long long len_ = 0;
+            for(pair<int, int> tmp : pr){
+                  if(tmp.first > up){
+                        len_ += up -down;
+                        down = tmp.first;
+                        up = tmp.second;
+                  }else if( tmp.second > up){
+                        up = tmp.second;
+                  }
+            }
+            len_ += up - down;
+            len_ *= (r - l);
+            len_ %= mod;
+            ans += len_;
+            ans %= mod;
+      }
+      return  ans;
+} */
+
+
+int rectangleArea(vector<vector<int>>& rectangles) {
+        vector<int> lines;
+        for(vector<int>&v:rectangles){
+            lines.emplace_back(v[0]);
+            lines.emplace_back(v[2]);
+        }
+        sort(lines.begin(),lines.end());
+        int res=0;
+        for(int i=1;i<lines.size();++i){
+            int l=lines[i-1], r=lines[i];
+            if(l==r) continue;
+            vector<pair<int,int>> edges;
+            for(vector<int>&v:rectangles){
+                if(v[0]<=l && v[2]>=r) edges.push_back({v[1],v[3]});
+            }
+            sort(edges.begin(),edges.end());
+            int up=-1,down=-1;
+            long long len = 0;
+            for(pair<int,int>&p:edges){
+                if(p.first>up){
+                    len+=up-down;
+                    down=p.first;
+                    up=p.second;
+                }
+                else if(p.second>up) up = p.second;
+            }
+            len+=up-down;
+            len*=r-l;
+            len%=(long long)1e9+7;
+            res+=len;
+            res%=(long long)1e9+7;
+        }
+        return res;
+    }
+
+
+/* int rectangleArea(vector<vector<int>>& rectangles) {
+      const int mod = (int) 1e9 + 7;
+      if(rectangles.size() == 1){
+            return ((rectangles[0][2] - rectangles[0][0]) % mod ) * ((rectangles[0][3] - rectangles[0][1]) % mod);
+      }
+      int min_x = INT16_MAX, max_x = INT16_MIN, min_y = INT16_MAX, max_y = INT16_MIN;
+      for(auto rec : rectangles){
+            if(rec[0] < min_x) min_x = rec[0];
+            if(rec[2] > max_x) max_x = rec[2];
+            if(rec[1] < min_y) min_y = rec[1];
+            if(rec[3] > max_y) max_y = rec[3];
+      }
+      int ans = 0 ; 
+      for(int x = min_x; x < max_x; x ++){
+            for(int y = min_y ; y < max_y; y ++){
+                  ans += checkCovered(rectangles, x, y);
+                  //cout << "ans "<< ans << " x : "<< x << " y : "<< y << endl;
+            }
+      }
+      
+      return ans % mod;
+} */

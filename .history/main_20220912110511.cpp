@@ -16,7 +16,13 @@ using namespace std;
 
 
 int main(void){
-	vector<vector<int > > vec1 {{0,0,2,2},{1,0,2,3},{1,0,3,1}};
-	cout << rectangleArea(vec1) <<endl;
+	vector<int> vec1 {4,5,0,1,2,3};
+	
+	//vector<int> vec2 {1,2,3,1};
+	//vector<int> vec3 {1,2,3,4};
+	cout << missingNumber2(vec1) <<endl;
+	cout << missingNumber2(vec2) <<endl;
+	cout << missingNumber2(vec3) <<endl;
+	cout << missingNumber2(vec4) <<endl;
 	return 0;
 }

@@ -16,7 +16,6 @@ using namespace std;
 
 
 int main(void){
-	vector<vector<int > > vec1 {{0,0,2,2},{1,0,2,3},{1,0,3,1}};
-	cout << rectangleArea(vec1) <<endl;
+	vector<int> 
 	return 0;
 }

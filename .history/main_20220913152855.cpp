@@ -16,7 +16,9 @@ using namespace std;
 
 
 int main(void){
-	vector<vector<int > > vec1 {{0,0,2,2},{1,0,2,3},{1,0,3,1}};
-	cout << rectangleArea(vec1) <<endl;
+	vector<int> vec1{1,2,3,1};
+	vector<int> vec2{1,2,1,3,5,6,4};
+	cout << findPeakElement(vec1) <<endl;
+	cout << findPeakElement(vec2) <<endl;
 	return 0;
 }

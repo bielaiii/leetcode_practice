@@ -16,7 +16,9 @@ using namespace std;
 
 
 int main(void){
-	vector<vector<int > > vec1 {{0,0,2,2},{1,0,2,3},{1,0,3,1}};
-	cout << rectangleArea(vec1) <<endl;
+	vector<int> vec1 { 3,5};
+	vector<int> vec2 { 0, 0, 0};
+	vector<int> vec1 { 3,5};
+	cout << specialArray(vec1) <<endl;
 	return 0;
 }

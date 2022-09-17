@@ -16,7 +16,10 @@ using namespace std;
 
 
 int main(void){
-	vector<vector<int > > vec1 {{0,0,2,2},{1,0,2,3},{1,0,3,1}};
-	cout << rectangleArea(vec1) <<endl;
+	vector<string> vec1 = {"d1/","d2/","../","d21/","./"};
+	cout << minOperations(vec1) <<endl;
+	//print_1d_array( constructArray(3,1));
+	//print_1d_array( constructArray(3,2));
+	
 	return 0;
 }

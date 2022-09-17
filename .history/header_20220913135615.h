@@ -205,9 +205,4 @@ bool searchMatrix(vector<vector<int>>& matrix, int target);
 bool search3(vector<int>& nums, int target);
 int specialArray(vector<int>& nums);
 int maximumSwap(int num);
-int findPeakElement(vector<int>& nums);
-double trimMean(vector<int>& arr);
-int bulbSwitch(int n);
-int rectangleArea(vector<vector<int>>& rectangles);
-int maxLengthBetweenEqualCharacters(string s) ;
 #endif
