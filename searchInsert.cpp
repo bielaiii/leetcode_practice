@@ -4,16 +4,16 @@
 using namespace std;
 
 int searchInsert(vector<int>& nums, int target) {
-    int left = 0, right = nums.size() - 1;
-    while(left <= right){
-        int idx = ( left + right) / 2;
-        if(nums[idx] == target){
-            return idx;
-        }else if(nums[idx] < target){
-            left = idx + 1;
+    int l = 0, r = nums.size() - 1;
+    while(l <= r){
+        int mid = l + (r - l) / 2;
+        if(nums[mid] < target){
+            l = mid + 1;
+        }else if(nums[mid] > target){
+            r = mid - 1;
         }else{
-            right = idx - 1;
+            return mid;
         }
     }
-    return ( left + right ) / 2;
+    return r + 1;
 }
