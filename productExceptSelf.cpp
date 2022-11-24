@@ -13,8 +13,8 @@ vector<int> productExceptSelf(vector<int>& nums) {
       }
       vector<int> vt (nums.size(), 0);
       for(int i = 0; i < nums.size(); i++){
-            int temp1 = i - 1 >= 0? inorder[i] : 1;
-            int temp2 = nums.size() - i  >= 0? reorder[reorder.size() - i] : 1;
+            int temp1 = i - 1 >= 0? inorder[i-1] : 1;
+            int temp2 = i + 1 < nums.size()? reorder[i+1] : 1;
             vt[i] = temp1 * temp2;
       }
       return vt;

@@ -237,4 +237,17 @@ bool exist(vector<vector<char>>& board, string word);
 int numTilings(int n);
 int minSubArrayLen(int target, vector<int>&nums );
 vector<int> productExceptSelf(vector<int>& nums);
+bool checkSubarraySum(vector<int>& nums, int k);
+double largestSumOfAverages(vector<int>& nums, int k);
+int findLength(vector<int>& nums1, vector<int>& nums2) ;
+int sumSubseqWidths(vector<int>& nums);
+double champagneTower(int poured, int query_row, int query_glass);
+double soupServings(int n);
+bool PredictTheWinner(vector<int>& nums);
+int nthMagicalNumber(int n, int a, int b);
+int countBalls(int lowLimit, int highLimit);
+int hIndex(vector<int>& citations);
+int arrangeCoins(int n);
+int numSubarrayBoundedMax(vector<int>& nums, int left, int right);
+//void template_checker(vector<T> answer, vector<T> input);
 #endif
