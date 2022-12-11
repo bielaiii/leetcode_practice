@@ -2,39 +2,36 @@
 #include<vector>
 using namespace std;
 
-const int arr[4][2] = {{0,-1},{0,1},{1,0},{-1, 0}};
 
-void bfs_numIslands(vector<vector<char>> & grid, int r, int c){
-    if(r < 0 || r >= grid.size()){
-        return ;
-    }else if(c < 0 ||  c >= grid[0].size()){
-        return ;
-    }
+const int dir[4][2] = {{-1,0},{1,0},{0,-1},{0,1}};
+
+void bfs(vector<vector<char>> & vt, int r, int c){
+    if(vt[r][c] != '1' ) return ;
     
-    if(grid[r][c] == '1'){
-        grid[r][c] = '2';
-        for(int i = 0; i < 4; i++){
-            bfs_numIslands(grid, r+arr[i][0], c+ arr[i][1]);
-        }
-       // bfs_numIslands(grid, r +1 , c  );
-       // bfs_numIslands(grid, r  , c - 1 );
-       // bfs_numIslands(grid, r  , c + 1 );
-       // bfs_numIslands(grid, r -1 , c  );
-    }
-
+            if(vt[r][c] == '1'){
+                for(int i = 0 ; i < 4; i++){
+                    vt[r][c] = '2';
+                    int temp_r = r + dir[i][0];
+                    int temp_c = c + dir[i][1];
+                    if(temp_c < 0 || temp_c >= vt[0].size() || temp_r < 0 || temp_r >= vt.size() ){
+                        continue;
+                    }
+                    bfs(vt, temp_r, temp_c);
+                }
+            }
+            
 }
 
+
 int numIslands(vector<vector<char>>& grid) {
-    int count = 0;
-    for(int i = 0; i < grid.size(); i++){
-        for(int j = 0; j < grid[0].size(); j++){
-            if(grid[i][j] == '1' ){
-               // visited[i][j] = 1;
-                bfs_numIslands(grid, i, j);
-                
-                count ++;
+    int ct = 0 ;
+    for(int r = 0 ; r < grid.size(); r++){
+        for(int c= 0 ; c < grid[0].size(); c++){
+            if(grid[r][c] == '1'){
+                bfs(grid, r, c);
+                ct ++;
             }
         }
     }
-    return count;
+    return ct;
 }

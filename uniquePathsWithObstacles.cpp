@@ -2,39 +2,32 @@
 #include<vector>
 using namespace std;
 template<typename T>
-void printer2(T toprint){
-    for(int e = 0;e < toprint.size(); e++){
-        for(int d =0; d < toprint[e].size(); d++){
-            cout << toprint[e][d] << " ";
-        }
-        cout << endl;
-    }
-    
-        cout << endl;
-}
+
+
 
 int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
-    if(obstacleGrid[obstacleGrid.size()-1][obstacleGrid[0].size()-1] || obstacleGrid[0][0]) return 0;
-    vector<vector<int>> paths (int(obstacleGrid.size()+1),vector<int>(obstacleGrid[0].size()+1, 0));
-    paths[1][1] = 1;
-    for(int c = 0; c < obstacleGrid.size(); c++){
-        for(int r = 0; r < obstacleGrid[0].size(); r++){
-            if(obstacleGrid[c][r]) continue;
-            if(c == 0){
-                
-                if(paths[c+1][r]) paths[c+1][r+1] = 1;
-            }else if(r == 0){
-                if(paths[c][r+1])paths[c+1][r+1] = 1;
-            }
-            else{
-                int m = obstacleGrid[c-1][r]? 0 : paths[c-1+1][r+1];
-                int n = obstacleGrid[c][r-1]? 0 : paths[c+1][r-1+1];
-                if(!obstacleGrid[c][r]){
-                    paths[c+1][r+1] = m + n;
-                }
-            } 
+    const int dir[2][2] = {{0,1},{1,0}};
+    int r_sz = obstacleGrid.size(), c_sz = obstacleGrid[0].size();
+    vector<vector<int>> dp(r_sz, vector<int>(c_sz, 0));
+    for(int i = 0; i < r_sz; i++){
+        if(obstacleGrid[i][0] ) break;
+        dp[i][0] = 1;
+    }
+    for(int i = 0; i < c_sz; i++){
+        if(obstacleGrid[0][i] ) break;
+        dp[0][i] = 1;
+    } 
+    for(int r = 1 ; r < r_sz; r++){
+        for(int c = 1; c < c_sz; c++){
+            if(obstacleGrid[r][c] ) continue;
+            dp[r][c] = dp[r-1][c] + dp[r][c-1];
         }
     }
-    printer2(paths);
-    return paths[obstacleGrid.size()][obstacleGrid[0].size()];
+    for(auto rr : dp){
+        for(auto cc : rr){
+            cout << cc <<" ";
+        }
+        cout << endl;
+    }
+    return dp[r_sz - 1][c_sz - 1];
 }

@@ -13,27 +13,42 @@
 #include"KthLargest.cpp"
 #include"Twitter.cpp"
 #include"template_checker.cpp"
+#include "quicksort.cpp"
 //#include "magicDictionary.cpp"
 using namespace std;
 
-
+/* vector<string> spliter(string s){
+      s += ' ';
+      vector<string> ans;
+      string temp = "";
+      
+      for(int i = 0; i < s.size();){
+            int j = i;
+            while(j < s.size() && s[j] != ' ' && s[j] != '(' && s[j] != ')') j++;
+            ans.emplace_back(s.substr(i, j - i ));
+            i = j+1;
+      }
+      return ans;
+} */
 
 
 int main(void){
-	vector<int> vt1 {2,1,4,3};
-	vector<int> vt2 {2,9,2,5,6};
-	vector<int> vt3 {73,55,36,5,55,14,9,7,72,52};
-	int ans1 = numSubarrayBoundedMax(vt1, 2, 3);
-	int ans2 = numSubarrayBoundedMax(vt2, 2, 8);
-	int ans3 = numSubarrayBoundedMax(vt3, 2, 8);
-	//int ans3 = numSubarrayBoundedMax(vt1, 2, 8));
-	//int ans4 = numSubarrayBoundedMax(vt1, 2, 8));
-	vector<int> answer = {3,7,22};
-	vector<int> input = {ans1, ans2, ans3};
-	template_checker(answer, input);
-	//cout << "ans "<< " with " << ans1 <<" but "<<(ans1 == 3) <<endl;
-	//cout << "ans "<< " with " << ans2 <<" but "<<(ans2 == 2) <<endl;
-	//cout << "ans "<< " with " << ans2 <<" but "<<(ans3 == 0) <<endl;
-	
-	return 0;
+    
+    string s1 = "e + 8 - a + 5";
+    string s2 = "e - 8 + temperature - pressure";
+    string s3 = "(e + 8) * (e - 8)";
+    
+    vector<string> evalvars1 {"e"};
+    vector<string> evalvars2 {"e", "temperature"};
+    vector<string> evalvars3 {"e", "temperature"};
+
+    vector<int> evalints1 {1};
+    vector<int> evalints2 {1,12};
+    vector<int> evalints3 {1,12};
+
+    print_1d_array(basicCalculatorIV(s1, evalvars1, evalints1));
+    print_1d_array(basicCalculatorIV(s2, evalvars2, evalints2));
+    print_1d_array(basicCalculatorIV(s3, evalvars3, evalints3));
+    
+    return 0;
 }

@@ -3,7 +3,7 @@
 #include<stack>
 using namespace std;
 
-vector<int> nextGreaterElements(vector<int>& nums) {
+vector<int> nextGreaterElements4(vector<int>& nums) {
       vector<int> vec(nums.size(), 0);
       stack<int> st;
       for(int i = 0; i < nums.size(); i++){

@@ -12,25 +12,27 @@ using namespace std;
      TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  };
 
-void bfs_pathSum(TreeNode * root, int const target,int sum, vector<int> temp, vector< vector<int> > & all){
-      if(! root) return;
-      sum += root->val;
-      temp.push_back(root->val);
-      if(! root->left && ! root->right){
-            if(sum == target){
-                  all.push_back(temp);
+void dfs_pathSum(TreeNode * root, const int & targetSum, int temp_sum,vector<vector<int>> & allpath, vector<int> cur_path){
+      if(root == nullptr) return ;
+
+      cur_path.push_back(root->val);
+      temp_sum += root->val;
+
+      if(root->left == nullptr && root->right == nullptr){
+            if(temp_sum == targetSum){
+                  allpath.push_back(cur_path);
             }
-            return ;
+            return;
       }
-      bfs_pathSum(root->left , target, sum, temp, all );
-      bfs_pathSum(root->right, target, sum, temp, all );
+      dfs_pathSum(root->left, targetSum, temp_sum , allpath, cur_path);
+      dfs_pathSum(root->right, targetSum, temp_sum , allpath, cur_path);
 }
 
 
 vector<vector<int>> pathSum(TreeNode* root, int targetSum) {
-      vector< vector<int> > all;
-      vector<int> temp;
+      vector<vector<int>> alls;
+      vector<int> path;
       int sum = 0 ;
-      bfs_pathSum(root, targetSum, sum, temp, all);
-      return all;
+      dfs_pathSum(root, targetSum, sum, alls, path);
+      return alls;
 }

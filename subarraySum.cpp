@@ -4,16 +4,19 @@
 using namespace std;
 
 int subarraySum(vector<int>& nums, int k) {
-      unordered_map<int, int> mp;
-      int count = 0;
-      mp[0] = 1;
-      int cul = 0;
-      for(auto i : nums){
-            cul += i;
-            if(mp.count(cul - k)){
-                  count += mp[cul - k];
-            }
-            mp[cul] ++;
+      if(nums.size() == 0) return 0;
+      int ct = 0 ;
+      vector<int> ssum(nums.size(), 0);
+      ssum[0] = nums[0];
+      ct += nums[0] == k ? 1 : 0;
+      for(int i = 1 ; i < nums.size(); i++){
+            ssum[i] = ssum[i-1] + nums[i];
       }
-      return count;
+      for(int i = 1; i < nums.size(); i++){
+            if(ssum[i] == k) ct ++;
+            for(int j = i + 1; j < nums.size(); j++){
+                  
+            }
+      }
+      return ct;
 }

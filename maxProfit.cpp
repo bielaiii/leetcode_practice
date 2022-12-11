@@ -3,11 +3,14 @@
 using namespace std;
 
 int maxProfit(vector<int> &nums){
-    int buy = nums[0];
+    if(nums.size() <= 1) return 0;
     int profit = 0;
-    for(int i = 1; i < nums.size(); i++){
-        buy = min(buy, nums[i]);
-        profit = max(profit, nums[i] - buy);
+    int minbuy = INT32_MAX;
+    int maxsell = 0;
+    for(int i = 0 ; i < nums.size(); i++){
+       profit = max(profit, nums[i] - minbuy);
+       minbuy = min(minbuy, nums[i]);
+        
     }
     return profit;
 }

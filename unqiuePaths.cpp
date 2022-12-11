@@ -4,18 +4,19 @@ using namespace std;
 
 
 
-
 int uniquePaths(int m, int n) {
-    vector<vector<int>> paths (m, vector<int>(n, 0));
-    for(int mm = 0; mm < m; mm ++){
-        for(int  nn = 0; nn < n; nn++){
-            if(mm == 0 || nn == 0){
-                paths[mm][nn] = 1;
-            }else{
-                paths[mm][nn] = paths[mm-1][nn] + paths[mm][nn-1];
+        int r = 0, c = 0;
+        vector<vector<int>> dp(m, vector<int>(n  ,0));
+        for(int i =0; i < m; i++){
+            dp[i][0] = 1;
+        }
+        for(int i = 0; i < n; i++){
+            dp[0][i] = 1;
+        }
+        for(r = 1; r < m; r++){
+            for(c = 1; c < n; c++){
+                dp[r][c] = dp[r-1][c] + dp[r][c-1] ;
             }
         }
-    }
-   // printer2(paths);
-    return paths[m-1][n-1];
+        return dp.back().back();
 }

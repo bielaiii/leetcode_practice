@@ -1,16 +1,11 @@
 #include <iostream>
 #include <vector>
 #include "header.h"
+//#include"print_1d_array.cpp"
 using namespace std;
 
 
-void swap(vector<int> &vec, int low, int high){
-    int temp = vec[low];
-    vec[low] = vec[high];
-    vec[high] = temp;
-}
-
-int partition(vector<int> &vec, int low, int high){
+/* int partition_r(vector<int> &vec, int low, int high){
     int base = vec[low];
     int i = low, j = high;
     while( i  < j){
@@ -18,21 +13,25 @@ int partition(vector<int> &vec, int low, int high){
         vec[i] = vec[j];
         while(i < j && vec[i] <= base) i++;
         vec[j] = vec[i];
-        
        // swap(vec, i, j);
     }
+    
     vec[i] = base;
+    for(auto it : vec){
+        cout << it <<" ";
+    }
+    cout << endl;
     return i ;
 }
 
 
-void QuickSort(vector<int>& vec, int low, int high){
+void QuickSort_r(vector<int>& vec, int low, int high){
     if(low < high){
-        int pivot = partition(vec, low, high);
-        QuickSort(vec, low, pivot - 1);
-        QuickSort(vec, pivot + 1, high);
+        int pivot = partition_r(vec, low, high);
+        QuickSort_r(vec, low, pivot - 1);
+        QuickSort_r(vec, pivot + 1, high);
     }
-}
+} */
 
 /* void QuickSort(vector<int>& vec, int low, int high){
     if(low >= high) return;

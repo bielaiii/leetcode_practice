@@ -3,22 +3,18 @@
 using namespace std;
 
 int jump(vector<int>& nums){
-    vector<int> step (nums.size(), 0);
-    int count = 1;
-    step[0] =0;
-    int i = 0;
-    while(i < nums.size()){
-        for(int t = 1; t <= nums[i]; t++){
-            if(i +  t  >= nums.size()) break;
-            step[i + t ] = count;
+    int n = nums.size();
+    if(n <= 1) return 0;
+    int maxpos = nums[0];
+    int maxstep = nums[0];
+    int minjump = 1;
+    for(int i = 1; i < n; i ++){
+        if(maxstep < i){
+            minjump ++;
+            maxstep = maxpos;
         }
-        i += nums[i] + 1;
-        cout << "i: " << i << endl;
-        count ++;
+        maxpos = max(maxpos, i + nums[i]);
+        //cout << maxstep << " " << maxpos << endl;
     }
-    for(int i = 0; i < step.size(); i++){
-        cout << step[i] << " ";
-    }
-    cout << endl;
-    return step[step.size()-1];
+    return minjump;
 }
