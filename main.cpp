@@ -1,4 +1,4 @@
-#include "header.h"
+/* #include "header.h"
 #include <iostream>
 #include <vector>
 #include<string>
@@ -13,9 +13,12 @@
 #include"KthLargest.cpp"
 #include"Twitter.cpp"
 #include"template_checker.cpp"
-#include "quicksort.cpp"
+#include "quicksort.cpp" */
+#include <cassert>
+#include <format>
+#include<iostream>
 //#include "magicDictionary.cpp"
-using namespace std;
+//using namespace std;
 
 /* vector<string> spliter(string s){
       s += ' ';
@@ -33,22 +36,8 @@ using namespace std;
 
 
 int main(void){
-    
-    string s1 = "e + 8 - a + 5";
-    string s2 = "e - 8 + temperature - pressure";
-    string s3 = "(e + 8) * (e - 8)";
-    
-    vector<string> evalvars1 {"e"};
-    vector<string> evalvars2 {"e", "temperature"};
-    vector<string> evalvars3 {"e", "temperature"};
+      std::string message = std::format("The answer is {}.", 42);
+    assert( message == "The answer is 42." );
 
-    vector<int> evalints1 {1};
-    vector<int> evalints2 {1,12};
-    vector<int> evalints3 {1,12};
-
-    print_1d_array(basicCalculatorIV(s1, evalvars1, evalints1));
-    print_1d_array(basicCalculatorIV(s2, evalvars2, evalints2));
-    print_1d_array(basicCalculatorIV(s3, evalvars3, evalints3));
-    
     return 0;
 }

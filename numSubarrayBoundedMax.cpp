@@ -10,7 +10,10 @@ int numSubarrayBoundedMax(vector<int>& nums, int left, int right) {
       for(int i = 0; i < nums.size(); i++){
             if(nums[i] > right) start = i + 1;
             if(nums[i] >= left) p = i;
+            
             sum += p - start + 1; 
+            cout << "sum "<< sum <<endl;
+            cout << "p val " << p <<endl;
       }
       return sum;
 }

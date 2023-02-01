@@ -18,6 +18,7 @@ void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
             }else{
                   vec_.push_back(nums2[j]);
                   j++;
+                  
             }
       }
       nums1.swap(vec_);
