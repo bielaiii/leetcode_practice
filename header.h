@@ -4,7 +4,9 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-/*
+
+
+using namespace std;
 struct TreeNode {
      int val;
       TreeNode *left;
@@ -13,8 +15,6 @@ struct TreeNode {
       TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
       TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
-*/
-using namespace std;
 
 template<typename T>
 void print_1d_array(T toprint);
@@ -28,15 +28,11 @@ vector<string> letterCombinations(string );
 int reverse(int);
 int search(vector<int>&, int);
 int firstBadVersion(int);
-
 int searchInsert(vector<int>&, int);
-
 vector<int> sortedSquares(vector<int>& );
-
 void rotate(vector<int> &, int);
 void moveZeroes(vector<int> &);
 vector<int> twoSum(vector<int> &, int);
-
 void reverseString(vector<char>&);
 string reverseWords(string);
 int lengthOfLongestSubstring(string s);
