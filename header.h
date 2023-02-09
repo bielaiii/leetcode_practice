@@ -267,4 +267,10 @@ int minimumLengthEncoding(vector<string>& words);
 int numDistinct(string s, string t);
 int calculate(string s);
 vector<string> basicCalculatorIV(string expression, vector<string>& evalvars, vector<int>& evalints);
+int getMaximumConsecutive(vector<int>& coins);
+bool canMeasureWater(int jug1Capacity, int jug2Capacity, int targetCapacity);
+vector<string> alertNames(vector<string>& keyName, vector<string>& keyTime);
+//vector<string> alertNames(vector<string>& keyName, vector<string>& keyTime);
+int tallestBillboard(vector<int>& rods);
+void gameOfLife(vector<vector<int>>& board);
 #endif
