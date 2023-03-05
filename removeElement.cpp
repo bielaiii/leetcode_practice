@@ -3,10 +3,5 @@
 using namespace std;
 
 int removeElement(vector<int>& nums, int val) {
-    int fast  = 0,slow = 0;
-    while(slow < nums.size()){
-        if(nums[slow] != val){
-            
-        }
-    }
+    return 0;
 }

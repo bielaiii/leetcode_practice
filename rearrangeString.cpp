@@ -5,24 +5,31 @@
 using namespace std;
 
 string rearrangeString(string s, int k) {
-        unordered_map<char, int> cnt;
-        for (char c : s) ++cnt[c];
-        priority_queue<pair<int, char>> pq;
-        for (auto& [c, v] : cnt) pq.push({v, c});
-        queue<pair<int, char>> q;
-        string ans;
-        while (!pq.empty()) {
-            auto [v, c] = pq.top();
+      unordered_map<char, int> ct;
+      for (auto c: s) {
+            ct[c]++;
+      }
+      priority_queue<pair<int, char>> pq;
+      for(auto it : ct){
+            pq.push({it.second, it.first});
+      }
+      string str ="";
+      queue<pair<int, char>> q;
+      while (pq.size()) {
+            pair<int, char> temp = pq.top();
             pq.pop();
-            ans += c;
-            q.push({v - 1, c});
-            if (q.size() >= k) {
-                auto p = q.front();
-                q.pop();
-                if (p.first) {
-                    pq.push(p);
-                }
+            str += temp.second;
+            temp.first--;
+            q.push(temp);
+            if(q.size() >= k){
+                  while (q.size()) {
+                        pair<int, char> fronq = q.front();
+                        q.pop();
+                        if(fronq.first) {
+                              pq.push(fronq);
+                        }
+                  }
             }
-        }
-        return ans.size() == s.size() ? ans : "";
+      }
+      return str.size() == s.size() ? str : "";
 }

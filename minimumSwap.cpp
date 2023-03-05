@@ -2,15 +2,14 @@
 #include<vector>
 using namespace std;
 
-/* int minimumSwap(string s1, string s2) {
+int minimumSwap(string s1, string s2) {
       int ct = 0;
       int swap1 = 0, swap2 = 0;
-      if(s1.si)
-      for(int i = 0, j = 0; i < s1.size() && j < s2.size(); i++, j++){
+      for(int i = 0, j = 0; i < s1.size() && j < s2.size(); i++, j++) {
             
       }
       return ct;
-} */
+}
 
 /* 
 xxy xyy xyx

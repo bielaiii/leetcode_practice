@@ -4,8 +4,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
-
 using namespace std;
 struct TreeNode {
      int val;
@@ -14,6 +12,12 @@ struct TreeNode {
       TreeNode() : val(0), left(nullptr), right(nullptr) {}
       TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
       TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
 };
 
 template<typename T>
@@ -273,4 +277,20 @@ vector<string> alertNames(vector<string>& keyName, vector<string>& keyTime);
 //vector<string> alertNames(vector<string>& keyName, vector<string>& keyTime);
 int tallestBillboard(vector<int>& rods);
 void gameOfLife(vector<vector<int>>& board);
+string rearrangeString(string s, int k);
+int minSumOfLengths(vector<int>& arr, int target);
+vector<string> generateParenthesis(int n);
+string largestNumber(vector<int>& nums);
+int fillCups(vector<int>& amount);
+string alphabetBoardPath(string target);
+int balancedString(string s);
+bool isGoodArray(vector<int>& nums);
+vector<int> numberOfPairs(vector<int>& nums);
+string bestHand(vector<int>& ranks, vector<char>& suits);
+vector<int> circularPermutation(int n, int start);
+int largest1BorderedSquare(vector<vector<int>>& grid);
+int movesToMakeZigzag(vector<int>& nums);
+vector<vector<int>> mergeSimilarItems(vector<vector<int>>& items1, vector<vector<int>>& items2);
+vector<vector<int>> largestLocal(vector<vector<int>>& grid);
+string printBin(double num);
 #endif

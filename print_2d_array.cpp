@@ -1,18 +1,12 @@
-#include<iostream>
-using namespace std;
+#include"header.h"
 
 template<typename T>
-void print_2d_array(T toprint){
-    cout << "--------------------" <<endl;
-    for(int e = 0;e < toprint.size(); e++){
-        for(int d =0; d < toprint[e].size(); d++){
-            if(d < toprint[e].size() - 1)
-                cout << toprint[e][d] << " -> ";
-            else
-                cout << toprint[e][d] ;
+void print_2d_array(T toprint)
+{
+    for (auto it : toprint) {
+        for (auto item : it) {
+            cout << item <<" -> ";
         }
         cout << endl;
     }
-    cout << "--------------------" <<endl;
-    
 }

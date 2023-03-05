@@ -3,5 +3,5 @@
 using namespace std;
 
 vector<string> permutation(string s){
-      
+      return {};
 }

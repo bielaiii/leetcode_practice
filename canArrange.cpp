@@ -12,13 +12,12 @@ bool canArrange(vector<int>& arr, int k) {
     for(int i = 0; i < arr.size(); i++){
         int temp = ((arr[i]%k)+k)%k;
         myarr[temp]++;
-       
     }
     int end = k-1;
     int half = end;
     int i = 1;
     while(i < end){
-        if((myarr[i] == myarr[end])){
+        if(myarr[i] == myarr[end]){
             end --;
             i++;
         }else{

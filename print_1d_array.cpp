@@ -1,5 +1,7 @@
-#include <iostream>
-using namespace std;
+//#include <iostream>
+//using namespace std;
+#include"header.h"
+
 
 template<typename T>
 void print_1d_array(T toprint){

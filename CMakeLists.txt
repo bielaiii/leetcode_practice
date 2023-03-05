@@ -7,7 +7,7 @@ project(demo)
 # 设置
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD 17)
-
+set(CMAKE_CXX_FLAGS -o3)
 #SET(CMAKE_BUILE_TYPE DEBUG)                      #指定编译类型
 #SET(CMAKE_CXX_FLAGS_DEBUG "-g -Wall")          #指定编译器 
 aux_source_directory(. SRC_LIST)
