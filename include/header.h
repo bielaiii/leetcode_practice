@@ -21,10 +21,10 @@ struct ListNode {
 };
 
 template<typename T>
-void print_1d_array(T toprint);
+extern void print_1d_array(T toprint);
 
 template<typename T>
-void print_2d_array(T toprint);
+extern void print_2d_array(T toprint);
 
 vector<vector <int> > threeSum(vector<int> & nums);
 void hello();
@@ -293,4 +293,7 @@ int movesToMakeZigzag(vector<int>& nums);
 vector<vector<int>> mergeSimilarItems(vector<vector<int>>& items1, vector<vector<int>>& items2);
 vector<vector<int>> largestLocal(vector<vector<int>>& grid);
 string printBin(double num);
+int minimumDeletions(string s);
+vector<string> braceExpansionII(string expression);
+int maxValue(vector<vector<int>>& grid);
 #endif

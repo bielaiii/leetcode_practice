@@ -20,7 +20,18 @@
       "miDebuggerPath": "C:\\MinGw\\bin\\gdb.exe"
     },
     "configurations": [
-    
+        {
+            "name": "(lldb) launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/build/main",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        }
     ],
     
   }

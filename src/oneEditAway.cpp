@@ -6,7 +6,7 @@ using namespace std;
 
 
 bool checkString(string first, string second){
-
+    return 0;
 }
 
 bool oneEditAway(string first, string second) {

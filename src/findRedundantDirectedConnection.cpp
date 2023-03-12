@@ -10,5 +10,5 @@ vector<int> findRedundantDirectedConnection(vector<vector<int>>& edges) {
             outdegree[edge[0]] ++;
             indegree[edge[1]] ++;
       }
-      
+    return {};
 }

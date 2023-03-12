@@ -7,4 +7,5 @@ vector<vector<int>> merge_interval(vector<vector<int>>& intervals) {
     for(int i = 0; i < intervals.size(); i++){
         
     }
+    return {};
 }

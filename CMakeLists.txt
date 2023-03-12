@@ -2,14 +2,29 @@
 cmake_minimum_required(VERSION 3.13)
 
 # 工程名称
-project(demo)
-
-# 设置
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+project(main)
+include_directories(include)
+aux_source_directory(src src_files)
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_FLAGS -o3)
-#SET(CMAKE_BUILE_TYPE DEBUG)                      #指定编译类型
-#SET(CMAKE_CXX_FLAGS_DEBUG "-g -Wall")          #指定编译器 
-aux_source_directory(. SRC_LIST)
-# 编译源码生成目标
-add_executable(demo ${SRC_LIST})
+set(CMAKE_CXX_STANDARD_REQUIRED on)
+add_executable(main ${src_files})
+
+message("build project success")
+
+#enable_testing()
+add_subdirectory(googletest)
+include_directories(googletest/googletest/include)
+set(GTEST_LIB gtest gtest_main)
+#add_executable(test_addBinary test/test.cpp)
+target_link_libraries(main gtest gtest_main)
+#add_executable(gtest test/test.cpp)
+
+
+
+
+
+
+
+
+
+

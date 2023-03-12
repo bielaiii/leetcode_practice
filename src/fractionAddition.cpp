@@ -14,7 +14,7 @@ string fractionAddition(string expression) {
       while (is >> num1 >> oper >> num2) {
             nume = nume * num2 + num1 * deno;
             deno *= num2;
-            int gcdnum = gcd(nume, deno);
+            int gcdnum = gcd(num1, num2);
             nume /= gcdnum;
             deno /= gcdnum;
       }

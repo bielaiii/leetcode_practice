@@ -24,7 +24,7 @@ public:
 
 Node * rec_connect2(Node * root){
       if(! root) return nullptr;
-
+        return nullptr;
 }
 
 Node* connect2(Node* root) {
