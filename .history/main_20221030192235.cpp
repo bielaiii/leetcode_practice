@@ -8,7 +8,7 @@
 #include <unordered_map>
 #include <iomanip>
 #include<queue>
-#include"print_1d_array.cpp"
+
 #include"KthLargest.cpp"
 #include"Twitter.cpp"
 //#include "magicDictionary.cpp"

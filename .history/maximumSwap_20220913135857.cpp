@@ -1,6 +1,6 @@
 #include<iostream>
 #include<vector>
-#include"print_1d_array.cpp"
+
 using namespace std;
 
 int maximumSwap(int num) {

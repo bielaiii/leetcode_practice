@@ -1,6 +1,6 @@
 #include<iostream>
 #include<vector>
-#include"print_1d_array.cpp"
+
 using namespace std;
 
 int rec_PredictTheWinner(const vector<int> &nums, int l, int r, int turn ){

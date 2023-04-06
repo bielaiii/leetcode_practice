@@ -1,6 +1,5 @@
 #include<iostream>
 #include<vector>
-#include"print_1d_array.cpp"
 using namespace std;
 
 void merge(vector<int> &nums, int p, int q, int r){

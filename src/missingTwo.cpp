@@ -1,6 +1,6 @@
 #include<iostream>
 #include<vector>
-#include"print_1d_array.cpp"
+
 using namespace std;
 
 vector<int> missingTwo(vector<int>& nums){
@@ -12,7 +12,7 @@ vector<int> missingTwo(vector<int>& nums){
                   nums[nums[i] - 1] = nums[i];
                   nums[i] = temp;
             }
-            print_1d_array(nums);
+            
       }
       vector<int> ans;
       for(int n = 0; n < nums.size(); n++){

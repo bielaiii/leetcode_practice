@@ -2,7 +2,7 @@
 #include<vector>
 #include<map>
 #include<stdlib.h>
-#include"print_1d_array.cpp"
+
 using namespace std;
 
 int maximumSwap(int num) {

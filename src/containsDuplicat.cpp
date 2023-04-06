@@ -1,6 +1,5 @@
 #include<iostream>
 #include<vector>
-#include"print_1d_array.cpp"
 using namespace std;
 
 void merge(vector<int> &nums, int p, int q, int r){
@@ -40,16 +39,14 @@ void merge_sort(vector<int> &nums, int p, int r ){
 
 
 
-
+/* 
 bool containsDuplicate(vector<int>& nums) {
       int find_max = INT16_MIN;
       merge_sort(nums, 0 , nums.size() - 1);
-
-      print_1d_array(nums);
 
       for(int i = 1; i < nums.size() ; i++){
             if(nums[i] == nums[i - 1]) return true;
       }
       
       return false;
-}
+} */

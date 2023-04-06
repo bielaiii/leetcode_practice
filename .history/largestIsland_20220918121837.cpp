@@ -1,7 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<unordered_map>
-#include"print_1d_array.cpp"
+
 #include"print_2d_array.cpp"
 using namespace std;
 

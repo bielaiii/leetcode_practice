@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "header.h"
-//#include"print_1d_array.cpp"
+//
 using namespace std;
 
 

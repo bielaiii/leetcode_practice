@@ -11,7 +11,7 @@
 };
  */
 
-void rec_preorderTraversal(TreeNode * root, vector<int> & vec){
+void rec_preorderTraversal(TreeNode * root, std::vector<int> & vec){
       if(! root) return ;
       vec.push_back(root->val);
       rec_preorderTraversal(root->left, vec);
@@ -19,8 +19,8 @@ void rec_preorderTraversal(TreeNode * root, vector<int> & vec){
 
 }
 
-vector<int> preorderTraversal(TreeNode* root) {
-      vector<int> vec;
+std::vector<int> preorderTraversal(TreeNode* root) {
+      std::vector<int> vec;
       rec_preorderTraversal(root, vec);
       return vec;
 }

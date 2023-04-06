@@ -2,7 +2,7 @@
 #include<vector>
 #include<unordered_map>
 #include<unordered_set>
-#include"print_1d_array.cpp"
+
 #include"print_2d_array.cpp"
 using namespace std;
 
