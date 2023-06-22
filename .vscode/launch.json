@@ -1,37 +1,17 @@
 {
-    "name": "C++ Launch",
-    "type": "cppdbg",
-    "request": "launch",
-    "program": "${workspaceFolder}/${fileBasenameNoExtension}",
-    "stopAtEntry": false,
-    "customLaunchSetupCommands": [
-      { "text": "target-run", "description": "run target", "ignoreFailures": false }
-    ],
-    "launchCompleteCommand": "exec-run",
-    "linux": {
-      "MIMode": "gdb",
-      "miDebuggerPath": "/usr/bin/gdb"
-    },
-    "osx": {
-      "MIMode": "lldb"
-    },
-    "windows": {
-      "MIMode": "gdb",
-      "miDebuggerPath": "C:\\MinGw\\bin\\gdb.exe"
-    },
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
     "configurations": [
         {
-            "name": "(lldb) launch",
-            "type": "cppdbg",
+            "type": "lldb",
             "request": "launch",
-            "program": "${workspaceRoot}/build/main",
+            "name": "CLang launch",
+            "program": "${command:cmake.launchTargetPath}",
             "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "lldb"
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "CMake: build"
         }
-    ],
-    
+    ]
   }

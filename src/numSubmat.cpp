@@ -1,6 +1,5 @@
 #include<iostream>
 #include<vector>
-#include"print_2d_array.cpp"
 using namespace std;
 
 int numSubmat(vector<vector<int>>& mat) {

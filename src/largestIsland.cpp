@@ -2,8 +2,6 @@
 #include<vector>
 #include<unordered_map>
 #include<unordered_set>
-
-#include"print_2d_array.cpp"
 using namespace std;
 
 

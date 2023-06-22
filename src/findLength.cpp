@@ -1,6 +1,5 @@
 #include<iostream>
 #include<vector>
-#include"print_2d_array.cpp"
 using namespace std;
 
 int findLength(vector<int>& nums1, vector<int>& nums2) {

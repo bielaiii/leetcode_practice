@@ -4,7 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-//using namespace std;
+using namespace std;
 struct TreeNode {
      int val;
       TreeNode *left;
@@ -19,32 +19,6 @@ struct ListNode {
     ListNode *next;
     ListNode(int x) : val(x), next(NULL) {}
 };
-
-template<typename T>
-extern void print_1d_array(T toprint);
-
-template<typename T>
-void print_1d_array(T toprint){
-    for (auto it : toprint) {
-        std::cout << it << " ";
-    }
-    std::cout << std::endl;
-    std::cout << "------------------"<<std::endl;
-}
-
-template<typename T>
-void print_2d_array(T toprint);
-template<typename T>
-void print_2d_array(T toprint){
-    
-    for(auto row : toprint){
-        for (auto it : row) {
-            std::cout << it <<" ";
-        }
-        std::cout << std::endl;
-    }
-    std::cout << "------------------"<<std::endl;
-}
 
 std::vector<std::vector <int> > threeSum(std::vector<int> & nums);
 void hello();
@@ -322,5 +296,10 @@ std::vector<std::vector<int>> combinationSum(std::vector<int>& candidates, int t
 std::string maskPII(std::string s);
 std::vector<int> prevPermOpt1(std::vector<int>& arr);
 int mergeStones(std::vector<int>& stones, int k);
-
+bool canTransform(std::string start, std::string end);
+int longestDecomposition(std::string text);
+std::vector<std::vector<int>> combinationSum3(int k, int n);
+int smallestEvenMultiple(int n);
+string addStrings(std::string num1, std::string num2);
+int robotSim(std::vector<int>& commands, std::vector<std::vector<int>>& obstacles);
 #endif
