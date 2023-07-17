@@ -8,20 +8,13 @@ using namespace std;
 
 int main()
 {
-    vector<int>commands = {4,-1,3};
-    vector<vector<int>> obstacles = {};
-    cout << robotSim(commands, obstacles) << endl;
-    commands = {4,-1,4,-2,4};
-    obstacles = {{2,4}};
-    cout << robotSim(commands, obstacles) << endl;
-    commands ={6,-1,-1,6};
-    obstacles = {};
-    cout << robotSim(commands, obstacles) << endl;
-    commands = {-2,8,3,7,-1};
-    obstacles = {{-4,-1},{1,-1},{1,4},{5,0},{4,5},{-2,-1},{2,-5},{5,1},{-3,-1},{5,-3}};
-    cout << robotSim(commands, obstacles) << endl;
-    commands = {7,-2,-2,7,5};
-    obstacles = {{-3,2},{-2,1},{0,1},{-2,4},{-1,0},{-2,-3},{0,-3},{4,4},{-3,3},{2,2}};
-    cout << robotSim(commands, obstacles) << endl;
+    vector<int> vt1 = { 9,4,2,10,7,8,8,1,9};
+    cout << maxTurbulenceSize(vt1) << endl;
+    vector<int> vt2 = { 4, 8, 12, 16};
+    cout << maxTurbulenceSize(vt2) << endl;
+    vector<int> vt3 = {100};
+    cout << maxTurbulenceSize(vt3) << endl;
+    vector<int> vt4 = {99, 99};
+    cout << maxTurbulenceSize(vt4) << endl;
     return 0;
 }

@@ -302,4 +302,6 @@ std::vector<std::vector<int>> combinationSum3(int k, int n);
 int smallestEvenMultiple(int n);
 string addStrings(std::string num1, std::string num2);
 int robotSim(std::vector<int>& commands, std::vector<std::vector<int>>& obstacles);
+int characterReplacement(std::string s, int k);
+int maxTurbulenceSize(vector<int>& arr);
 #endif
