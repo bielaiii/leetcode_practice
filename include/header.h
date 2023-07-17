@@ -304,4 +304,5 @@ string addStrings(std::string num1, std::string num2);
 int robotSim(std::vector<int>& commands, std::vector<std::vector<int>>& obstacles);
 int characterReplacement(std::string s, int k);
 int maxTurbulenceSize(vector<int>& arr);
+int removeElement(vector<int>& nums, int val);
 #endif
