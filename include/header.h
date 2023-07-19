@@ -302,4 +302,6 @@ std::vector<std::vector<int>> combinationSum3(int k, int n);
 int smallestEvenMultiple(int n);
 string addStrings(std::string num1, std::string num2);
 int robotSim(std::vector<int>& commands, std::vector<std::vector<int>>& obstacles);
+int kItemsWithMaximumSum(int numOnes, int numZeros, int numNegOnes, int k);
+int maxSatisfied(vector<int>& customers, vector<int>& grumpy, int minutes);
 #endif

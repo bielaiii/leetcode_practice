@@ -36,3 +36,5 @@ build/*
 CmakeFiles/*
 .vscode/*
 googletest/
+.history/
+.cache/
