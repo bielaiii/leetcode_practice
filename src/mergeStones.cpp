@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<stdint.h>
 using namespace std;
 
 int mergeStones(vector<int>& stones, int k) {
@@ -15,7 +16,7 @@ int mergeStones(vector<int>& stones, int k) {
     vector<vector<int>> dp(len, vector<int>(len, 0));
     for (int i = len - 1; i >= 0; i--) {
         for (int j = i + 1; j < len; j++) {
-            dp[i][j] = INT_MAX;
+            dp[i][j] = INT16_MAX;
             for (int m = i; m < j; m+=k-1) {
                 dp[i][j] = min(dp[i][j], dp[i][m] + dp[m + 1][j]);
             }

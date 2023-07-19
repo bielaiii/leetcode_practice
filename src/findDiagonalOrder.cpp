@@ -2,8 +2,6 @@
 #include<vector>
 using namespace std;
 
-/* pair<int,int> dir[2] = {{1, 1}, {-1, -1}};
-//pair<int,int> dir1 = {1, 1}
 
 vector<int> findDiagonalOrder(vector<vector<int>>& mat) {
     vector<int> ans;
@@ -35,4 +33,4 @@ vector<int> findDiagonalOrder(vector<vector<int>>& mat) {
         
     }
     return ans;
-} */
+}

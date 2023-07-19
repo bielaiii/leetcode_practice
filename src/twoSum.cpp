@@ -1,26 +1,18 @@
+#include <cstdio>
 #include <iostream>
 #include <vector>
 using namespace std;
 
-vector<int> twoSum(vector<int>& numbers, int target) {
-    int tail = numbers.size() - 1;
-    /*
-    while(tail > 0 && numbers[tail] > target){
-        tail --;
-    }
-    */
-    int head = 0;
-    vector<int> ret;
-    while(head < tail ){
-        if(numbers[head] + numbers[tail] > target){
-            tail --;
-        }else if(numbers[head] + numbers[tail] < target){
-            head ++;
-        }else{
-            ret.push_back(head + 1);
-            ret.push_back(tail + 1);
-            return ret;
+vector<int> twoSum(vector<int> &numbers, int target)
+{
+    int l = 0;
+    int r = numbers.size() - 1;
+    while (l < r && numbers[l] + numbers[r] != target) {
+        if (numbers[l] + numbers[r] < target) {
+            l++;
+        } else {
+            r--;
         }
     }
-    return ret;
+    return {l + 1, r + 1};
 }

@@ -3,7 +3,7 @@
 #include<stack>
 using namespace std;
 
-int dir[4][2] = {{0,-1},{0,1},{1,0},{-1,0}};
+int dir_dig[4][2] = {{0,-1},{0,1},{1,0},{-1,0}};
 
 bool rec_exist(const vector<vector<char>>& board, const string word, int r, int c, int i, string cur, vector<vector<bool>>  visited){
       if(i == word.size() ) return 1;
@@ -14,10 +14,10 @@ bool rec_exist(const vector<vector<char>>& board, const string word, int r, int 
       cur += word[i];
       i ++;
        visited[r][c] = 1;
-      int ret = rec_exist(board, word, r+ dir[0][0], c+dir[0][1], i  , cur  , visited ) ||
-             rec_exist(board, word, r+ dir[1][0], c+dir[1][1], i  , cur  , visited ) ||
-             rec_exist(board, word, r+ dir[2][0], c+dir[2][1], i  , cur  , visited ) ||
-             rec_exist(board, word, r+ dir[3][0], c+dir[3][1], i  , cur  , visited ) ;
+      int ret = rec_exist(board, word, r+ dir_dig[0][0], c+dir_dig[0][1], i  , cur  , visited ) ||
+             rec_exist(board, word, r+ dir_dig[1][0], c+dir_dig[1][1], i  , cur  , visited ) ||
+             rec_exist(board, word, r+ dir_dig[2][0], c+dir_dig[2][1], i  , cur  , visited ) ||
+             rec_exist(board, word, r+ dir_dig[3][0], c+dir_dig[3][1], i  , cur  , visited ) ;
       visited[r][c] = 0;
       return ret;
 }
