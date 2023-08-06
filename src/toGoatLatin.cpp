@@ -25,7 +25,6 @@ string toGoatLatin(string sentence) {
             count ++;
             left = i + 1;
         }
-        
     }
     return str;
 }
