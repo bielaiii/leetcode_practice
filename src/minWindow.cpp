@@ -45,8 +45,3 @@ string minWindow(string s, string t) {
     }
     return len == 65535? "" : s.substr(i, len);
 }
-
-export http_proxy='http://192.168.50.137:7890'
-export https_proxy='http://192.168.50.137:7890'
-export all_proxy='socks5://192.168.50.137:7890'
-export ALL_PROXY='socks5://192.168.50.137:7890'
