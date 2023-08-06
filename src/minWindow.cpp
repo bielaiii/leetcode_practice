@@ -43,5 +43,5 @@ string minWindow(string s, string t) {
         }
         
     }
-    return len == 65535? "aaa" : s.substr(i, len);
+    return len == 65535? "" : s.substr(i, len);
 }
