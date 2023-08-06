@@ -5,20 +5,7 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-struct TreeNode {
-     int val;
-      TreeNode *left;
-      TreeNode *right;
-      TreeNode() : val(0), left(nullptr), right(nullptr) {}
-      TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-      TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-};
 
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
-};
 
 std::vector<std::vector <int> > threeSum(std::vector<int> & nums);
 void hello();
@@ -305,4 +292,6 @@ int robotSim(std::vector<int>& commands, std::vector<std::vector<int>>& obstacle
 int characterReplacement(std::string s, int k);
 int maxTurbulenceSize(vector<int>& arr);
 int removeElement(vector<int>& nums, int val);
+std::vector<std::vector<std::string>> partition(std::string s);
+std::string minWindow(std::string s, std::string t);
 #endif

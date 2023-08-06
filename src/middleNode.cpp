@@ -10,16 +10,11 @@ struct ListNode {
 };
 
 ListNode* middleNode(ListNode* head) {
-    int i = 0;
-    ListNode * temp_head = head;
-    while(temp_head != nullptr){
-        i++;
-        temp_head = temp_head->next;
+    ListNode *fast = head;
+    ListNode *slow = head;
+    while (fast && fast->next) {
+        fast = fast->next ? fast->next->next : fast->next;
+        slow = slow->next;
     }
-    temp_head = head;
-    int time = i / 2 ;
-    for(int r  =0 ; r < time; r++){
-        temp_head = temp_head->next;
-    }
-    return temp_head;
+    return slow;
 }

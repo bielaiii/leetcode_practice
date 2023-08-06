@@ -1,20 +1,24 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
-#include<unordered_map>
-#include<map>
+#include <algorithm>
+#include <iostream>
+#include <map>
+#include <type_traits>
+#include <unordered_map>
+#include <vector>
 using namespace std;
 
-bool carPooling(vector<vector<int>>& trips, int capacity) {
-      map<int, int> stops;
-      for(auto trip : trips){
-            stops[trip[1]] += trip[0];
-            stops[trip[2]] -= trip[0];
-      }
-      int ct = 0 ;
-      for(auto it : stops){
-            ct += it.second;
-           if(ct > capacity) return 0;
-      }
-      return 1;
+bool carPooling(vector<vector<int>> &trips, int capacity)
+{
+    map<int, int> mp;
+    for (auto trip : trips) {
+        mp[trip[1]] += trip[0];
+        mp[trip[2]] -= trip[0];
+    }
+    auto ct = 0;
+    for (auto it : mp) {
+        ct += it.second;
+        if (ct > capacity) {
+            return false;
+        }
+    }
+    return true;
 }

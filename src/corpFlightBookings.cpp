@@ -1,19 +1,24 @@
-#include<iostream>
-#include<vector>
-#include<map>
-#include<unordered_map>
+#include <iostream>
+#include <map>
+#include <unordered_map>
+#include <vector>
 using namespace std;
 
-vector<int> corpFlightBookings(vector<vector<int>>& bookings, int n) {
-      vector<int> vt(n, 0);
-      for(auto book : bookings){
-            vt[book[0]-1] += book[2];
-            if(book[1] < n){
-                  vt[book[1]] -= book[2];
-            }
-      }
-      for(int i = 1; i < n; i++){
-           vt[i] += vt[i-1];
-      }
-      return vt;
+vector<int> corpFlightBookings(vector<vector<int>> &bookings, int n) {
+    map<int, int> mp;
+    for (auto it : bookings) {
+        mp[it[0]] += it[2];
+        mp[it[1] + 1] -= it[2];
+    }    
+    vector<int> vt(n, 0);
+    int ret = 0;
+    auto it = mp.begin();
+    for (int i = 0; i < n; i++) {
+        if (mp.find(i + 1) != mp.end()) {
+            ret += mp[i + 1];
+            it++;
+        }
+        vt[i] += ret;
+    }
+    return vt;
 }

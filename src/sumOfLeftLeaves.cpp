@@ -1,4 +1,5 @@
 #include"header.h"
+#include"data_structure.h"
 using namespace std;
 
 int CalLeft(TreeNode * root){
