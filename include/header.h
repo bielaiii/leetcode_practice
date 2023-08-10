@@ -296,4 +296,5 @@ int maxTurbulenceSize(vector<int>& arr);
 int removeElement(vector<int>& nums, int val);
 std::vector<std::vector<std::string>> partition(std::string s);
 std::string minWindow(std::string s, std::string t);
+vector<vector<int>> subsetsWithDup(vector<int>& nums);
 #endif

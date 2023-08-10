@@ -17,6 +17,9 @@ void printVector(vector<T> vt, int len)
 
 int main()
 {
-	cout << minWindow("ADOBECODEBANC", "ABC") << endl;
+	string str1 = "a good   example";
+	cout <<"!" << reverseWords(str1) << "!" << endl;
+	cout <<  reverseWords(str1)  << endl;
+
 	return 0;
 }

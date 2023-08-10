@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
 int maxSatisfied(vector<int>& customers, vector<int>& grumpy, int minutes) {

@@ -1,29 +1,33 @@
+#include<cstdio>
 #include<iostream>
 #include<vector>
 #include<unordered_set>
+#include<set>
 using namespace std;
 
-void dfs(int l, int r, string str, unordered_set<string> & vt){
-      if(l == 0 && r == 0) {
+void backtracking(int l, int r, string str, set<string>& vt, int n){
+      if (r > l) {
+            return;
+      }
+      if (l == r && str.length() == 2 * n){
             vt.insert(str);
             return;
       }
-      if(l > 0){
-            dfs(l-1, r, str + "(", vt);
+      if (l + r > 2 * n) {
+            return;
       }
-      if(r > l){
-            dfs(l, r- 1, str + ")", vt);
-      }
+      
+      if (l < n)
+            backtracking(l + 1, r, str + "(", vt, n);
+      if (r < l)
+            backtracking(l, r + 1, str + ")", vt, n);
+      
 }
 
-
 vector<string> generateParenthesis(int n) {
-      unordered_set<string> vt;
+      set<string> vt;
       string str = "";
-      dfs(n, n, str, vt);
-      vector<string> ans;
-      for(auto s : vt){
-            ans.push_back(s);
-      }
-      return ans;
+      backtracking(0, 0, str, vt, n);
+      vector<string> st(vt.begin(), vt.end());
+      return st;
 }
