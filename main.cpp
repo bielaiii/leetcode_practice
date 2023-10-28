@@ -17,9 +17,8 @@ void printVector(vector<T> vt, int len)
 
 int main()
 {
-	string str1 = "a good   example";
-	cout <<"!" << reverseWords(str1) << "!" << endl;
-	cout <<  reverseWords(str1)  << endl;
+	vector<int> vt {25,64,9,4,100};
+    cout << pickGifts(vt, 4) << endl;;
 
 	return 0;
 }

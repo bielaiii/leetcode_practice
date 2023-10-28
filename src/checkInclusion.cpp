@@ -5,40 +5,24 @@
 using namespace std;
 
 
-/*
 bool checkInclusion(string s1, string s2) {
-    if(s1.length() > s2.length() ) return false;
-    sort(s1.begin(), s1.end());
-    int len1 = s1.length();
-    int len2 = s2.length();
-    for(int i = 0; i < len2 - len1 +1; i++){
-        string tempstr = s2.substr(i, len1);
-        sort(tempstr.begin(), tempstr.end());
-        if(tempstr == s1) return true;
+    vector<int> vt1(26, 0);
+    for (auto c : s1) {
+        vt1[c - 'a']++;
+    }
+    int left = 0, right = 0;
+    vector<int> temp(26, 0);
+    while (right < s2.size()){
+        temp[s2[right] - 'a']++;
+        right++;
+        if (right - left == s1.size()) {
+            if (temp == vt1) {
+                return 1;
+            }
+            temp[s2[left]-'a']--;
+            left++;
+        }
+        
     }
     return false;
-}
-*/
-
-bool checkInclusion(string s1, string s2) {
-    if(s1.length() > s2.length() ) return false;
-    
-    int len1 = s1.length();
-    int len2 = s2.length();
-    
-    vector<int> vec1(26,0);
-    vector<int> vec2(26,0);
-
-    for(int i = 0; i < len1 ; i++){
-        vec1[s1[i]-'a']++;
-        vec2[s2[i]-'a']++;
-    }
-
-    for(int d = len1; d < len2; d++){
-        if(vec2 == vec1) return true;
-        vec2[s2[d]-'a']++;
-        vec2[s2[d - len1 ] - 'a']--;
-    }
-
-    return vec2 == vec1;
 }

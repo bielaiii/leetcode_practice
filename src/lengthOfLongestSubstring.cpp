@@ -1,47 +1,37 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include<set>
+#include<map>
 #include <unordered_set>
 #include <algorithm>
 using namespace std;
 
+bool checker(map<char, int> mp){
+    for (auto m : mp) {
+        if (m.second > 1) {
+            return true;
+        }
+    }
+    return false;
+}
 
 int lengthOfLongestSubstring(string s) {
-    unordered_set<char> st;
-    int j = 0;
+    int l = 0, r = 0;
+    map<char, int> st;
     int maxlen = 0;
-    for(int i = 0 ; i <s.size(); i++){
-        st.emplace(s[i]);
-        j = i + 1;
-        while( j<s.size() && st.find(s[j]) == st.end()){
-            
-            st.emplace(s[j]);
-            j++;
+    int strlen = 0;
+    while (r < s.length()) {
+        st[s[r]]++;
+        r++;
+        while (l < r && st.size() < r - l && checker(st)) {
+            st[s[l]]--;
+            if (st[s[l]] <= 0) {
+                st.erase(st.find(s[l]));
+            }
+            l++;
         }
-        st.clear();
-        maxlen = max(maxlen , j - i);
-        
+        maxlen = max(maxlen, r - l);
     }
     return maxlen;
 }
-
-
-/* int lengthOfLongestSubstring(string s) {
-    if(s == "") return 0;
-    unordered_set<char> set;
-    int ret = 0;
-    int left = 0;
-    //int max = 0;
-    for(int i =0; i < s.length(); i++){
-        while(set.find(s[i]) != set.end()){
-            set.erase(s[left]);
-            left ++;
-        }
-
-        ret = max(ret, i-left+1);
-        set.insert(s[i]);
-    }
-    return ret;
-    
-}
- */

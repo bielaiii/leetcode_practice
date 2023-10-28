@@ -1,10 +1,9 @@
 #ifndef header_h
 #define header_h
 
-#include <iostream>
+
 #include <vector>
-#include <algorithm>
-using namespace std;
+
 
 
 std::vector<std::vector <int> > threeSum(std::vector<int> & nums);
@@ -20,7 +19,7 @@ void moveZeroes(std::vector<int> &);
 std::vector<int> twoSum(std::vector<int> &, int);
 void reversestdstring(std::vector<char>&);
 std::string reverseWords(std::string);
-int lengthOfLongestSubstdstring(std::string s);
+//int lengthOfLongestSubstdstring(std::string s);
 bool checkInclusion(std::string s1, std::string s2);
 std::vector<std::vector<int> > floodFill(std::vector<std::vector<int> >&, int , int , int);
 int maxAreaOfIsland(std::vector<std::vector<int> >&);
@@ -287,14 +286,16 @@ bool canTransform(std::string start, std::string end);
 int longestDecomposition(std::string text);
 std::vector<std::vector<int>> combinationSum3(int k, int n);
 int smallestEvenMultiple(int n);
-string addStrings(std::string num1, std::string num2);
+std::string addStrings(std::string num1, std::string num2);
 int robotSim(std::vector<int>& commands, std::vector<std::vector<int>>& obstacles);
 int kItemsWithMaximumSum(int numOnes, int numZeros, int numNegOnes, int k);
-int maxSatisfied(vector<int>& customers, vector<int>& grumpy, int minutes);
+int maxSatisfied(std::vector<int>& customers, std::vector<int>& grumpy, int minutes);
 int characterReplacement(std::string s, int k);
-int maxTurbulenceSize(vector<int>& arr);
-int removeElement(vector<int>& nums, int val);
+int maxTurbulenceSize(std::vector<int>& arr);
+int removeElement(std::vector<int>& nums, int val);
 std::vector<std::vector<std::string>> partition(std::string s);
 std::string minWindow(std::string s, std::string t);
-vector<vector<int>> subsetsWithDup(vector<int>& nums);
+std::vector<std::vector<int>> subsetsWithDup(std::vector<int>& nums);
+int lengthOfLongestSubstring(std::string s);
+long long pickGifts(std::vector<int>& gifts, int k);
 #endif
