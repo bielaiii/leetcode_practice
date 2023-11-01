@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<map>
+#include<algorithm>
 #include<stdlib.h>
 
 using namespace std;
