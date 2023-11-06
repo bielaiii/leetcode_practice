@@ -6,19 +6,22 @@
 using namespace std;
 
 template <typename T>
-void printVector(vector<T> vt, int len)
+void printVector(vector<T> vt)
 {
-	for(int i = 0; i < len; i++)
-	{
-		cout << vt[i] << " ";
-	}
-	cout << endl;
+    for(auto t : vt)
+    {
+        cout << t << " -> ";
+    }
+    cout << endl;
 }
 
 int main()
 {
-	vector<int> vt {25,64,9,4,100};
-    cout << pickGifts(vt, 4) << endl;;
-
-	return 0;
+    using namespace type_B;
+    vector<int> vt {1, 2,  100};
+    vector<int> vt1 {0,1,3,5,6};
+    cout << type_B::hIndex(vt) << endl;;
+    cout << type_B::hIndex(vt1) << endl;;
+    
+    return 0;
 }

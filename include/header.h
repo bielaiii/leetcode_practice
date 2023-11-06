@@ -299,4 +299,10 @@ int lengthOfLongestSubstring(std::string s);
 long long pickGifts(std::vector<int>& gifts, int k);
 std::vector<std::vector<int>> subsetsWithDup(std::vector<int>& nums);
 int maxArea(int h, int w, std::vector<int>& horizontalCuts, std::vector<int>& verticalCuts);
+namespace type_A{
+    int hIndex(std::vector<int>& citations);
+}
+namespace type_B{
+    int hIndex(std::vector<int>& citations);
+}
 #endif
