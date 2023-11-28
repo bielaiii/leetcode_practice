@@ -299,4 +299,5 @@ int lengthOfLongestSubstring(std::string s);
 long long pickGifts(std::vector<int>& gifts, int k);
 std::vector<std::vector<int>> subsetsWithDup(std::vector<int>& nums);
 int maxArea(int h, int w, std::vector<int>& horizontalCuts, std::vector<int>& verticalCuts);
+int maximizeSum(std::vector<int>& nums, int k);
 #endif
