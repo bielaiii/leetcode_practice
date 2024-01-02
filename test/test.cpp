@@ -17,5 +17,6 @@ TEST(HelloTest, BasicAssertions) {
 
 int main(int argc, char** argv)
 {
+    InitGoogleTest();
     return RUN_ALL_TESTS();
 }

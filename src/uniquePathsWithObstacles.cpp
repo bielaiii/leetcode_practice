@@ -1,9 +1,6 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-template<typename T>
-
-
 
 int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
     const int dir[2][2] = {{0,1},{1,0}};

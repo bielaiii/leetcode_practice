@@ -15,11 +15,18 @@ message("build project success")
 set_target_properties(${PROJECT_NAME}
     PROPERTIES
     CXX_STANDARD 20
+    CXX_STANDARD_REQUIRED ON
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/build/${CMAKE_BUILD_TYPE}/$<0:>
 )
+
 
 target_compile_options(${PROJECT_NAME} PRIVATE 
     $<$<CXX_COMPILER_ID:GNU>:
         $<$<CONFIG:Debug>:-Wall -pedantic -g>
+        $<$<CONFIG:Release>:-O3>
+    >
+    $<$<CXX_COMPILER_ID:Clang>:
+        $<$<CONFIG:Debug>: -g -Wno-c++98-compat >
         $<$<CONFIG:Release>:-O3>
     >
 )

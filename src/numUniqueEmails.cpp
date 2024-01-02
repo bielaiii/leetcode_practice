@@ -13,10 +13,7 @@ int numUniqueEmails(vector<string>& emails) {
         string temp = email.substr(0, email.find_first_of("+@"));
         while(temp.find(".") != string::npos)
             temp.replace(temp.find("."), 1, "");
-        //temp.append(email.find("@"), email.end() );
         temp += email.substr(email.find("@") , email.length() - email.find("@")  );
-        //cout <<"-------------------" <<endl;
-        //cout << temp << " " << email << endl;
         if(temp == "") continue;
         if(! dict_.count(temp)){
             dict_.insert(temp);

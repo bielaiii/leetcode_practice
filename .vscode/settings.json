@@ -69,7 +69,7 @@
     "git.enableSmartCommit": true,
     "editor.inlayHints.enabled": "on",
     "[cpp]": {
-        "editor.defaultFormatter": "xaver.clang-format"
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
     },
     //"C_Cpp.intelliSenseEngine": "disabled",
     "editor.guides.bracketPairs": "active",
@@ -301,6 +301,11 @@
     "explorer.confirmDelete": false,
     "editor.detectIndentation": false,
     "window.menuBarVisibility": "compact",
+    "testMate.cpp.test.advancedExecutables": [
+        {
+            "pattern" : "{build,Build,BUILD,out,Out,OUT}/**/*{test,Test,TEST}*"
+        }
+    ],
     
     
 }
