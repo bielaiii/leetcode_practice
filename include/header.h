@@ -306,6 +306,6 @@ namespace type_B{
     int hIndex(std::vector<int>& citations);
 }
 int maximizeSum(std::vector<int>& nums, int k);
-
+int minLength(std::string s);
 int minimumEffortPath(std::vector<std::vector<int>>& heights);
 #endif
