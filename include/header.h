@@ -308,4 +308,5 @@ namespace type_B{
 int maximizeSum(std::vector<int>& nums, int k);
 int minLength(std::string s);
 int minimumEffortPath(std::vector<std::vector<int>>& heights);
+std::string findReplaceString(std::string s, std::vector<int>& indices, std::vector<std::string>& sources, std::vector<std::string>& targets);
 #endif
