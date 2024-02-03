@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 bool checkCovered(const vector<vector<int> > & rectangles, int x, int y){

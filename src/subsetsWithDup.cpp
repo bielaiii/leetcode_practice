@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<set>
+#include<algorithm>
 using namespace std;
 
 void backTracking(vector<int> &nums, set<vector<int>>& ret, vector<int> temp, int i) {

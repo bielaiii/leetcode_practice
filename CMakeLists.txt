@@ -2,19 +2,19 @@ cmake_minimum_required(VERSION 3.20)
 
 
 project(main)
-include_directories(include)
 aux_source_directory(${CMAKE_SOURCE_DIR}/src src_files)
 #set(CMAKE_CXX_STANDARD 20)
 #set(CMAKE_CXX_STANDARD_REQUIRED on)
 add_executable(main main.cpp ${src_files})
 
 set(EXPORT_COMPILE_COMMANDS ON)
+include_directories(main PRIVATE include)
 
 message("build project success")
 
 set_target_properties(${PROJECT_NAME}
     PROPERTIES
-    CXX_STANDARD 20
+    CXX_STANDARD 23
     CXX_STANDARD_REQUIRED ON
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/build/${CMAKE_BUILD_TYPE}/$<0:>
 )

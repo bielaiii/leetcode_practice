@@ -69,12 +69,12 @@
     "git.enableSmartCommit": true,
     "editor.inlayHints.enabled": "on",
     "[cpp]": {
-        "editor.defaultFormatter": "xaver.clang-format"
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
     },
     //"C_Cpp.intelliSenseEngine": "disabled",
     "editor.guides.bracketPairs": "active",
     "security.workspace.trust.untrustedFiles": "open",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 0,
 // [[C/C++]]
     "C_Cpp.errorSquiggles": "enabled",
     "C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
@@ -301,6 +301,11 @@
     "explorer.confirmDelete": false,
     "editor.detectIndentation": false,
     "window.menuBarVisibility": "compact",
+    "testMate.cpp.test.advancedExecutables": [
+        {
+            "pattern" : "{build,Build,BUILD,out,Out,OUT}/**/*{test,Test,TEST}*"
+        }
+    ],
     
     
 }

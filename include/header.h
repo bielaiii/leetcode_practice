@@ -309,4 +309,6 @@ int maximizeSum(std::vector<int>& nums, int k);
 int minLength(std::string s);
 int minimumEffortPath(std::vector<std::vector<int>>& heights);
 std::string findReplaceString(std::string s, std::vector<int>& indices, std::vector<std::string>& sources, std::vector<std::string>& targets);
+std::vector<int> circularGameLosers(int n, int k);
+bool canChange(std::string start, std::string target);
 #endif
