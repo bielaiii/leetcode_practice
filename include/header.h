@@ -183,7 +183,12 @@ int missingNumber2(std::vector<int>& nums) ;
 bool searchMatrix(std::vector<std::vector<int>>& matrix, int target);
 bool search3(std::vector<int>& nums, int target);
 int specialArray(std::vector<int>& nums);
-int maximumSwap(int num);
+namespace A {
+    int maximumSwap(int num);
+};
+namespace B {
+    int maximumSwap(int num);
+};
 int findPeakElement(std::vector<int>& nums);
 double trimMean(std::vector<int>& arr);
 int bulbSwitch(int n);
@@ -311,4 +316,9 @@ int minimumEffortPath(std::vector<std::vector<int>>& heights);
 std::string findReplaceString(std::string s, std::vector<int>& indices, std::vector<std::string>& sources, std::vector<std::string>& targets);
 std::vector<int> circularGameLosers(int n, int k);
 bool canChange(std::string start, std::string target);
+int captureForts(std::vector<int>& forts);
+int minimumEffortPath(std::vector<std::vector<int>>& heights);
+int countWords(std::vector<std::string>& words1, std::vector<std::string>& words2);
+int minimumSeconds(std::vector<int>& nums);
+std::vector<int> distinctDifferenceArray(std::vector<int>& nums);
 #endif

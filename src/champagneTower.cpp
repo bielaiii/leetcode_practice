@@ -2,8 +2,6 @@
 #include<vector>
 using namespace std;
 
-
-
 double champagneTower(int poured, int query_row, int query_glass) {
       double dp[101][101] = {0} ;
       dp[0][0] = poured;

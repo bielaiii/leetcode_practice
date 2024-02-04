@@ -27,6 +27,7 @@ target_compile_options(${PROJECT_NAME} PRIVATE
     >
     $<$<CXX_COMPILER_ID:Clang>:
         $<$<CONFIG:Debug>: -g -Wno-c++98-compat >
+        #$<$<CONFIG:Debug>: -g -Wno-c++98-compat -fsanitize=address -fno-omit-frame-pointer>
         $<$<CONFIG:Release>:-O3>
     >
 )

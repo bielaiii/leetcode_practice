@@ -17,7 +17,7 @@ enable_testing()
 #target_include_directories(hello_test PRIVATE ${goolgetest_INCLUDE_DIR})
 aux_source_directory(${CMAKE_SOURCE_DIR}/test current_test_file)    
 #message(${src_files})
-set(cur UnitTest)
+set(cur test)
 add_executable(${cur} ${current_test_file} ${src_files})
 set_target_properties(${cur} PROPERTIES
     CXX_STANDARD 20

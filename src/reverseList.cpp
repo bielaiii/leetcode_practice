@@ -1,23 +1,16 @@
 #include <iostream>
+#include "data_structure.h"
 using namespace std;
 
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
-};
 
-ListNode * recur_reverse(ListNode * head, ListNode * temp){
-    if(!head) return temp;
-    ListNode * node = new ListNode(head->val);
-    node->next = temp->next;
-    temp->next = node;
-    return recur_reverse(head->next, temp);
-}
 
 ListNode* reverseList(ListNode* head) {
-    ListNode * temp = new ListNode();
-    return recur_reverse(head, temp)->next;;
+    if (head == nullptr || head->next == nullptr) {
+        return head;
+    }
+    ListNode *temp = reverseList(head->next);
+    head->next->next = temp;
+    head->next = nullptr;
+
+    return temp;
 }
