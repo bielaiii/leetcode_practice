@@ -44,7 +44,9 @@ int main(void)
     for (auto k : vt4) {
         cout << k << endl;
     } */
-    cout << "hello, world" << endl;
+    //cout << "hello, world" << endl;
+    vector<int> vt {1, -1, -2, 4, -7, 3};
+    cout << maxResult(vt, 2) << endl;
 
     return 0;
 }

@@ -321,4 +321,5 @@ int minimumEffortPath(std::vector<std::vector<int>>& heights);
 int countWords(std::vector<std::string>& words1, std::vector<std::string>& words2);
 int minimumSeconds(std::vector<int>& nums);
 std::vector<int> distinctDifferenceArray(std::vector<int>& nums);
+int maxResult(std::vector<int>& nums, int k);
 #endif
