@@ -64,7 +64,7 @@
     "cmake.configureOnOpen": true,
     "code-runner.saveFileBeforeRun": true,
     "code-runner.runInTerminal": true,
-    "workbench.colorTheme": "GitHub Dark",
+    "workbench.colorTheme": "Dracula",
     "clangd.checkUpdates": true,
     "git.enableSmartCommit": true,
     "editor.inlayHints.enabled": "on",
@@ -306,6 +306,19 @@
             "pattern" : "{build,Build,BUILD,out,Out,OUT}/**/*{test,Test,TEST}*"
         }
     ],
+    "editor.lineNumbers": "relative",
+    //"testMate.cpp.debug.configTemplate": {
+    //    "type": "cppvsdbg",
+    //    "linux": { "type": "cppdbg", "MIMode": "gdb" },
+    //    "darwin": { "type": "cppdbg", "MIMode": "lldb" },
+    //    "win32": { "type": "cppvsdbg" },
+    //    "program": "${exec}",
+    //    "args": "${argsArray}",
+    //    "cwd": "${cwd}",
+    //    "env": "${envObj}",
+    //    "environment": "${envObjArray}",
+    //    "sourceFileMap": "${sourceFileMapObj}",
+    //  }
     
     
 }

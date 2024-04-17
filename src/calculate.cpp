@@ -18,7 +18,7 @@ int calculate(string s) {
                   while(i + j < s.size() && isdigit(s[i + j])){
                         j ++;
                   }
-                  int num = stoi(s.substr(i, j));
+                  int num = 0;//stoi(s.substr(i, j));
                   i += j - 1;
                   if(vt.size() > 0 && num1 == vt.back() ){
                         num2 = num;

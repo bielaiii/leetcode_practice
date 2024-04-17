@@ -1,11 +1,12 @@
 #include<iostream>
+#include <string>
 #include<vector>
 #include<unordered_map>
 #include<stack>
 using namespace std;
 
 
-vector<string> spliter(string s){
+static vector<string> spliter(string s){
       s += ' ';
       vector<string> ans;
       string temp = "";

@@ -13,11 +13,12 @@ include(GoogleTest)
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 add_library(GTest::Gtest INTERFACE IMPORTED)
-enable_testing()
+#enable_testing()
 #target_include_directories(hello_test PRIVATE ${goolgetest_INCLUDE_DIR})
 aux_source_directory(${CMAKE_SOURCE_DIR}/test current_test_file)    
 #message(${src_files})
-set(cur test)
+#enable_testing()
+set(cur SimpleTest)
 add_executable(${cur} ${current_test_file} ${src_files})
 set_target_properties(${cur} PROPERTIES
     CXX_STANDARD 20
@@ -27,4 +28,4 @@ set_target_properties(${cur} PROPERTIES
 target_include_directories(${cur} PRIVATE ${CMAKE_SOURCE_DIR}/include)
 target_link_libraries(${cur} PRIVATE GTest::gtest_main)
 
-#gtest_discover_tests(${cur})
+gtest_discover_tests(${cur})

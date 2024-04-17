@@ -44,9 +44,14 @@ int main(void)
     for (auto k : vt4) {
         cout << k << endl;
     } */
-    //cout << "hello, world" << endl;
-    vector<int> vt {1, -1, -2, 4, -7, 3};
-    cout << maxResult(vt, 2) << endl;
-
+    // cout << "hello, world" << endl;
+    // vector<int> vt {1, -1, -2, 4, -7, 3};
+    // cout << maxResult(vt, 2) << endl;
+    int m = 4;
+    int n = 3;
+    vector<int> hFences { 2, 3};
+    vector<int> vFences { 2};
+    cout << maximizeSquareArea(m, n, hFences, vFences) << endl;
+    
     return 0;
 }

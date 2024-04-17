@@ -322,4 +322,8 @@ int countWords(std::vector<std::string>& words1, std::vector<std::string>& words
 int minimumSeconds(std::vector<int>& nums);
 std::vector<int> distinctDifferenceArray(std::vector<int>& nums);
 int maxResult(std::vector<int>& nums, int k);
+std::string getHint(std::string secret, std::string guess);
+std::string capitalizeTitle(std::string title);
+int maximizeSquareArea(int m, int n, std::vector<int>& hFences, std::vector<int>& vFences);
+//int maximizeSquareArea(int m, int n, vector<int>& hFences, vector<int>& vFences)
 #endif

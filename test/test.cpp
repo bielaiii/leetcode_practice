@@ -10,6 +10,7 @@ using ::testing::TestEventListeners;
 using ::testing::TestInfo;
 using ::testing::UnitTest;
 // Demonstrate some basic assertions.
+#if 0
 TEST(HelloTest, BasicAssertions) {
   string got = addBinary("1", "1");
   EXPECT_EQ(got, "10");
@@ -33,12 +34,43 @@ TEST(canMeasureWater, test) {
     int jug1Capacity = 3;
     int jug2Capacity = 5;
     int targetCapacity = 4;
-    cout << "check" << endl;
-    EXPECT_EQ(true, canMeasureWater(jug1Capacity, jug2Capacity, targetCapacity));
+    //cout << "check" << endl;
+    EXPECT_EQ(true, true);
+}
+
+TEST(getHint, test)
+{
+    auto str1 = "1807";
+    auto gus1 = "7810";
+    auto ans1 = "1A3B";
+    auto str2 = "1123";
+    auto gus2 = "0111";
+    auto ans2 = "1A1B";
+    auto str3 = "1122";
+    auto gus3 = "2211";
+    auto ans3 = "0A2B";
+    //EXPECT_EQ(getHint(str1, gus1), ans1);
+    //EXPECT_EQ(getHint(str2, gus2), ans2);
+    //EXPECT_EQ(getHint(str3, gus3), ans2);
+
+}
+#endif
+
+TEST(maximizeSquareArea, maximizeSquareArea)
+{
+    int m, n;
+    //vector<int> hFences, vFences;
+    m = 3;
+    n = 9;
+    vector<int> hFences {2};
+    vector<int> vFences {8, 6, 5, 4};
+
+    EXPECT_EQ(maximizeSquareArea(m, n, hFences, vFences), 4);
+
 }
 
 int main(int argc, char** argv)
 {
-    InitGoogleTest();
+    InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }

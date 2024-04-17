@@ -8,6 +8,9 @@ int minOperations(vector<string>& logs) {
     for(string log : logs){
         if(st.empty() && (log == "../" || log == "./" )) continue;
         if( log == "../"){
+            if (st.empty()) {
+                continue;
+            }
             st.pop();
         }else if(log != "./"){
             st.push(log);
