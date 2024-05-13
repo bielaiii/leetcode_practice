@@ -54,7 +54,6 @@ TEST(getHint, test)
     //EXPECT_EQ(getHint(str3, gus3), ans2);
 
 }
-#endif
 
 TEST(maximizeSquareArea, maximizeSquareArea)
 {
@@ -67,6 +66,32 @@ TEST(maximizeSquareArea, maximizeSquareArea)
 
     EXPECT_EQ(maximizeSquareArea(m, n, hFences, vFences), 4);
 
+}
+
+
+TEST(minimumRounds, minimumRounds)
+{
+    vector<int> vt{2,2,3,3,2,4,4,4,4,4};
+    EXPECT_EQ(minimumRounds(vt), 4);
+    vector<int> vt1{2, 3, 3};
+    EXPECT_EQ(minimumRounds(vt1), -1);
+    vector<int> vt2{3, 3};
+    EXPECT_EQ(minimumRounds(vt2), 1);
+    vector<int> vt3{5, 5, 5, 5};
+    EXPECT_EQ(minimumRounds(vt3), 2);
+    
+}
+#endif
+
+TEST(findPeakGrid, findPeakGrid)
+{
+    vector<vector<int>> grid {{1,4},{3,2}};
+    //EXPECT_EQ(findPeakGrid(grid), {1, 0});
+    auto ans = findPeakGrid(grid);
+    for_each(ans.begin(), ans.end(), [](auto c) {
+        cout << c << " ";
+    });
+    
 }
 
 int main(int argc, char** argv)

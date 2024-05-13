@@ -326,4 +326,7 @@ std::string getHint(std::string secret, std::string guess);
 std::string capitalizeTitle(std::string title);
 int maximizeSquareArea(int m, int n, std::vector<int>& hFences, std::vector<int>& vFences);
 //int maximizeSquareArea(int m, int n, vector<int>& hFences, vector<int>& vFences)
+int minimumRounds(std::vector<int>& tasks);
+bool isAcronym(std::vector<std::string>& words, std::string s);
+std::vector<int> findPeakGrid(std::vector<std::vector<int>>& mat);
 #endif

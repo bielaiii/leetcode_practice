@@ -7,7 +7,7 @@ aux_source_directory(${CMAKE_SOURCE_DIR}/src src_files)
 #set(CMAKE_CXX_STANDARD_REQUIRED on)
 add_executable(main main.cpp ${src_files})
 
-set(EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 include_directories(main PRIVATE include)
 
 message("build project success")
