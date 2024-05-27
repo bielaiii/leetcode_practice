@@ -1,7 +1,7 @@
-#include<iostream>
-#include"header.h"
-#include"data_structure.h"
-#include"gtest/gtest.h"
+#include "data_structure.h"
+#include "header.h"
+#include "gtest/gtest.h"
+#include <iostream>
 using namespace std;
 using ::testing::EmptyTestEventListener;
 using ::testing::InitGoogleTest;
@@ -81,7 +81,6 @@ TEST(minimumRounds, minimumRounds)
     EXPECT_EQ(minimumRounds(vt3), 2);
     
 }
-#endif
 
 TEST(findPeakGrid, findPeakGrid)
 {
@@ -94,8 +93,16 @@ TEST(findPeakGrid, findPeakGrid)
     
 }
 
-int main(int argc, char** argv)
-{
+TEST(test_suite_name, test_name) {
+    vector<vector<int>> vt{{1, 3}, {2, 3}, {3, 6}, {5, 6},  {5, 7},
+                           {4, 5}, {4, 8}, {4, 9}, {10, 4}, {10, 9}};
+    auto ans = findWinners(vt);
+    EXPECT_THAT(ans[0], ::testing::ElementsAre(1, 2, 10));
+    EXPECT_THAT(ans[1], ::testing::ElementsAre(4, 5, 7, 8));
+}
+
+#endif
+int main(int argc, char** argv) {
     InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
-}
+};

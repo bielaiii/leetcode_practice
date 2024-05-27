@@ -1,6 +1,6 @@
 #ifndef header_h
 #define header_h
-
+#include "data_structure.h"
 #include<iostream>
 #include<string>
 #include <vector>
@@ -328,5 +328,8 @@ int maximizeSquareArea(int m, int n, std::vector<int>& hFences, std::vector<int>
 //int maximizeSquareArea(int m, int n, vector<int>& hFences, vector<int>& vFences)
 int minimumRounds(std::vector<int>& tasks);
 bool isAcronym(std::vector<std::string>& words, std::string s);
+int findMinimumTime(std::vector<std::vector<int>>& tasks);
 std::vector<int> findPeakGrid(std::vector<std::vector<int>>& mat);
+ListNode* removeNodes(ListNode* head);
+bool isSubPath(ListNode* head, TreeNode* root);
 #endif

@@ -5,26 +5,35 @@
 #include <ranges>
 #include <vector>
 using namespace std;
+#include"LFUCache.h"
+
+
+static void printNode(ListNode *head)
+{
+    auto ret = head;
+    while (ret) {
+        cout << ret->val << (ret->next ? " -> " : "\n");
+        ret = ret->next;
+    }
+    cout << "\n";
+}
 
 int main(void)
 {
 
-    vector<vector<int>> grid {{1,4},{3,2}};
-    //EXPECT_EQ(findPeakGrid(grid), {1, 0});
-    auto ans = findPeakGrid(grid);
-    for_each(ans.begin(), ans.end(), [](auto c) {
-        cout << c << " ";
-    });
-    //print_container(ans);
-    //cout << "\n";
-
-    // 创建一个 ostream_iterator 将数据输出到标准输出流
-    //std::ostream_iterator<int> out_iter(std::cout, " ");
-
-    // 使用 *out_iter = value; 将数据写入输出流
-    //*out_iter = 10;
-    //*out_iter = 20;
-    //*out_iter = 30;
-
+    ListNode node1(8);
+    ListNode node2(3, &node1);
+    ListNode node3(13, &node2);
+    ListNode node4(2, &node3);
+    ListNode node5(5, &node4);
+    printNode(&node5);
+    auto ret = removeNodes(&node5);
+    printNode(ret);
+    ListNode node6(1);
+    ListNode node7(1, &node6);
+    ListNode node8(1, &node7);
+    ListNode node9(1, &node8);
+    auto ret1 = removeNodes(&node9);
+    printNode(ret1);
     return 0;
 }
