@@ -101,7 +101,48 @@ TEST(test_suite_name, test_name) {
     EXPECT_THAT(ans[1], ::testing::ElementsAre(4, 5, 7, 8));
 }
 
+
+TEST(test_suite_name, test_name) {
+    string s1 = "abcabcbb";
+    using namespace B;
+    EXPECT_EQ(B::lengthOfLongestSubstring(s1), 3);
+    string s2 = "bbbbb";
+    EXPECT_EQ(B::lengthOfLongestSubstring(s2), 1);
+    string s3 = "pwwkew";
+    EXPECT_EQ(B::lengthOfLongestSubstring(s3), 3);
+
+
+
+    string s4 = " ";
+    EXPECT_EQ(B::lengthOfLongestSubstring(s4), 1);
+    string s5 = "aab";
+    EXPECT_EQ(B::lengthOfLongestSubstring(s5), 2);
+}
+
+
+TEST(test_suite_name, test_name) {
+    vector<int> vt1 {1, 3 ,8 ,48, 10};
+    EXPECT_EQ(longestNiceSubarray(vt1), 3);
+    vector<int> vt2{3, 1, 5, 11, 13};
+    EXPECT_EQ(longestNiceSubarray(vt2), 1);
+}
+
+
+TEST(test_suite_name, test_name) {
+    int n = 5, limit = 2;
+    EXPECT_EQ(distributeCandies(n, limit), 3);
+
+    n = 3;
+    limit = 3;
+    EXPECT_EQ(distributeCandies(n, limit), 10);
+}
 #endif
+
+TEST(test_suite_name, test_name) {
+    EXPECT_EQ((val1), val2)
+}
+
+
 int main(int argc, char** argv) {
     InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
