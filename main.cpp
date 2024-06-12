@@ -21,19 +21,24 @@ static void printNode(ListNode *head)
 int main(void)
 {
 
-    ListNode node1(8);
-    ListNode node2(3, &node1);
-    ListNode node3(13, &node2);
-    ListNode node4(2, &node3);
-    ListNode node5(5, &node4);
-    printNode(&node5);
-    auto ret = removeNodes(&node5);
-    printNode(ret);
-    ListNode node6(1);
-    ListNode node7(1, &node6);
-    ListNode node8(1, &node7);
-    ListNode node9(1, &node8);
-    auto ret1 = removeNodes(&node9);
-    printNode(ret1);
+    
+    vector<int> vt1{3, 2, 4 ,3};
+    int m = 4;
+    int n = 2;
+    auto ans = missingRolls(vt1, m, n);
+    print_1d_array(ans);
+    
+    vector<int> vt2{1, 5, 6};
+    m = 3;
+    n = 4;
+    ans = missingRolls(vt2, m, n);
+    print_1d_array(ans);
+    vector<int> vt3{1, 2 , 3, 4};
+    m = 6;
+    n = 4;
+    ans = missingRolls(vt3, m, n);
+    
+    print_1d_array(ans);
+
     return 0;
 }

@@ -4,6 +4,7 @@
 #include <map>
 #include <memory>
 #include <vector>
+#include<algorithm>
 using namespace std;
 struct record {
     int lastUseFrame;

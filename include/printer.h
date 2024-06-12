@@ -10,7 +10,7 @@ void print_1d_array(T toprint){
     for (auto it : toprint) {
         std::cout << it << " ";
     }
-    std::copy(toprint.begin(), toprint.end(), std::ostream_iterator<T>(std::cout, " "));
+    //std::copy(toprint.begin(), toprint.end(), std::ostream_iterator<T>(std::cout, " "));
     std::cout << "\n------------------\n";
 }
 

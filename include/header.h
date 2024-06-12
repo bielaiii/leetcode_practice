@@ -357,6 +357,7 @@ int countWords(std::vector<std::string>& words1,
 int minimumSeconds(std::vector<int>& nums);
 std::vector<int> distinctDifferenceArray(std::vector<int>& nums);
 int maxResult(std::vector<int>& nums, int k);
+int findMaxLength(std::vector<int>& nums);
 std::string getHint(std::string secret, std::string guess);
 std::string capitalizeTitle(std::string title);
 int maximizeSquareArea(int m, int n, std::vector<int>& hFences,
@@ -377,4 +378,6 @@ int maxNumberOfAlloys(int n, int k, int budget,
                       std::vector<std::vector<int>>& composition,
                       std::vector<int>& stock, std::vector<int>& cost);
 int countBattleships(std::vector<std::vector<char>>& board);
+std::vector<int> missingRolls(std::vector<int>& rolls, int mean, int n);
+int numberOfBoomerangs(std::vector<std::vector<int>>& points);
 #endif
