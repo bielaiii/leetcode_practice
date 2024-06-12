@@ -139,7 +139,16 @@ TEST(test_suite_name, test_name) {
 #endif
 
 TEST(test_suite_name, test_name) {
-    EXPECT_EQ((val1), val2)
+    vector<vector<char>> board(4, vector<char>(4, '.'));
+    board[0][0] = 'X';
+    board[0][3] = 'X';
+    board[1][3] = 'X';
+    board[2][3] = 'X';
+    vector<vector<char>> board1(1, vector<char>(3, 'X'));
+    EXPECT_EQ(countBattleships(board), 2);
+    EXPECT_EQ(countBattleships(board1), 1);
+    
+
 }
 
 
