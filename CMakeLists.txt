@@ -33,32 +33,30 @@ target_compile_options(${PROJECT_NAME} PRIVATE
 )
 
 
-add_subdirectory(test)
+#add_subdirectory(test)
 
 #include(FetchContent)
 #FetchContent_Declare(
-#      googletest
-#      URL https://github.com/google/googletest/archive/3596a01ee50ed33e9dfd640b249b4be3799d395.zip
-#    )
-#    # For Windows: Prevent overriding the parent project's compiler/linker settings
-#    set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-#    FetchContent_MakeAvailable(googletest)
-#    
-#    enable_testing()
-#    
-#    add_executable(test_temp ${src_files} ${CMAKE_SOURCE_DIR}/test/test.cpp)
-#    set_target_properties(test_temp PROPERTIES 
-#        CXX_STANDARD 20
-#        CXX_STANDARD_REQUIRED ON
-#    )
-#    target_link_libraries(
-#            test_temp
-#            GTest::gtest_main
-#        
-#        )
-#
-#    target_include_directories(test_temp PRIVATE include)
-#        
-#        include(GoogleTest)
-#        gtest_discover_tests(test_temp)
+    #  googletest
+    #  URL https://github.com/google/googletest/archive/3596a01ee50ed33e9dfd640b249b4be3799d395.zip
+    #)
+    ## For Windows: Prevent overriding the parent project's compiler/linker settings
+    #set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+    #FetchContent_MakeAvailable(googletest)
+    #
+    #enable_testing()
+    #
+    #add_executable(test_temp ${CMAKE_SOURCE_DIR}/test/test_maxArea1.cpp)
+    #set_target_properties(test_temp PROPERTIES 
+    #    CXX_STANDARD 20
+    #    CXX_STANDARD_REQUIRED ON
+    #)
+    #target_link_libraries(
+        #    test_temp
+        #    GTest::gtest_main
+        #
+        #)
+        #
+        #include(GoogleTest)
+        #gtest_discover_tests(test_temp)
         
