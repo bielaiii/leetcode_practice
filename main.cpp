@@ -5,11 +5,9 @@
 #include <ranges>
 #include <vector>
 using namespace std;
-#include"LFUCache.h"
+#include "LFUCache.h"
 
-
-static void printNode(ListNode *head)
-{
+static void printNode(ListNode* head) {
     auto ret = head;
     while (ret) {
         cout << ret->val << (ret->next ? " -> " : "\n");
@@ -18,22 +16,11 @@ static void printNode(ListNode *head)
     cout << "\n";
 }
 
-int main(void)
-{
+int main(void) {
+    vector<vector<int>> matrix{{1,5,9,},
+                               {10, 11, 13},
+                               {12, 13, 15}};
+    cout << kthSmallest(matrix, 8) << "\n";
 
-    ListNode node1(8);
-    ListNode node2(3, &node1);
-    ListNode node3(13, &node2);
-    ListNode node4(2, &node3);
-    ListNode node5(5, &node4);
-    printNode(&node5);
-    auto ret = removeNodes(&node5);
-    printNode(ret);
-    ListNode node6(1);
-    ListNode node7(1, &node6);
-    ListNode node8(1, &node7);
-    ListNode node9(1, &node8);
-    auto ret1 = removeNodes(&node9);
-    printNode(ret1);
     return 0;
 }

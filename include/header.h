@@ -377,4 +377,6 @@ int maxNumberOfAlloys(int n, int k, int budget,
                       std::vector<std::vector<int>>& composition,
                       std::vector<int>& stock, std::vector<int>& cost);
 int countBattleships(std::vector<std::vector<char>>& board);
+int sumIndicesWithKSetBits(std::vector<int>& nums, int k);
+int kthSmallest(std::vector<std::vector<int>>& matrix, int k);
 #endif
