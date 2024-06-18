@@ -32,6 +32,7 @@ struct Point {
 };
 
 int kthSmallest(vector<vector<int>>& matrix, int k) {
+#if 0
     priority_queue<Point, vector<Point>, greater<Point>> q;
     for (int i = 0; i < matrix.size(); i++) {
         q.emplace(i, 0, matrix[i][0]);
@@ -47,4 +48,6 @@ int kthSmallest(vector<vector<int>>& matrix, int k) {
     }
     
     return q.top().val;
+#endif
+    return 0;
 }

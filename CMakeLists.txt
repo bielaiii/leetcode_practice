@@ -33,7 +33,7 @@ target_compile_options(${PROJECT_NAME} PRIVATE
 )
 
 
-#add_subdirectory(test)
+add_subdirectory(test)
 
 #include(FetchContent)
 #FetchContent_Declare(

@@ -1,6 +1,7 @@
 #include "data_structure.h"
 #include "header.h"
 #include "gtest/gtest.h"
+#include <__atomic/atomic_flag.h>
 #include <iostream>
 using namespace std;
 using ::testing::EmptyTestEventListener;
@@ -136,7 +137,6 @@ TEST(test_suite_name, test_name) {
     limit = 3;
     EXPECT_EQ(distributeCandies(n, limit), 10);
 }
-#endif
 
 TEST(test_suite_name, test_name) {
     vector<vector<char>> board(4, vector<char>(4, '.'));
@@ -148,6 +148,20 @@ TEST(test_suite_name, test_name) {
     EXPECT_EQ(countBattleships(board), 2);
     EXPECT_EQ(countBattleships(board1), 1);
     
+
+}
+#endif
+
+TEST(test_suite_name, test_name)
+{
+    string sentence = "there are $1 $2 and 5$ candies in the shop";
+    EXPECT_EQ(discountPrices(sentence, 50), "there are $0.50 $1.00 and 5$ candies in the shop");
+    
+    sentence = "1 2 $3 4 $5 $6 7 8$ $9 $10$";
+    //cout << "ans " << discountPrices(sentence, 100) << "\n";
+    EXPECT_EQ(discountPrices(sentence, 100), "1 2 $0.00 4 $0.00 $0.00 7 8$ $0.00 $10$");
+    sentence = "ka3caz4837h6ada4 r1 $602";
+    EXPECT_EQ(discountPrices(sentence, 9), "ka3caz4837h6ada4 r1 $547.82");
 
 }
 
