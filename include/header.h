@@ -380,4 +380,6 @@ int maxNumberOfAlloys(int n, int k, int budget,
 int countBattleships(std::vector<std::vector<char>>& board);
 std::vector<int> missingRolls(std::vector<int>& rolls, int mean, int n);
 int numberOfBoomerangs(std::vector<std::vector<int>>& points);
+int sumIndicesWithKSetBits(std::vector<int>& nums, int k);
+int kthSmallest(std::vector<std::vector<int>>& matrix, int k);
 #endif

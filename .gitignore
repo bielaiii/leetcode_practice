@@ -34,7 +34,8 @@
 #cmake file
 build/*
 CmakeFiles/*
-#.vscode/*
+.vscode/*
+.vscode/*.json
 googletest/
 .history/
 .cache/
