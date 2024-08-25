@@ -1,6 +1,0 @@
-
-
-
-ListNode* removeNthFromEnd(ListNode* head, int n) {
-
-}

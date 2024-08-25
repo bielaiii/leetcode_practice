@@ -1,7 +1,6 @@
 #include "data_structure.h"
 #include "header.h"
 #include "gtest/gtest.h"
-#include <__atomic/atomic_flag.h>
 #include <iostream>
 using namespace std;
 using ::testing::EmptyTestEventListener;
@@ -150,7 +149,6 @@ TEST(test_suite_name, test_name) {
     
 
 }
-#endif
 
 TEST(test_suite_name, test_name)
 {
@@ -163,6 +161,24 @@ TEST(test_suite_name, test_name)
     sentence = "ka3caz4837h6ada4 r1 $602";
     EXPECT_EQ(discountPrices(sentence, 9), "ka3caz4837h6ada4 r1 $547.82");
 
+}
+
+
+TEST(test_suite_name, test_name) {
+    vector<int> nums1 = {4, 2, 9, 5, 3};
+    EXPECT_EQ(maximumPrimeDifference(nums1), 3);
+    vector<int> nums2 = {4, 8, 2, 8};
+    EXPECT_EQ(maximumPrimeDifference(nums2), 0);
+
+}
+#endif
+
+
+TEST(test_suite_name, test_name) {
+    vector<int> nums1 {3, 2, 1, 2, 3, 4};
+    EXPECT_EQ(maxOperations(nums1), 3);
+    vector<int> nums2 {3, 2, 6, 1, 4};
+    EXPECT_EQ(maxOperations(nums2), 2);
 }
 
 

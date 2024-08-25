@@ -1,7 +1,0 @@
-#include<iostream>
-#include<vector>
-using namespace std;
-
-void nextPermutation(vector<int>& nums) {
-      for()
-}

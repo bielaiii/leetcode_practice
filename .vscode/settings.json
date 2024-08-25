@@ -7,7 +7,7 @@
     "cmake.configureOnOpen": true,
     "code-runner.saveFileBeforeRun": true,
     "code-runner.runInTerminal": true,
-    "workbench.colorTheme": "Dracula",
+    "workbench.colorTheme": "Dracula Theme",
     "clangd.checkUpdates": true,
     "git.enableSmartCommit": true,
     "editor.inlayHints.enabled": "on",

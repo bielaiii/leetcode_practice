@@ -383,4 +383,10 @@ int numberOfBoomerangs(std::vector<std::vector<int>>& points);
 int sumIndicesWithKSetBits(std::vector<int>& nums, int k);
 int kthSmallest(std::vector<std::vector<int>>& matrix, int k);
 std::string discountPrices(std::string sentence, int discount);
+int maximumPrimeDifference(std::vector<int>& nums);
+int maxOperations(std::vector<int>& nums);
+int numRescueBoats(std::vector<int>& people, int limit);
+bool canMakeSquare(std::vector<std::vector<char>>& grid);
+std::vector<std::vector<int>> insert(std::vector<std::vector<int>>& intervals, std::vector<int>& newInterval);
+std::vector<std::string> findHighAccessEmployees(std::vector<std::vector<std::string>>& access_times);
 #endif

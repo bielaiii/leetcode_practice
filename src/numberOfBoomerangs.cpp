@@ -1,4 +1,5 @@
 #include "header.h"
+#include <cmath>
 #include <map>
 using namespace std;
 

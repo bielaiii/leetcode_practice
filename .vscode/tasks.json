@@ -11,6 +11,27 @@
             "group": "build",
             "problemMatcher": [],
             "detail": "CMake template build task"
+        },
+        {
+            "type": "shell",
+            "label": "build_cur",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileBasenameNoExtension}"
+            ],
+            "problemMatcher": "$gcc"
+        },
+        {
+            "type": "shell",
+            "label": "print",
+            "command": "echo",
+            "args": [
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "problemMatcher": []
         }
     ]
 }
