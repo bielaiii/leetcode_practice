@@ -1,17 +1,7 @@
 {
     "version": "2.0.0",
     "tasks": [
-        {
-            "type": "cmake",
-            "label": "CMake: build",
-            "command": "build",
-            "targets": [
-                "all"
-            ],
-            "group": "build",
-            "problemMatcher": [],
-            "detail": "CMake template build task"
-        },
+        
         {
             "type": "shell",
             "label": "build_cur",
@@ -20,18 +10,10 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "problemMatcher": "$gcc"
         },
-        {
-            "type": "shell",
-            "label": "print",
-            "command": "echo",
-            "args": [
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
-            "problemMatcher": []
-        }
+        
     ]
 }
