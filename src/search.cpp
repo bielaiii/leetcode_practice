@@ -3,17 +3,18 @@
 using namespace std;
 
 int search(vector<int>& nums, int target) {
-    int left = 0, right = nums.size() - 1;
-    while(left <= right){
-        int temp = left + (right - left) / 2;
-        
-        if(nums[temp] == target){
-            return temp;
-            
-        }else if(nums[temp] < target){
-            left = temp + 1;
-        }else{
-            right = temp - 1;
+    int l = 0, r = nums.size();
+    int tg;
+    while (l < r) {
+        int mid = (r - l) / 2 + l;
+        if (nums[mid] == target) {
+            return mid;
+
+        } else if (nums[mid] < target) {
+            l = mid + 1;
+
+        } else {
+            r = mid;
         }
     }
     return -1;

@@ -1,20 +1,30 @@
-#include<iostream>
-#include<vector>
-#include<map>
+#include <cstdint>
+#include <iostream>
+#include <map>
+#include <vector>
 using namespace std;
 
 int minimumRecolors(string blocks, int k) {
-    int ct= 0 ;
-    for (int i = 0; i < k ; i++){
-        if (blocks[i] == 'W') {
-            ++ct;
+    map<char, int> mp;
+    int ans = INT32_MAX;
+    for (int left = 0, right = 0; right < blocks.size(); right++) {
+        mp[blocks[right]]++;
+        if (right - left + 1 >= k) {
+            ans = min(ans, mp['W']);
+            mp[blocks[left]]--;
+            left++;
         }
     }
-    int ans = INT32_MAX;
-    for (int i = k; i < blocks.size(); i++) {
-        ct -= blocks[i - k] == 'W' ? 1 : 0;
-        ct += blocks[i - k] == 'B' ? 1 : 0;
-        ans = min(ans, ct);
-    }
-    return min(ans, ct);
+    return ans;
 }
+
+int main() {
+    string blocks = "WBBWWBBWBW";
+    int k = 7;
+    cout << minimumRecolors(blocks, k);
+    blocks = "WBWBBBW";
+    k = 2;
+    cout << minimumRecolors(blocks, k);
+
+    return 0;
+};

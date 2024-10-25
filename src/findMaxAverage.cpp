@@ -1,22 +1,20 @@
+#include <algorithm>
+#include <cmath>
+#include <cstdint>
 #include <iostream>
 #include <vector>
-#include <cmath>
-using namespace std; 
-    
-    
+using namespace std;
+
 double findMaxAverage(vector<int>& nums, int k) {
-    int left = 0;
-    int right = k;
-    double sum = 0;
-    for(int i = 0; i < k ; i++){
-        sum += nums[i];
+    double ans = INT32_MIN;
+    double temp = 0;
+    for (int l = 0, r = 0; r < nums.size(); r++) {
+        temp += nums[r];
+        if (r - l + 1 >= k) {
+            ans = max(ans, temp);
+            temp -= nums[l];
+            l++;
+        }
     }
-    double avg = sum / k;
-    for(; right < nums.size(); right++){
-        sum -= nums[left];
-        sum += nums[right];
-        avg = max(avg, sum / k);
-        left ++;
-    }
-    return avg;
+    return ans / k;
 }
