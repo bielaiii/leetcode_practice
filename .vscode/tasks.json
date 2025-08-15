@@ -1,20 +1,30 @@
 {
     "version": "2.0.0",
     "tasks": [
-        
         {
             "type": "shell",
             "label": "build_cur",
             "command": "g++",
             "args": [
                 "-g",
-                "-std=c++20",
+                "-fsanitize=address,undefined",
+                "-std=c++23",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${workspaceFolder}/build/${fileBasenameNoExtension}"
             ],
             "problemMatcher": "$gcc"
         },
-        
+        {
+            "type": "shell",
+            "label": "build&&run",
+            "command": [
+                "${workspaceFolder}/build/${fileBasenameNoExtension}"
+            ],
+            "dependsOn": [
+                "build_cur"
+            ],
+            "problemMatcher": []
+        }
     ]
 }

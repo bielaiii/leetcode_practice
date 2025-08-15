@@ -7,7 +7,7 @@
     "cmake.configureOnOpen": true,
     "code-runner.saveFileBeforeRun": true,
     "code-runner.runInTerminal": true,
-    "workbench.colorTheme": "Dracula Theme",
+    "workbench.colorTheme": "Gruvbox Dark Medium",
     "clangd.checkUpdates": true,
     "git.enableSmartCommit": true,
     "editor.inlayHints.enabled": "on",
@@ -28,8 +28,8 @@
     "clangd.arguments": [
         "--all-scopes-completion", // 全局补全(补全建议会给出在当前作用域不可见的索引,插入后自动补充作用域标识符),例如在main()中直接写cout,即使没有`#include <iostream>`,也会给出`std::cout`的建议,配合"--header-insertion=iwyu",还可自动插入缺失的头文件
         "--background-index", // 后台分析并保存索引文件
-        "--clang-tidy", // 启用 Clang-Tidy 以提供「静态检查」，下面设置 clang tidy 规则
-        "--clang-tidy-checks=performance-*, bugprone-*, misc-*, google-*, modernize-*, readability-*, portability-*",
+      //  "--clang-tidy", // 启用 Clang-Tidy 以提供「静态检查」，下面设置 clang tidy 规则
+        //"--clang-tidy-checks=performance-*, bugprone-*, misc-*, google-*, modernize-*, readability-*, portability-*",
         "--compile-commands-dir=${workspaceFolder}/build/", // 编译数据库(例如 compile_commands.json 文件)的目录位置
         "--completion-parse=auto", // 当 clangd 准备就绪时，用它来分析建议
         "--completion-style=detailed", // 建议风格：打包(重载函数只会给出一个建议);还可以设置为 detailed
@@ -257,7 +257,7 @@
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "zig": "zig run",
-        "cpp": "cd $dir && g++ -std=c++20 -g $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -std=c++23 $fileName -o $workspaceRoot/build/$fileNameWithoutExt && $workspaceRoot/build/$fileNameWithoutExt",
         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
         "python": "python -u",
