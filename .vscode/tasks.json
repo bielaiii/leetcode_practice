@@ -7,11 +7,20 @@
             "command": "g++",
             "args": [
                 "-g",
-                "-fsanitize=address,undefined",
                 "-std=c++23",
                 "${file}",
                 "-o",
                 "${workspaceFolder}/build/${fileBasenameNoExtension}"
+            ],
+            "problemMatcher": "$gcc"
+        },
+        {
+            "type": "shell",
+            "label": "echo cwd",
+            "command": "echo",
+            "args": [
+                
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "problemMatcher": "$gcc"
         },
