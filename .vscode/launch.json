@@ -79,13 +79,14 @@
             "preLaunchTask": "CMake: build"
         },
         {
-            "type": "cppdbg",
+            "type": "lldb",
             "request": "launch",
             "name": "g++ launch",
-            "program": "${fileBasenameNoExtension}",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [],
-            "cwd": "${workspaceFolder}",
-            "preLaunchTask": "build_cur"
+            "cwd": "${fileDirname}",
+            "preLaunchTask": "build_cur",
+            
         }
 
     ]

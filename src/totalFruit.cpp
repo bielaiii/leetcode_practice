@@ -1,26 +1,42 @@
+#include <algorithm>
 #include <iostream>
-#include <vector>
+#include <iterator>
 #include <map>
+#include <numeric>
+#include <unordered_map>
+#include <vector>
 using namespace std;
 
-int totalFruit(vector<int>& fruits) {
+int totalFruit(vector<int>& fruits)
+{
+    unordered_map<int, int> mp;
     int left = 0;
-    int right = 0;
-    int len = 0;
-    int fruit1 = fruits[left];
-    
-    int fruit2 = fruits[right];
-    while(right < fruits.size()){
-        if(fruits[right] == fruit1 || fruit2 == fruits[right]){
-            len = max(len , right + 1 - left);
-            right++;
-        }else{
-            left = right - 1;
-            fruit1 = fruits[left];
-            while(left >= 1 && fruits[left-1] == fruit1) left --;
-            fruit2 = fruits[right];
-            len = max(len, right - left + 1);
+    int right;
+    int ret = 0;
+    for ( right = 0 ; right < fruits.size(); right++) {
+        mp[fruits[right]]++;
+        while (mp.size() > 2) {
+            mp[fruits[left]]--;
+            if (mp[fruits[left]] == 0) {
+                mp.erase(fruits[left]);
+            }
+            left++;
         }
+        ret = max(ret, right - left + 1);
     }
-    return len;
+
+    return ret;
+}
+
+int main()
+{
+    vector<int> fruits0 = { 1, 2, 1 };
+    vector<int> fruits1 = { 0, 1, 2, 2 };
+    vector<int> fruits2 = { 1, 2, 3, 2, 2 };
+    vector<int> fruits3 = { 3,3,3,1,2,1,1,2,3,3,4 };
+    // println("{}", totalFruit(fruits0));
+    // println("{}", totalFruit(fruits1));
+    println("{}", totalFruit(fruits2));
+    println("{}", totalFruit(fruits3));
+    return 0;
 }

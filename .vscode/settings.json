@@ -7,7 +7,7 @@
     "cmake.configureOnOpen": true,
     "code-runner.saveFileBeforeRun": true,
     "code-runner.runInTerminal": true,
-    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "workbench.colorTheme": "Gruvbox Light Medium",
     "clangd.checkUpdates": true,
     "git.enableSmartCommit": true,
     "editor.inlayHints.enabled": "on",
